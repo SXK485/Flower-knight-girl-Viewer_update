@@ -17,8 +17,7 @@ import re
 import shutil
 import time
 import json
-import multiprocessing
-import concurrent.futures
+from concurrent.futures import ThreadPoolExecutor
 from bs4 import BeautifulSoup
 from PIL import Image
 
@@ -42,7 +41,7 @@ def main():
     # 将时间间隔转换为秒
     time_interval_in_seconds = YOUR_TIME_INTERVAL * 24 * 60 * 60
 
-    # 检查文件是否存在
+    #检查文件是否存在
     if os.path.isfile("differenceList.txt"):
         # 如果文件存在，则获取文件的修改时间
         file_time = os.path.getmtime("differenceList.txt")
@@ -53,6 +52,8 @@ def main():
         # 如果文件的年龄超过指定时间，则重新获取数据
         if file_age > time_interval_in_seconds:
             datalist = getData(baseurl1)
+            if not datalist:
+                return
             # 将数据保存到文本文件中
             with open("differenceList.txt", "w") as f:
                 for item in datalist:
@@ -64,12 +65,14 @@ def main():
     else:
         # 如果文件不存在，则重新获取
         datalist = getData(baseurl1)
+        if not datalist:
+            return
         # 将数据保存到文本文件中
         with open("differenceList.txt", "w") as f:
             for item in datalist:
                 f.write(str(item) + "\n")
 
-    # datalist = [150207]
+    # datalist = [100011]
 
     if not os.path.exists("scenes"):
         os.mkdir("scenes")
@@ -93,6 +96,7 @@ def main():
     get_sceneData()
 
 def download_role(id):
+    print(str(id)+"线程")
     # 判断是否有动画
     is_spine = False
 
@@ -189,6 +193,7 @@ def download_role(id):
 
 # 定义一个函数，用于从数据结构中提取角色的id
 def get_id_from_data():
+    # folder_path = "E:\さいきん\Flower knight girl Viewer 1.0\package.nw\scenes"
     folder_path = "scenes"
     folder_names = []
 
@@ -336,9 +341,8 @@ def getData(baseurl):
 
     listOne = bs.select('table.sortable.wikitable > tbody', limit=1)  # 查找id为“sortable wikitable”的table标签的
     # 子标签————tbody,同时只找到第一个，因为第二个tbody的id相同
-    manager = multiprocessing.Manager()
-    bloomedList = manager.list()
-    idList = manager.list()
+    bloomedList = []
+    idList = []
 
     #2、3、4星角色ID集合
     lowIDList = [131909, 141101, 160007, 130801, 152701, 120801, 111505, 160809, 142201, 140901,
@@ -350,30 +354,51 @@ def getData(baseurl):
 
     for item in listOne:
         listTwo = item.select('tr')[2:]  # 跳过数组的前两个元素
-        with concurrent.futures.ThreadPoolExecutor() as executor:
-            futures = [executor.submit(process_item, item1, data_id_list, url, lowIDList, bloomedList, idList) for item1 in listTwo]
-            for future in concurrent.futures.as_completed(futures):
+        with ThreadPoolExecutor() as executor:
+            futures = [executor.submit(process_item, item1, data_id_list, url, lowIDList)
+                       for item1 in listTwo]
+
+            for future in futures:
+
+                row_id = None
+                bloomed_id = None
+
                 result = future.result()
+
+                if result:
+                    row_id, bloomed_id = result
+
+                if row_id:
+                    idList.append(row_id)
+
+                if bloomed_id:
+                    bloomedList.append(bloomed_id)
 
         print(idList)
         print(bloomedList)
 
-        result = list(idList) + list(bloomedList)
-        print(result)
+        resultList = idList + bloomedList
+        print(resultList)
 
         #找出ID差集，并保存
-        differenceSet = set(result).difference(set(data_id_list))
+        differenceSet = set(resultList).difference(set(data_id_list))
         differenceList = list(differenceSet)
-        with open("differenceList.txt", "w") as f:
-            for differenceID in differenceList:
-                f.write(str(differenceID) + "\n")
+        print(differenceList)
+        if differenceList:
+            with open("differenceList.txt", "w") as f:
+                for differenceID in differenceList:
+                    f.write(str(differenceID) + "\n")
 
         return differenceList
 
-def process_item(item1, data_id_list, url, lowIDList, bloomedList, idList):
+def process_item(item1, data_id_list, url, lowIDList):
     listThr = item1.findAll('td')[1:4]  # 只查找第二和第三个元素
 
     print(listThr[1])
+
+    rowID = int(listThr[0].get_text())
+    bloomedID = None
+
     # 获取角色详情页
     detialUrl = listThr[1].select("td > a")[0].get("href")
     # 获取角色的id
@@ -396,6 +421,7 @@ def process_item(item1, data_id_list, url, lowIDList, bloomedList, idList):
 
     # 开花寝室
     for item2 in listFour:
+
         listFive = item2.findAll('tr')[7:]
 
         for liem3 in listFive:
@@ -413,10 +439,10 @@ def process_item(item1, data_id_list, url, lowIDList, bloomedList, idList):
                             status2 = int(listThr[0].get_text()) + 300000
                             print("开花"+str(status2))
                             print("\n")
-                            bloomedList.append(status2)
+                            bloomedID = status2
 
-    idList.append(int(listThr[0].get_text()))
     print(int(listThr[0].get_text()))
+    return rowID, bloomedID
 
 #遍历scenes文件夹并输出sceneData.js
 def get_sceneData():
@@ -745,5 +771,4 @@ def download_spine(id, folder_name, url_r18):
 
 
 if __name__ == "__main__":
-    multiprocessing.freeze_support()
     main()
