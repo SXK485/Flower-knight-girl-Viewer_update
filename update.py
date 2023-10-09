@@ -307,25 +307,44 @@ def askURL(url):
     data = bytes(urllib.parse.urlencode({"name": "eric"}), encoding="utf-8")
     request = urllib.request.Request(url, data=data, headers=headers)
     html = ""
+
+    session = requests.Session()
+    retry = Retry(total=100,
+                  backoff_factor=0.1,
+                  status_forcelist=[500, 502, 503, 504])
+    session.mount('http://', HTTPAdapter(max_retries=retry))
+    session.mount('https://', HTTPAdapter(max_retries=retry))
+
     try:
         response = urllib.request.urlopen(request)
         html = response.read().decode("utf-8")
         response.close()
         return html
     except:
-        for i in range(100):  # 循环去请求网站
+        # for i in range(100):  # 循环去请求网站
+        #     try:
+        #         response = requests.get(url, headers=headers, timeout=20)
+        #         try:
+        #             if response.code == 200:
+        #                 html = response.read().decode("utf-8")
+        #                 response.close()
+        #                 return html
+        #         except AttributeError:
+        #             print(response)
+        #     except:
+        #         html = askURL(url)
+        #         return html
+        while True:
             try:
-                response = requests.get(url, headers=headers, timeout=20)
-                try:
-                    if response.code == 200:
-                        html = response.read().decode("utf-8")
-                        response.close()
-                        return html
-                except AttributeError:
-                    print(response)
-            except:
-                html = askURL(url)
-                return html
+                response = session.get(url, headers=headers, timeout=20)
+                if response.status_code == 200:
+                    html = response.text
+                    return html
+
+            except requests.exceptions.RequestException as e:
+                print("Request failed, retrying:", url)
+                html = ""
+                continue
     # return html  # 返回一个html页面
 
 
@@ -483,95 +502,150 @@ def get_sceneData():
 
 # 定义一个函数，用于下载图片，并保存为jpg格式
 def download_image(url, file_name):
-    # 定义重试策略
-    retry_strategy = Retry(
-        total=50,  # 最大重试次数
-        status_forcelist=[500, 502, 503, 504],  # 遇到这些状态码时重试
-        backoff_factor=1  # 重试之间的时间间隔
-    )
 
-    # 创建一个会话对象
-    session = requests.Session()
-    session.mount("http://", HTTPAdapter(max_retries=retry_strategy))
-    session.mount("https://", HTTPAdapter(max_retries=retry_strategy))
+    max_retries = 5
 
-    # 发送网络请求，获取图片的内容
-    response = session.get(url)
-    # 判断网络请求是否成功
-    if response.status_code == 200:
-        # 获取图片的二进制数据
-        image_data = response.content
-        # 打开一个文件，以二进制写入模式
-        with open(file_name, "wb") as f:
-            # 将图片的二进制数据写入文件中
-            f.write(image_data)
-            # 关闭文件
-            f.close()
-    else:
-        # 打印错误信息
-        print("网络请求失败，请检查url是否正确")
-        None_H = True
-        return None_H
+    for i in range(max_retries):
+
+        try:
+            # 定义重试策略
+            retry_strategy = Retry(
+                total=50,  # 最大重试次数
+                status_forcelist=[500, 502, 503, 504],  # 遇到这些状态码时重试
+                backoff_factor=1  # 重试之间的时间间隔
+            )
+
+            # 创建一个会话对象
+            session = requests.Session()
+            session.mount("http://", HTTPAdapter(max_retries=retry_strategy))
+            session.mount("https://", HTTPAdapter(max_retries=retry_strategy))
+
+            # 发送网络请求，获取图片的内容
+            response = session.get(url)
+            # 判断网络请求是否成功
+            if response.status_code == 200:
+                # 获取图片的二进制数据
+                image_data = response.content
+                # 打开一个文件，以二进制写入模式
+                with open(file_name, "wb") as f:
+                    # 将图片的二进制数据写入文件中
+                    f.write(image_data)
+                    # 关闭文件
+                    f.close()
+                    return
+            else:
+                # 打印错误信息
+                print("网络请求失败，请检查url是否正确")
+                None_H = True
+                return None_H
+
+        except Exception as e:
+            print(f"Download exception: {e}")
+
+            if i == max_retries - 1:
+                print(f"Failed after {max_retries} retries for {url}")
+                return
+
+            else:
+                time.sleep(1)
+                continue
+
 
 # 定义一个函数，用于下载语音，并保存为mp3格式
 def download_voice(url, file_name):
-    # 定义重试策略
-    retry_strategy = Retry(
-        total=50,  # 最大重试次数
-        status_forcelist=[500, 502, 503, 504],  # 遇到这些状态码时重试
-        backoff_factor=1  # 重试之间的时间间隔
-    )
 
-    # 创建一个会话对象
-    session = requests.Session()
-    session.mount("http://", HTTPAdapter(max_retries=retry_strategy))
-    session.mount("https://", HTTPAdapter(max_retries=retry_strategy))
+    max_retries = 5
 
-    # 发送网络请求，获取语音的内容
-    response = session.get(url)
-    # 判断网络请求是否成功
-    if response.status_code == 200:
-        # 获取语音的二进制数据
-        voice_data = response.content
-        # 打开一个文件，以二进制写入模式
-        with open(file_name, "wb") as f:
-            # 将语音的二进制数据写入文件中
-            f.write(voice_data)
-            # 关闭文件
-            f.close()
-    else:
-        # 打印错误信息
-        print("网络请求失败，请检查url是否正确")
+    for i in range(max_retries):
+
+        try:
+            # 定义重试策略
+            retry_strategy = Retry(
+                total=50,  # 最大重试次数
+                status_forcelist=[500, 502, 503, 504],  # 遇到这些状态码时重试
+                backoff_factor=1  # 重试之间的时间间隔
+            )
+
+            # 创建一个会话对象
+            session = requests.Session()
+            session.mount("http://", HTTPAdapter(max_retries=retry_strategy))
+            session.mount("https://", HTTPAdapter(max_retries=retry_strategy))
+
+            # 发送网络请求，获取语音的内容
+            response = session.get(url)
+            # 判断网络请求是否成功
+            if response.status_code == 200:
+                # 获取语音的二进制数据
+                voice_data = response.content
+                # 打开一个文件，以二进制写入模式
+                with open(file_name, "wb") as f:
+                    # 将语音的二进制数据写入文件中
+                    f.write(voice_data)
+                    # 关闭文件
+                    f.close()
+                    return
+            else:
+                # 打印错误信息
+                print("网络请求失败，请检查url是否正确")
+
+        except Exception as e:
+            print(f"Download exception: {e}")
+
+            if i == max_retries - 1:
+                print(f"Failed after {max_retries} retries for {url}")
+                return
+
+            else:
+                time.sleep(1)
+                continue
 
 # 定义一个函数，用于下载剧本，并保存为txt格式，并进行zlib解压缩
 def download_script(url, file_name):
-    # 定义重试策略
-    retry_strategy = Retry(
-        total=50,  # 最大重试次数
-        status_forcelist=[500, 502, 503, 504],  # 遇到这些状态码时重试
-        backoff_factor=1  # 重试之间的时间间隔
-    )
 
-    # 创建一个会话对象
-    session = requests.Session()
-    session.mount("http://", HTTPAdapter(max_retries=retry_strategy))
-    session.mount("https://", HTTPAdapter(max_retries=retry_strategy))
+    max_retries = 5
 
-    # 发送网络请求，获取剧本的内容
-    response = session.get(url)
-    # 判断网络请求是否成功
-    if response.status_code == 200:
-        # 获取剧本的二进制数据，并进行zlib解压缩
-        script_data = zlib.decompress(response.content,wbits=15+32)
-        # 打开一个文件，以二进制写入模式
-        with open(file_name, "wb") as f:
-            # 将剧本的文本数据写入文件中
-            f.write(script_data)
-            # 关闭文件
-            f.close()
-    else:
-        # 打印错误信息
-        print("网络请求失败，请检查url是否正确")
+    for i in range(max_retries):
+
+        try:
+            # 定义重试策略
+            retry_strategy = Retry(
+                total=50,  # 最大重试次数
+                status_forcelist=[500, 502, 503, 504],  # 遇到这些状态码时重试
+                backoff_factor=1  # 重试之间的时间间隔
+            )
+
+            # 创建一个会话对象
+            session = requests.Session()
+            session.mount("http://", HTTPAdapter(max_retries=retry_strategy))
+            session.mount("https://", HTTPAdapter(max_retries=retry_strategy))
+
+            # 发送网络请求，获取剧本的内容
+            response = session.get(url)
+            # 判断网络请求是否成功
+            if response.status_code == 200:
+                # 获取剧本的二进制数据，并进行zlib解压缩
+                script_data = zlib.decompress(response.content,wbits=15+32)
+                # 打开一个文件，以二进制写入模式
+                with open(file_name, "wb") as f:
+                    # 将剧本的文本数据写入文件中
+                    f.write(script_data)
+                    # 关闭文件
+                    f.close()
+                    return
+            else:
+                # 打印错误信息
+                print("网络请求失败，请检查url是否正确")
+
+        except Exception as e:
+            print(f"Download exception: {e}")
+
+            if i == max_retries - 1:
+                print(f"Failed after {max_retries} retries for {url}")
+                return
+
+            else:
+                time.sleep(1)
+                continue
 
 def script_conversion(file_name, script_original, is_spine):
     voice_num = 0
