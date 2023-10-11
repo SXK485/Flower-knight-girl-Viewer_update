@@ -77,17 +77,33 @@ def main():
     if not os.path.exists("scenes"):
         os.mkdir("scenes")
 
-    # 定义一个列表，存储所有线程
-    threads = []
+    # # 定义一个列表，存储所有线程
+    # threads = []
+    #
+    # for id in datalist:
+    #     t = threading.Thread(target=download_role, args=(id,))
+    #     threads.append(t)
+    #     t.start()
+    #
+    # # 等待所有线程执行完毕
+    # for t in threads:
+    #     t.join()
 
+    # 创建线程池
+    executor = ThreadPoolExecutor(max_workers=10)  # 设置线程池的最大线程数
+
+    # 提交任务到线程池
+    results = []
     for id in datalist:
-        t = threading.Thread(target=download_role, args=(id,))
-        threads.append(t)
-        t.start()
+        future = executor.submit(download_role, id)
+        results.append(future)
 
-    # 等待所有线程执行完毕
-    for t in threads:
-        t.join()
+    # 等待所有任务完成
+    for future in results:
+        future.result()
+
+    # 关闭线程池
+    executor.shutdown()
 
     if not os.path.exists("data/scripts/data"):
         os.makedirs("data/scripts/data")
@@ -115,9 +131,6 @@ def download_role(id):
     # 创建资源文件夹
     if not os.path.exists(folder_path):
         os.mkdir(folder_path)
-    if os.path.exists(folder_path + "/script.txt"):
-        print(folder_name+"已存在!")
-        return
     # 在资源文件夹中创建images文件夹
     if not os.path.exists(folder_path + "/images"):
         os.mkdir(folder_path + "/images")
@@ -142,7 +155,7 @@ def download_role(id):
         # 拼接图片的文件名，使用资源文件夹名称和图片名称，并添加.jpg后缀
         image_file_name = folder_path + "/images/" + image_name + ".jpg"
         # 调用函数，下载图片，并保存为jpg格式
-        None_H = download_image(image_url, image_file_name)
+        None_H = download_image(image_url, image_file_name, folder_path + "/images", image_num)
     if None_H == True:
         # 删除文件夹及其内容
         shutil.rmtree(folder_path)
@@ -178,18 +191,22 @@ def download_role(id):
             voice_name = "fkg_" + str(id) + "_hscene0" + str(i).zfill(2)
         elif form == 2:
             voice_name = "fkg_" + str(id) + "_hscene2" + str(i).zfill(2)
-        print(voice_name)
         # 使用md5加密语音的名称，并转换为16进制字符串
         voice_md5 = hashlib.md5(voice_name.encode()).hexdigest()
         # 拼接语音的url，使用前缀和角色id和加密后的字符串，并添加.mp3后缀
         voice_url = VOICE_PREFIX + str(id) + "/" + voice_md5 + ".mp3"
         # 拼接语音的文件名，使用资源文件夹名称和语音名称，并添加.mp3后缀
         voice_file_name = folder_path + "/voices/" + voice_name + ".mp3"
+        if os.path.exists(folder_path + "/voices/" + voice_name + ".mp3"):
+            print(voice_name + ".mp3"+"已存在!")
+            continue
         # 调用函数，下载语音，并保存为mp3格式
+        print(voice_name)
         download_voice(voice_url, voice_file_name)
 
     # 打印完成信息
     print(str(id) + "资源文件夹已经生成完毕，请查看")
+    return
 
 # 定义一个函数，用于从数据结构中提取角色的id
 def get_id_from_data():
@@ -338,7 +355,8 @@ def askURL(url):
             try:
                 response = session.get(url, headers=headers, timeout=20)
                 if response.status_code == 200:
-                    html = response.text
+                    html = response.read().decode("utf-8")
+                    response.close()
                     return html
 
             except requests.exceptions.RequestException as e:
@@ -501,7 +519,15 @@ def get_sceneData():
         f.write(scene_data_js)
 
 # 定义一个函数，用于下载图片，并保存为jpg格式
-def download_image(url, file_name):
+def download_image(url, file_name, image_path, image_num):
+
+    # 获取路径下的文件数量
+    file_count = len(os.listdir(image_path))
+
+    # 判断文件数量是否与 image_num 相同
+    if file_count == image_num:
+        # 文件数量与 image_num 相同，说明文件已存在，直接返回，不进行下载
+        return
 
     max_retries = 5
 
@@ -602,6 +628,10 @@ def download_voice(url, file_name):
 # 定义一个函数，用于下载剧本，并保存为txt格式，并进行zlib解压缩
 def download_script(url, file_name):
 
+    if os.path.exists(file_name):
+        print(file_name+"已存在!")
+        return
+
     max_retries = 5
 
     for i in range(max_retries):
@@ -647,7 +677,12 @@ def download_script(url, file_name):
                 time.sleep(1)
                 continue
 
-def script_conversion(file_name, script_original, is_spine):
+def script_conversion(folder_path, script_original, is_spine):
+
+    if os.path.exists(folder_path+'/script.txt'):
+        print(folder_path+'/script.txt'+"已存在!")
+        return
+
     voice_num = 0
     # 打开原始文件
     with open(script_original, 'r', encoding='utf-8') as f:
@@ -797,12 +832,11 @@ def script_conversion(file_name, script_original, is_spine):
         new_lines.append('<BG_OUT>500\n')
         new_lines.append('<SCENARIO_END>')
     # 打开新的文件，用于写入转换后的内容
-    with open(file_name+'/script.txt', 'w', encoding='utf-8') as f:
+    with open(folder_path+'/script.txt', 'w', encoding='utf-8') as f:
         # 遍历转换后的每一行
         for line in new_lines:
             # 写入文件，并在每一行后面加上换行符
             f.write(line)
-    print("音频数量"+str(voice_num))
     return is_spine,voice_num
 
 def download_spine(id, folder_name, url_r18):
