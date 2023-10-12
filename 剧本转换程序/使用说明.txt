@@ -1,0 +1,4 @@
+此播放器的作者大概是为了播放器能更快地响应，将文本全部放到了".\package.nw\data\scripts\data\sceneData.js"路径下的sceneData.js文件中。
+播放器中显示的文本也都是sceneData.js文件中的文本。我猜想，原理大概是先扫描scenes的所有资源文件，然后生成的sceneData.js文件。
+如果想要显示翻译文本，先翻译好scenes目录下的script.txt文件，然后把scriptConversion.exe放在package.nw目录下，双击运行程序
+就会生成一个sceneData.js文件在package.nw目录下，拿这个文件覆盖掉".\package.nw\data\scripts\data\sceneData.js"下原来的文件即可。
