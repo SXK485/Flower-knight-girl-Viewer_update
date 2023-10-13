@@ -1,0 +1,7 @@
+将ScriptToJson.py放到package.nw目录下，通过命令行运行，会生成一个json_jp文件夹
+其中有已经转换好的、可以直接用于GalTransl项目的json文件，直接将整个json_jp文件夹放到GalTransl下的自定义工程路径即可，比如默认的sampleProject。
+
+将ScriptToJson.py，还有GalTransl项目生成的json_cn文件夹放到package.nw目录下，通过命令行运行
+会将GalTransl项目翻译好的json回填至scenes文件夹下对应的script.txt。
+
+GalTransl项目仓库地址：https://github.com/XD2333/GalTransl
