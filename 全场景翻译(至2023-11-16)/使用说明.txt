@@ -1,0 +1,4 @@
+使用自动化翻译项目GalTransl，利用gpt-3.5-turbo和gpt-3.5-turbo-0613模型，耗时两周翻完，截止至2023-11-16。
+先运行JsonToScript.exe，然后再运行scriptConversion.exe，用生成的sceneData.js替换掉旧的，如果有需要还可以再运行createMeta.exe补充场景的搜索索引。
+因为模型的翻译质量参差不齐，如果对某些场景的翻译不满意，你也可以单独对某些场景的json文件进行修改然后再操作。
+提示：操作前请运行update.exe将场景更新至最新。
