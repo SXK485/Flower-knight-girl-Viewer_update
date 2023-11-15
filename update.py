@@ -335,9 +335,8 @@ def askURL(url):
     session.mount('https://', HTTPAdapter(max_retries=retry))
 
     try:
-        response = urllib.request.urlopen(request)
-        html = response.read().decode("utf-8")
-        response.close()
+        response = session.get(url, headers=headers, timeout=20)
+        html = response.text
         return html
     except:
         # for i in range(100):  # 循环去请求网站
@@ -357,8 +356,7 @@ def askURL(url):
             try:
                 response = session.get(url, headers=headers, timeout=20)
                 if response.status_code == 200:
-                    html = response.read().decode("utf-8")
-                    response.close()
+                    html = response.text
                     return html
 
             except requests.exceptions.RequestException as e:

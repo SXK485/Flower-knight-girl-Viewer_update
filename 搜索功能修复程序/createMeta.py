@@ -312,17 +312,15 @@ def askURL(url):
     session.mount('https://', HTTPAdapter(max_retries=retry))
 
     try:
-        response = urllib.request.urlopen(request)
-        html = response.read().decode("utf-8")
-        response.close()
+        response = session.get(url, headers=headers, timeout=20)
+        html = response.text
         return html
     except:
         while True:
             try:
                 response = session.get(url, headers=headers, timeout=20)
                 if response.status_code == 200:
-                    html = response.read().decode("utf-8")
-                    response.close()
+                    html = response.text
                     return html
 
             except requests.exceptions.RequestException as e:
