@@ -436,19 +436,25 @@ def process_item(item1, data_id_list, url, lowIDList):
     rowID = int(listThr[0].get_text())
     bloomedID = None
 
-    # 获取角色详情页
-    detialUrl = listThr[1].select("td > a")[0].get("href")
+    if len(listThr) < 2:
+        print(listThr[1])
     # 获取角色的id
     id = int(listThr[0].get_text()) + 300000
     # 跳过已经开花场景的角色，跳过2、3、4星角色
     if in_data(id, data_id_list) == True or in_data(int(listThr[0].get_text()), lowIDList) == True:
         print("跳过" + str(id))
         return
+    # 获取角色详情页
+    try:
+        detialUrl = listThr[1].select("td > a")[0].get("href")
+    except IndexError:
+        print(str(rowID)+"-"+"表格格式异常！")
+        return rowID, bloomedID
     print(url + detialUrl)
     detailHtml = askURL(url + detialUrl)
     try:
         bs1 = BeautifulSoup(detailHtml, "html.parser")
-    except TypeError:
+    except IndexError:
         print(detailHtml)
     table = bs1.select('table.wikitable.cs.cs-force-center')[0]
     listFour = table.findAll('tbody')

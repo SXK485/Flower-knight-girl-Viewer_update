@@ -340,11 +340,9 @@ def getData(baseurl):
     for item in listOne:
         listTwo = item.select('tr')[2:]  # 跳过数组的前两个元素
         with ThreadPoolExecutor() as executor:
-            futures = [executor.submit(process_item, item1, idList)
+            futures = [executor.submit(process_item, item1)
                        for item1 in listTwo]
             for future in futures:
-
-                id = None
 
                 id = future.result()
 
@@ -382,22 +380,19 @@ def getData(baseurl):
 
 
 
-def process_item(item1, idList):
+def process_item(item1):
     listThr = item1.findAll('td')[1:5]  # 只查找第二和第三个元素
 
     print(listThr[1])
-    # 获取角色详情页
-    detialUrl = listThr[1].select("td > a")[0].get("href")
-    # 获取角色的id
-    id = int(listThr[0].get_text()) + 300000
-    lowId = int(listThr[0].get_text()) + 400000
-    # 跳过已经开花场景的角色，跳过2、3、4星角色
     dict = {}
-    dict['id'] = int(listThr[0].get_text())
-    dict['name'] = listThr[1].select("td > a")[0].get_text()
-    dict['engName'] = listThr[2].select("td > a")[0].get_text()
-
-    idList.append(dict)
+    try:
+        dict['id'] = int(listThr[0].get_text())
+        dict['name'] = listThr[1].select("td > a")[0].get_text()
+        dict['engName'] = listThr[2].select("td > a")[0].get_text()
+    except IndexError:
+        print(listThr[0].get_text() + "-" + "表格格式异常！")
+        return None
+    return dict
 
 def main():
     baseurl = "https://flowerknight.fandom.com/wiki/List_of_Flower_Knights_by_ID"
