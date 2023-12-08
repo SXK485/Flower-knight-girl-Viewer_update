@@ -9,17 +9,13 @@ import hashlib
 import zlib
 # 导入os库，用于进行文件和目录操作
 import os
-import random
-import urllib.request
-import urllib.parse
-import urllib.error
-import re
 import shutil
 import time
 import json
 from concurrent.futures import ThreadPoolExecutor
 from bs4 import BeautifulSoup
 from PIL import Image
+import slpp
 
 qww = lambda x, y: True if x == y else False
 
@@ -33,8 +29,6 @@ SCRIPT_PREFIX = "https://dugrqaqinbtcq.cloudfront.net/product/ynnFQcGDLfaUcGhp/a
 URL_R18 = 'https://dugrqaqinbtcq.cloudfront.net/product/ynnFQcGDLfaUcGhp/assets/hscene_r18_spine/'
 
 def main():
-    baseurl1 = "https://flowerknight.fandom.com/wiki/List_of_Flower_Knights_by_ID"
-
     # 将时间间隔转换为天数
     YOUR_TIME_INTERVAL = 30  # 7天
 
@@ -51,7 +45,7 @@ def main():
         file_age = current_time - file_time
         # 如果文件的年龄超过指定时间，则重新获取数据
         if file_age > time_interval_in_seconds:
-            datalist = getData(baseurl1)
+            datalist = get_difference_list()
             if not datalist:
                 return
             # 将数据保存到文本文件中
@@ -64,7 +58,7 @@ def main():
                 datalist = [int(line.strip()) for line in f.readlines()]
     else:
         # 如果文件不存在，则重新获取
-        datalist = getData(baseurl1)
+        datalist = get_difference_list()
         if not datalist:
             return
         # 将数据保存到文本文件中
@@ -76,18 +70,6 @@ def main():
 
     if not os.path.exists("scenes"):
         os.mkdir("scenes")
-
-    # # 定义一个列表，存储所有线程
-    # threads = []
-    #
-    # for id in datalist:
-    #     t = threading.Thread(target=download_role, args=(id,))
-    #     threads.append(t)
-    #     t.start()
-    #
-    # # 等待所有线程执行完毕
-    # for t in threads:
-    #     t.join()
 
     # 创建线程池
     executor = ThreadPoolExecutor(max_workers=10)  # 设置线程池的最大线程数
@@ -240,252 +222,64 @@ def in_data(id, data_id_list):
         return False
 
 
-def askURL(url):
-    headers_list = [
-        {
-            'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; Android 8.0.0; SM-G955U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Mobile Safari/537.36'
-        }, {
-            'user-agent': 'Mozilla/5.0 (iPad; CPU OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/87.0.4280.77 Mobile/15E148 Safari/604.1'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; Android) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.109 Safari/537.36 CrKey/1.54.248666'
-        }, {
-            'user-agent': 'Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.188 Safari/537.36 CrKey/1.54.250320'
-        }, {
-            'user-agent': 'Mozilla/5.0 (BB10; Touch) AppleWebKit/537.10+ (KHTML, like Gecko) Version/10.0.9.2372 Mobile Safari/537.10+'
-        }, {
-            'user-agent': 'Mozilla/5.0 (PlayBook; U; RIM Tablet OS 2.1.0; en-US) AppleWebKit/536.2+ (KHTML like Gecko) Version/7.2.1.0 Safari/536.2+'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; SM-N900T Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; U; Android 4.1; en-us; GT-N7100 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; U; Android 4.0; en-us; GT-I9300 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; Android 7.0; SM-G950U Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; Android 8.0.0; SM-G965U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; Android 8.1.0; SM-T837A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Safari/537.36'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; U; en-us; KFAPWI Build/JDQ39) AppleWebKit/535.19 (KHTML, like Gecko) Silk/3.13 Safari/535.19 Silk-Accelerated=true'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; U; Android 4.4.2; en-us; LGMS323 Build/KOT49I.MS32310c) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.0.0 Mobile Safari/537.36'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 550) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/14.14263'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 10 Build/MOB31T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; Android 8.0.0; Nexus 5X Build/OPR4.170623.006) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; Android 7.1.1; Nexus 6 Build/N6F26U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; Android 8.0.0; Nexus 6P Build/OPP3.170518.006) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 7 Build/MOB30X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36'
-        }, {
-            'user-agent': 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Lumia 520)'
-        }, {
-            'user-agent': 'Mozilla/5.0 (MeeGo; NokiaN9) AppleWebKit/534.13 (KHTML, like Gecko) NokiaBrowser/8.5.0 Mobile Safari/534.13'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; Android 9; Pixel 3 Build/PQ1A.181105.017.A1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.158 Mobile Safari/537.36'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; Android 10; Pixel 4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; Android 11; Pixel 3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36'
-        }, {
-            'user-agent': 'Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36'
-        }, {
-            'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1'
-        }, {
-            'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1'
-        }, {
-            'user-agent': 'Mozilla/5.0 (iPad; CPU OS 11_0 like Mac OS X) AppleWebKit/604.1.34 (KHTML, like Gecko) Version/11.0 Mobile/15A5341f Safari/604.1'
-        }, {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+def get_difference_list():
+    # 获取data.json中的数据
+    url = "https://flowerknight.fandom.com/wiki/Module:MasterCharacterData?action=edit"
+    lua_table = get_lua_table(url)
+    data_list = filter_fields(lua_table)
+
+    # 获取本地文件夹中的数据
+    local_id_list = get_id_from_data()
+
+    # 输出data_list的所有id
+    data_id_list = [data['id'] for data in data_list]
+    print("Data ID List:", data_id_list)
+
+    # 输出local_id_list的所有id
+    print("Local ID List:", local_id_list)
+
+    # 找出ID差集，并保存
+    differenceSet = set(data_id_list).difference(set(local_id_list))
+    differenceList = list(differenceSet)
+    print("Difference List:", differenceList)
+    if differenceList:
+        with open("differenceList.txt", "w") as f:
+            for differenceID in differenceList:
+                f.write(str(differenceID) + "\n")
+
+    return differenceList
+
+def get_lua_table(url):
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    textarea = soup.find('textarea', {'id': 'wpTextbox1'})
+    lua_table_str = textarea.get_text()
+    lua_table_str = lua_table_str.split('return ')[1]
+    lua_table = slpp.SLPP().decode(lua_table_str)
+    return lua_table
+
+def filter_fields(lua_table):
+    chara_data = []
+    for key, value in lua_table.items():
+        chara = {
+            'id': value.get('id'),
+            'name': value.get('name'),
+            'reading': value.get('reading'),
+            'rarity': value.get('rarity'),
+            'tier3PowersOnlyBloom': value.get('tier3PowersOnlyBloom')
         }
-    ]
-
-    headers = random.choice(headers_list)
-
-    data = bytes(urllib.parse.urlencode({"name": "eric"}), encoding="utf-8")
-    request = urllib.request.Request(url, data=data, headers=headers)
-    html = ""
-
-    session = requests.Session()
-    retry = Retry(total=100,
-                  backoff_factor=0.1,
-                  status_forcelist=[500, 502, 503, 504])
-    session.mount('http://', HTTPAdapter(max_retries=retry))
-    session.mount('https://', HTTPAdapter(max_retries=retry))
-
-    try:
-        response = session.get(url, headers=headers, timeout=20)
-        html = response.text
-        return html
-    except:
-        # for i in range(100):  # 循环去请求网站
-        #     try:
-        #         response = requests.get(url, headers=headers, timeout=20)
-        #         try:
-        #             if response.code == 200:
-        #                 html = response.read().decode("utf-8")
-        #                 response.close()
-        #                 return html
-        #         except AttributeError:
-        #             print(response)
-        #     except:
-        #         html = askURL(url)
-        #         return html
-        while True:
-            try:
-                response = session.get(url, headers=headers, timeout=20)
-                if response.status_code == 200:
-                    html = response.text
-                    return html
-
-            except requests.exceptions.RequestException as e:
-                print("Request failed, retrying:", url)
-                html = ""
-                continue
-    # return html  # 返回一个html页面
-
-
-# 爬取页面
-def getData(baseurl):
-
-    data_id_list = get_id_from_data()
-    print(data_id_list)
-
-    url = "https://flowerknight.fandom.com"
-    html = askURL(baseurl)  # 保存获取到的网页源码
-    bs = BeautifulSoup(html, "html.parser")
-
-    listOne = bs.select('table.sortable.wikitable > tbody', limit=1)  # 查找id为“sortable wikitable”的table标签的
-    # 子标签————tbody,同时只找到第一个，因为第二个tbody的id相同
-    bloomedList = []
-    idList = []
-
-    #2、3、4星角色ID集合
-    lowIDList = [131909, 141101, 160007, 130801, 152701, 120801, 111505, 160809, 142201, 140901,
-                 111101, 121601, 131901, 132001, 111903, 132401, 140803, 111501, 141301, 122301,
-                 111905, 160405, 141901, 142501, 110807, 141303, 132801, 120401, 120201, 142401,
-                 120701, 151801, 111503, 112601, 120203, 122305, 121303, 141701, 135101, 152501,
-                 150803, 152711, 132101, 152709, 132501, 120101, 151901, 150801, 160011, 160011,
-                 130501, 152001, 152401, 152801, 122701, 122401, 152707, 130301, 160005]
-
-    for item in listOne:
-        listTwo = item.select('tr')[2:]  # 跳过数组的前两个元素
-        with ThreadPoolExecutor() as executor:
-            futures = [executor.submit(process_item, item1, data_id_list, url, lowIDList)
-                       for item1 in listTwo]
-
-            for future in futures:
-
-                row_id = None
-                bloomed_id = None
-
-                result = future.result()
-
-                if result:
-                    row_id, bloomed_id = result
-
-                if row_id:
-                    idList.append(row_id)
-
-                if bloomed_id:
-                    bloomedList.append(bloomed_id)
-
-        print(idList)
-        print(bloomedList)
-
-        resultList = idList + bloomedList
-        print(resultList)
-
-        #找出ID差集，并保存
-        differenceSet = set(resultList).difference(set(data_id_list))
-        differenceList = list(differenceSet)
-        print(differenceList)
-        if differenceList:
-            with open("differenceList.txt", "w") as f:
-                for differenceID in differenceList:
-                    f.write(str(differenceID) + "\n")
-
-        return differenceList
-
-def process_item(item1, data_id_list, url, lowIDList):
-    listThr = item1.findAll('td')[1:4]  # 只查找第二和第三个元素
-
-    print(listThr[1])
-
-    rowID = int(listThr[0].get_text())
-    bloomedID = None
-
-    if len(listThr) < 2:
-        print(listThr[1])
-    # 获取角色的id
-    id = int(listThr[0].get_text()) + 300000
-    # 跳过已经开花场景的角色，跳过2、3、4星角色
-    if in_data(id, data_id_list) == True or in_data(int(listThr[0].get_text()), lowIDList) == True:
-        print("跳过" + str(id))
-        return
-    # 获取角色详情页
-    try:
-        detialUrl = listThr[1].select("td > a")[0].get("href")
-    except IndexError:
-        print(str(rowID)+"-"+"表格格式异常！")
-        return rowID, bloomedID
-    print(url + detialUrl)
-    detailHtml = askURL(url + detialUrl)
-    try:
-        bs1 = BeautifulSoup(detailHtml, "html.parser")
-    except IndexError:
-        print(detailHtml)
-    table = bs1.select('table.wikitable.cs.cs-force-center')[0]
-    listFour = table.findAll('tbody')
-
-    # print(t_list3)
-    status2 = 0
-
-    # 开花寝室
-    for item2 in listFour:
-
-        listFive = item2.findAll('tr')[7:]
-
-        for liem3 in listFive:
-            td = liem3.findAll('td')[0]
-            tdName = td.get_text()
-            if qww("Bloomed\n", tdName) == True:
-                if liem3.findAll('td')[1] != None:
-                    print(liem3.findAll('td')[1].select("img")[0])
-                    if liem3.findAll('td')[1].select("img")[0] != None:
-                        line = liem3.findAll('td')[1].select("img")[0].get("alt")
-                        pattern = "Icon (.+).png"
-                        m = re.search(pattern, str(line))
-
-                        if m != None or qww(line, listThr[2].findAll('a')[0].get_text()):
-                            status2 = int(listThr[0].get_text()) + 300000
-                            print("开花"+str(status2))
-                            print("\n")
-                            bloomedID = status2
-
-    print(int(listThr[0].get_text()))
-    return rowID, bloomedID
+        if chara['id'] < 700001:
+            chara_data.append(chara)
+        if chara['tier3PowersOnlyBloom'] == 0 and chara['id'] < 700001:
+            charaBloomed = {
+                'id': value.get('id') + 300000,
+                'name': value.get('name'),
+                'reading': value.get('reading'),
+                'rarity': value.get('rarity'),
+                'tier3PowersOnlyBloom': value.get('tier3PowersOnlyBloom')
+            }
+            chara_data.append(charaBloomed)
+    return chara_data
 
 #遍历scenes文件夹并输出sceneData.js
 def get_sceneData():
