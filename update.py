@@ -1,3 +1,4 @@
+import sys
 # 导入requests库，用于发送网络请求
 import requests
 from requests.adapters import HTTPAdapter
@@ -27,6 +28,8 @@ VOICE_PREFIX = "https://dugrqaqinbtcq.cloudfront.net/product/ynnFQcGDLfaUcGhp/as
 SCRIPT_PREFIX = "https://dugrqaqinbtcq.cloudfront.net/product/ynnFQcGDLfaUcGhp/assets/event/hscene_r18/"
 #定义一个常数，表示spine动画文件的前缀
 URL_R18 = 'https://dugrqaqinbtcq.cloudfront.net/product/ynnFQcGDLfaUcGhp/assets/hscene_r18_spine/'
+# scene folder
+SCENE_PATH = "scenes"
 
 def main():
     # 将时间间隔转换为天数
@@ -67,9 +70,11 @@ def main():
                 f.write(str(item) + "\n")
 
     # datalist = [100011]
+    sub(datalist)
 
-    if not os.path.exists("scenes"):
-        os.mkdir("scenes")
+def sub(datalist):
+    if not os.path.exists(SCENE_PATH):
+        os.mkdir(SCENE_PATH)
 
     # 创建线程池
     executor = ThreadPoolExecutor(max_workers=10)  # 设置线程池的最大线程数
@@ -87,15 +92,17 @@ def main():
     # 关闭线程池
     executor.shutdown()
 
-    if not os.path.exists("data/scripts/data"):
-        os.makedirs("data/scripts/data")
-
     #获取sceneData.js
     get_sceneData()
 
     input("按下Enter键退出...")
 
 def download_role(id):
+    # 已知无场景的联动角色ID（转生史莱姆）
+    exclude_list = [131807,134207,140829,154801]
+    for i in exclude_list:
+        if (id == i or id == i+2):
+            return
     print(str(id)+"线程")
 
     # 定义一个变量，表示角色的形态，1表示普通形态，2表示开花形态
@@ -109,7 +116,7 @@ def download_role(id):
     if form == 2:
         folder_name += "_2"
     #
-    folder_path = "scenes/"+folder_name
+    folder_path = SCENE_PATH+"/"+folder_name
     # 创建资源文件夹
     if not os.path.exists(folder_path):
         os.mkdir(folder_path)
@@ -161,19 +168,15 @@ def download_role(id):
     result = script_conversion(folder_path, folder_path + "/script_original.txt")
     is_spine = result[0]
     voice_num = result[1]
+    voice_list = result[2]
     if is_spine == True:
         download_spine(str(id), folder_path, URL_R18)
 
     print("音频数量" + str(voice_num))
     voiceComplete = True;
     if voice_num != 0:
-        # 遍历语音的数量，从1开始循环到46
-        for i in range(1, voice_num + 1):
-            # 定义一个变量，表示语音的名称，根据您的需求可以修改
-            if form == 1:
-                voice_name = "fkg_" + str(id) + "_hscene0" + str(i).zfill(2)
-            elif form == 2:
-                voice_name = "fkg_" + str(id) + "_hscene2" + str(i).zfill(2)
+        # 遍历解析剧本得到的音频名称
+        for voice_name in voice_list:
             # 使用md5加密语音的名称，并转换为16进制字符串
             voice_md5 = hashlib.md5(voice_name.encode()).hexdigest()
             # 拼接语音的url，使用前缀和角色id和加密后的字符串，并添加.mp3后缀
@@ -195,18 +198,19 @@ def download_role(id):
 # 定义一个函数，用于从数据结构中提取角色的id
 def get_id_from_data():
     # folder_path = "E:\さいきん\Flower\kfg-viewer\public\scenes"
-    folder_path = "scenes"
+    folder_path = SCENE_PATH
     folder_names = []
 
-    for folder_name in os.listdir(folder_path):
-        if folder_name.startswith("c"):
-            if "_" in folder_name:
-                # If the folder name is c110001_2, then we need to add 300000 to 110001 to get 410001
-                folder_id = int(folder_name[1:7]) + 300000
-            else:
-                # If the folder name is c100001, then we need to remove the first character to get 100001
-                folder_id = int(folder_name[1:])
-            folder_names.append(folder_id)
+    if os.path.exists(folder_path):
+        for folder_name in os.listdir(folder_path):
+            if folder_name.startswith("c"):
+                if "_" in folder_name:
+                    # If the folder name is c110001_2, then we need to add 300000 to 110001 to get 410001
+                    folder_id = int(folder_name[1:7]) + 300000
+                else:
+                    # If the folder name is c100001, then we need to remove the first character to get 100001
+                    folder_id = int(folder_name[1:])
+                folder_names.append(folder_id)
 
     return folder_names
 
@@ -250,9 +254,18 @@ def get_difference_list():
     return differenceList
 
 def get_lua_table(url):
-    response = requests.get(url)
+    headers = requests.utils.default_headers()
+    headers.update({
+        'User-Agent': 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)',
+    })
+    response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.text, 'html.parser')
-    textarea = soup.find('textarea', {'id': 'wpTextbox1'})
+    # textarea = soup.find('textarea', {'id': 'wpTextbox1'})
+    textarea = soup.select_one('#wpTextbox1')
+    # none check
+    if textarea is None:
+        print(soup.get_text())
+        exit()
     lua_table_str = textarea.get_text()
     lua_table_str = lua_table_str.split('return ')[1]
     lua_table = slpp.SLPP().decode(lua_table_str)
@@ -283,10 +296,11 @@ def filter_fields(lua_table):
 
 #遍历scenes文件夹并输出sceneData.js
 def get_sceneData():
-    # 遍历scenes文件夹
-    scenes_dir = 'scenes'
+    scenes_dir = SCENE_PATH
     scene_data = {}
+    scene_data_name = "sceneData"
 
+    # 遍历scenes文件夹
     for scene_folder in os.listdir(scenes_dir):
         scene_id = scene_folder[1:7]
 
@@ -298,6 +312,7 @@ def get_sceneData():
         # 检查是否包含spines文件夹
         has_spines = os.path.exists(os.path.join(scenes_dir, scene_folder, 'spines'))
 
+        # if os.path.exists(os.path.join(scenes_dir, scene_folder, 'script.txt')):
         scene_data[scene_folder] = {
             "SCRIPTS": {
                 "PART1": {
@@ -312,10 +327,15 @@ def get_sceneData():
                 }
             }
         }
+        # else:
+        #     print("skip script: "+scene_folder)
+
+    if not os.path.exists("data/scripts/data"):
+        os.makedirs("data/scripts/data")
 
     # 输出sceneData.js
-    scene_data_js = f"sceneData = {json.dumps(scene_data, indent=2, ensure_ascii=False)}"
-    with open('data\scripts\data\sceneData.js', 'w', encoding='utf-8') as f:
+    scene_data_js = f"{scene_data_name} = {json.dumps(scene_data, indent=2, ensure_ascii=False)}"
+    with open(f'data\scripts\data\{scene_data_name}.js', 'w', encoding='utf-8') as f:
         f.write(scene_data_js)
 
 # 定义一个函数，用于下载图片，并保存为jpg格式
@@ -361,7 +381,7 @@ def download_image(url, file_name, image_path, image_num):
                     return
             else:
                 # 打印错误信息
-                print(file_name+"-网络请求失败，请检查url是否正确:"+url+"\n")
+                print(file_name+"-网络请求失败，请检查url是否正确:"+url+"\n", file=sys.stderr)
                 None_H = True
                 return None_H
 
@@ -412,7 +432,7 @@ def download_voice(url, file_name):
                     return False;
             else:
                 # 打印错误信息
-                print(file_name+"-网络请求失败，请检查url是否正确:"+url)
+                print(file_name+"-网络请求失败，请检查url是否正确:"+url, file=sys.stderr)
 
         except Exception as e:
             print(f"Download exception: {e}")
@@ -465,7 +485,7 @@ def download_script(url, file_name):
                     return
             else:
                 # 打印错误信息
-                print(file_name+"-网络请求失败，请检查url是否正确:"+url)
+                print(file_name+"-网络请求失败，请检查url是否正确:"+url, file=sys.stderr)
 
         except Exception as e:
             print(f"Download exception: {e}")
@@ -488,6 +508,7 @@ def script_conversion(folder_path, script_original):
     # 判断是否有动画
     is_spine = False
     voice_num = 0
+    voice_list = []
     # 打开原始文件
     with open(script_original, 'r', encoding='utf-8') as f:
         # 读取所有行
@@ -520,6 +541,8 @@ def script_conversion(folder_path, script_original):
                     # 如果第四个部分不为空，表示有音频名称
                     if parts[3] != '':
                         voice_num += 1
+                        # 拿音频名称
+                        voice_list.append(parts[3].split('/')[1])
                         # 在列表中添加<VOICE_PLAY>标签和音频名称，其中音频名称需要去掉 ID，只保留 fkg_ 开头的部分
                         new_lines.append('<VOICE_PLAY>' + parts[3].split('/')[1] + '\n')
                     # 在列表中添加<NAME_PLATE>标签和人物名字
@@ -641,7 +664,7 @@ def script_conversion(folder_path, script_original):
         for line in new_lines:
             # 写入文件，并在每一行后面加上换行符
             f.write(line)
-    return is_spine,voice_num
+    return is_spine,voice_num,voice_list
 
 def download_spine(id, folder_name, url_r18):
     path_per_id = os.path.join(folder_name, "spines")
@@ -679,7 +702,7 @@ def download_spine(id, folder_name, url_r18):
             img = Image.open(os.path.join(path_per_id, webpsavename + '.png'))
             img.save(os.path.join(path_per_id, webpsavename + '.png'), 'png')
         else:
-            print('not found:' + str(i + 1))
+            print('not found for '+id+': ' + str(i + 1), file=sys.stderr)
 
 
 if __name__ == "__main__":
