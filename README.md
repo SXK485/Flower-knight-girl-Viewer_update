@@ -3,3 +3,5 @@ Flower knight girl Viewer专用更新程序，放到package.nw目录更新即可
 
 ~~如果因为遇到请求200而中途退出程序，一般是因为网络问题，可以尝试检查网络、更换节点重新尝试。~~
 如果运行更新程序时遇到错误，请尝试开闭或开启代理。
+
+**程序优先根据diffrentList.txt的ID更新场景，如果不需要，请删除diffrentList.txt再执行更新程序**
