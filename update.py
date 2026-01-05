@@ -2,7 +2,7 @@ import sys
 # 导入requests库，用于发送网络请求
 import requests
 from requests.adapters import HTTPAdapter
-from requests.packages.urllib3.util.retry import Retry
+from urllib3.util.retry import Retry
 import threading
 # 导入hashlib库，用于进行md5加密
 import hashlib
