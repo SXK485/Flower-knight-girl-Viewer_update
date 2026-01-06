@@ -18,6 +18,19 @@ from bs4 import BeautifulSoup
 from PIL import Image
 import slpp
 
+import logging
+
+# 配置日志：同时输出到文件和控制台
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler("update_log.txt", encoding='utf-8'),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
+logger = logging.getLogger(__name__)
+
 qww = lambda x, y: True if x == y else False
 
 # 定义一个常数，表示图片的前缀
@@ -32,22 +45,40 @@ URL_R18 = 'https://dugrqaqinbtcq.cloudfront.net/product/ynnFQcGDLfaUcGhp/assets/
 SCENE_PATH = "scenes"
 
 def main():
-    # 将时间间隔转换为天数
-    YOUR_TIME_INTERVAL = 30  # 7天
+    try:
+        logger.info("Flower knight girl Viewer更新程序开始运行...")
+        # 将时间间隔转换为天数
+        YOUR_TIME_INTERVAL = 30  # 7天
 
-    # 将时间间隔转换为秒
-    time_interval_in_seconds = YOUR_TIME_INTERVAL * 24 * 60 * 60
+        # 将时间间隔转换为秒
+        time_interval_in_seconds = YOUR_TIME_INTERVAL * 24 * 60 * 60
 
-    #检查文件是否存在
-    if os.path.isfile("differenceList.txt"):
-        # 如果文件存在，则获取文件的修改时间
-        file_time = os.path.getmtime("differenceList.txt")
-        # 获取当前时间
-        current_time = time.time()
-        # 计算文件的年龄（以秒为单位）
-        file_age = current_time - file_time
-        # 如果文件的年龄超过指定时间，则重新获取数据
-        if file_age > time_interval_in_seconds:
+        #检查文件是否存在
+        if os.path.isfile("differenceList.txt"):
+            # 如果文件存在，则获取文件的修改时间
+            file_time = os.path.getmtime("differenceList.txt")
+            # 获取当前时间
+            current_time = time.time()
+            # 计算文件的年龄（以秒为单位）
+            file_age = current_time - file_time
+            # 如果文件的年龄超过指定时间，则重新获取数据
+            if file_age > time_interval_in_seconds:
+                logger.info("differenceList.txt 已过期，尝试重新获取...")
+                datalist = get_difference_list()
+                if not datalist:
+                    return
+                # 将数据保存到文本文件中
+                with open("differenceList.txt", "w") as f:
+                    for item in datalist:
+                        f.write(str(item) + "\n")
+            else:
+                logger.info("从本地加载 differenceList.txt")
+                # 如果文件未过期，则读取文件并将其转换为整数列表
+                with open("differenceList.txt", "r") as f:
+                    datalist = [int(line.strip()) for line in f.readlines()]
+        else:
+            logger.info("未找到 differenceList.txt，开始从 Wiki 获取数据...")
+            # 如果文件不存在，则重新获取
             datalist = get_difference_list()
             if not datalist:
                 return
@@ -55,22 +86,19 @@ def main():
             with open("differenceList.txt", "w") as f:
                 for item in datalist:
                     f.write(str(item) + "\n")
-        else:
-            # 如果文件未过期，则读取文件并将其转换为整数列表
-            with open("differenceList.txt", "r") as f:
-                datalist = [int(line.strip()) for line in f.readlines()]
-    else:
-        # 如果文件不存在，则重新获取
-        datalist = get_difference_list()
-        if not datalist:
-            return
-        # 将数据保存到文本文件中
-        with open("differenceList.txt", "w") as f:
-            for item in datalist:
-                f.write(str(item) + "\n")
 
-    # datalist = [100011]
-    sub(datalist)
+        # datalist = [100011]
+        if not datalist:
+            logger.warning("未发现需要更新的角色数据。")
+        else:
+            logger.info(f"发现 {len(datalist)} 个新角色需要下载。")
+            sub(datalist)
+
+        logger.info("所有操作已完成！")
+
+    except Exception as e:
+        logger.error(f"程序运行发生致命错误: {str(e)}", exc_info=True)
+        input("程序异常退出，请检查 update_log.txt 后按回车键结束...")
 
 def sub(datalist):
     if not os.path.exists(SCENE_PATH):
@@ -103,7 +131,7 @@ def download_role(id):
     for i in exclude_list:
         if (id == i or id == i+2):
             return
-    print(str(id)+"线程")
+    logger.info(f"线程启动：角色 ID {id}")
 
     # 定义一个变量，表示角色的形态，1表示普通形态，2表示开花形态
     form = 1
@@ -192,7 +220,7 @@ def download_role(id):
 
     # 打印完成信息
     if voiceComplete == False:
-        print(str(id) + "资源文件夹已经生成完毕，请查看")
+        logger.info(f"角色 ID {id} 资源文件夹已经生成完毕，请查看")
     return
 
 # 定义一个函数，用于从数据结构中提取角色的id
@@ -264,8 +292,8 @@ def get_lua_table(url):
     textarea = soup.select_one('#wpTextbox1')
     # none check
     if textarea is None:
-        print(soup.get_text())
-        exit()
+        logger.error("无法在 Wiki 页面找到数据框 (#wpTextbox1)，可能是网络被屏蔽或 Wiki 结构已更新")
+        return None
     lua_table_str = textarea.get_text()
     lua_table_str = lua_table_str.split('return ')[1]
     lua_table = slpp.SLPP().decode(lua_table_str)
@@ -301,6 +329,7 @@ def get_sceneData():
     scene_data_name = "sceneData"
 
     # 遍历scenes文件夹
+    count = 0
     for scene_folder in os.listdir(scenes_dir):
         scene_id = scene_folder[1:7]
 
@@ -312,7 +341,7 @@ def get_sceneData():
         # 检查是否包含spines文件夹
         has_spines = os.path.exists(os.path.join(scenes_dir, scene_folder, 'spines'))
 
-        # if os.path.exists(os.path.join(scenes_dir, scene_folder, 'script.txt')):
+
         scene_data[scene_folder] = {
             "SCRIPTS": {
                 "PART1": {
@@ -327,16 +356,21 @@ def get_sceneData():
                 }
             }
         }
-        # else:
-        #     print("skip script: "+scene_folder)
 
-    if not os.path.exists("data/scripts/data"):
-        os.makedirs("data/scripts/data")
+        count += 1
+
+    logger.info(f"正在生成 sceneData.js，共计处理 {count} 个场景文件夹")
+
+    output_path = 'data/scripts/data'
+    if not os.path.exists(output_path):
+        os.makedirs(output_path)
+        logger.info(f"创建输出目录: {output_path}")
 
     # 输出sceneData.js
     scene_data_js = f"{scene_data_name} = {json.dumps(scene_data, indent=2, ensure_ascii=False)}"
     with open(f'data\scripts\data\{scene_data_name}.js', 'w', encoding='utf-8') as f:
         f.write(scene_data_js)
+    logger.info("sceneData.js 已成功保存到 data/scripts/data/sceneData.js")
 
 # 定义一个函数，用于下载图片，并保存为jpg格式
 def download_image(url, file_name, image_path, image_num):
@@ -474,18 +508,21 @@ def download_script(url, file_name):
             response = session.get(url)
             # 判断网络请求是否成功
             if response.status_code == 200:
-                # 获取剧本的二进制数据，并进行zlib解压缩
-                script_data = zlib.decompress(response.content,wbits=15+32)
-                # 打开一个文件，以二进制写入模式
-                with open(file_name, "wb") as f:
-                    # 将剧本的文本数据写入文件中
-                    f.write(script_data)
-                    # 关闭文件
-                    f.close()
-                    return
+                try:
+                    # 获取剧本的二进制数据，并进行zlib解压缩
+                    script_data = zlib.decompress(response.content,wbits=15+32)
+                    # 打开一个文件，以二进制写入模式
+                    with open(file_name, "wb") as f:
+                        # 将剧本的文本数据写入文件中
+                        f.write(script_data)
+                        # 关闭文件
+                        f.close()
+                        return
+                except zlib.error:
+                    logger.error(f"解压缩失败，文件可能损坏: {url}")
             else:
                 # 打印错误信息
-                print(file_name+"-网络请求失败，请检查url是否正确:"+url, file=sys.stderr)
+                logger.warning(f"下载失败 (HTTP {response.status_code}): {url}")
 
         except Exception as e:
             print(f"Download exception: {e}")
