@@ -1,6 +1,6 @@
 import requests
 from requests.adapters import HTTPAdapter
-from requests.packages.urllib3.util.retry import Retry
+from urllib3.util.retry import Retry
 import json
 import os
 import random
@@ -16,7 +16,8 @@ qww = lambda x, y: True if x == y else False
 # import MeCab
 
 # scenes_path = 'E:\さいきん\Flower\kfg-viewer\public\scenes'
-scenes_path = 'scenes'
+# 修改为相对当前目录的路径
+scenes_path = os.path.join(os.getcwd(), 'scenes')
 data_path = 'data.json'
 
 

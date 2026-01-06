@@ -16,3 +16,5 @@ build/
 # 数据文件 (如果你不想同步 sceneData 文件夹)
 sceneData/
 differenceList.txt
+update_log.txt
+data.json
