@@ -1,0 +1,5 @@
+﻿requests
+beautifulsoup4
+pillow
+slpp
+urllib3

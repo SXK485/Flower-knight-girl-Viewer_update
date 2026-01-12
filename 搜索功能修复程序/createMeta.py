@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup
 qww = lambda x, y: True if x == y else False
 # import MeCab
 
-# scenes_path = 'E:\さいきん\Flower\kfg-viewer\public\scenes'
+# scenes_path = 'C:\\Users\\Du_gu\\Downloads\\Flower knight girl Viewer 1.3 (30-03-2025)\\package.nw\\scenes'
 # 修改为相对当前目录的路径
 scenes_path = os.path.join(os.getcwd(), 'scenes')
 data_path = 'data.json'
@@ -334,66 +334,65 @@ def getData(baseurl):
     html = askURL(baseurl)  # 保存获取到的网页源码
     bs = BeautifulSoup(html, "html.parser")
 
-    listOne = bs.select('table.sortable.wikitable > tbody', limit=1)  # 查找id为“sortable wikitable”的table标签的
-                                                                    #子标签————tbody,同时只找到第一个，因为第二个tbody的id相同
+    # 更加稳健的查找方式：先找表格，再找 tbody
+    table = bs.find('table', class_='wikitable')
+    if not table:
+        print("错误：找不到表格")
+        return
+
+    tbody = table.find('tbody')
+    # 如果有 tbody 就用 tbody，没有就直接用 table
+    listTwo = tbody.find_all('tr')[2:] if tbody else table.find_all('tr')[2:]
+
     idList = []
+    with ThreadPoolExecutor() as executor:
+        futures = [executor.submit(process_item, item1) for item1 in listTwo]
+        for future in futures:
+            res = future.result()
+            if res:
+                idList.append(res)
 
-    for item in listOne:
-        listTwo = item.select('tr')[2:]  # 跳过数组的前两个元素
-        with ThreadPoolExecutor() as executor:
-            futures = [executor.submit(process_item, item1)
-                       for item1 in listTwo]
-            for future in futures:
+                # 后续去重和保存逻辑
+    data_id_list = get_scene_ids()
+    newList = []
+    for data in data_id_list:
+        for item in idList:
+            # 这里的逻辑：判断场景ID和抓取到的角色ID是否匹配
+            if (data == item["id"]) or (data - 300000 == item["id"]):
+                newDict = item.copy()
+                if data > 300000:
+                    newDict['id'] = data
+                newList.append(newDict)
 
-                id = future.result()
-
-                if id:
-                    idList.append(id)
-
-        idList = list(idList)
-        data_id_list = get_scene_ids()
-
-        newList = []
-        for data in data_id_list:
-            for id in idList:
-                if(data == id["id"]) or (data - 300000 == id["id"]):
-                    newDict = {}
-                    if data > 300000:
-                        newDict['id'] = data
-                    else:
-                        newDict['id'] = id['id']
-                    newDict['name'] = id['name']
-                    newDict['engName'] = id['engName']
-                    newList.append(newDict)
-
-
-        print(idList)
-
-        dataObj = {}
-        dataObj["charaData"] = newList
-
-        file_name = "data.json"
-        # 文件路径
-        file_path = file_name
-
-        with open(file_path, 'w', encoding="utf-8") as fp:
-            fp.write(json.dumps(dataObj, indent=2, ensure_ascii=False))
-
+    dataObj = {"charaData": newList}
+    with open("data.json", 'w', encoding="utf-8") as fp:
+        fp.write(json.dumps(dataObj, indent=2, ensure_ascii=False))
+    print(f"成功更新 data.json，共抓取到 {len(idList)} 个角色，匹配到 {len(newList)} 个场景。")
 
 
 def process_item(item1):
-    listThr = item1.findAll('td')[1:5]  # 只查找第二和第三个元素
-
-    print(listThr[1])
-    dict = {}
-    try:
-        dict['id'] = int(listThr[0].get_text())
-        dict['name'] = listThr[1].select("td > a")[0].get_text()
-        dict['engName'] = listThr[2].select("td > a")[0].get_text()
-    except IndexError:
-        print(listThr[0].get_text() + "-" + "表格格式异常！")
+    cells = item1.find_all('td')
+    # 每个角色行有4个td
+    if len(cells) < 4:
         return None
-    return dict
+
+    res_dict = {}
+    try:
+        # ID no. 在第2列 (索引 1)
+        res_dict['id'] = int(cells[1].get_text(strip=True))
+
+        # 日本语在第3列 (索引 2)
+        jap_link = cells[2].find('a')
+        res_dict['name'] = jap_link.get_text(strip=True) if jap_link else cells[2].get_text(strip=True)
+
+        # 英语在第4列 (索引 3)
+        eng_link = cells[3].find('a')
+        res_dict['engName'] = eng_link.get_text(strip=True) if eng_link else cells[3].get_text(strip=True)
+
+    except (IndexError, ValueError) as e:
+        # 打印错误行方便排查，但跳过不处理
+        return None
+    return res_dict
 
 def main():
     baseurl = "https://flowerknight.fandom.com/wiki/List_of_Flower_Knights_by_ID"
