@@ -256,8 +256,10 @@ def in_data(id, data_id_list):
 
 def get_difference_list():
     # 获取data.json中的数据
-    url = "https://flowerknight.fandom.com/wiki/Module:MasterCharacterData?action=edit"
-    lua_table = get_lua_table(url)
+    lua_table = get_lua_table(None)
+    if lua_table is None:
+        logger.error("无法获取 Wiki 数据，程序终止")
+        return []
     data_list = filter_fields(lua_table)
 
     # 获取本地文件夹中的数据
@@ -282,22 +284,56 @@ def get_difference_list():
     return differenceList
 
 def get_lua_table(url):
-    headers = requests.utils.default_headers()
-    headers.update({
-        'User-Agent': 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)',
-    })
-    response = requests.get(url, headers=headers)
-    soup = BeautifulSoup(response.text, 'html.parser')
-    # textarea = soup.find('textarea', {'id': 'wpTextbox1'})
-    textarea = soup.select_one('#wpTextbox1')
-    # none check
-    if textarea is None:
-        logger.error("无法在 Wiki 页面找到数据框 (#wpTextbox1)，可能是网络被屏蔽或 Wiki 结构已更新")
+    # 使用 MediaWiki API 接口直接获取页面源码，避免 Cloudflare 人机验证
+    api_url = "https://flowerknight.fandom.com/api.php"
+    params = {
+        "action": "query",
+        "format": "json",
+        "titles": "Module:MasterCharacterData",
+        "prop": "revisions",
+        "rvprop": "content",
+        "rvslots": "main"
+    }
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    }
+    
+    logger.info(f"正在通过 API 请求数据: {api_url}")
+    
+    try:
+        response = requests.get(api_url, params=params, headers=headers, timeout=15)
+        logger.info(f"HTTP 响应状态码: {response.status_code}")
+        
+        if response.status_code != 200:
+            logger.error("API 请求失败，可能依然被拦截")
+            return None
+        
+        data = response.json()
+        pages = data.get("query", {}).get("pages", {})
+        
+        # 获取第一个页面的 page_id
+        page_id = list(pages.keys())[0]
+        if page_id == "-1":
+            logger.error("未找到页面数据，请检查 titles 拼写")
+            return None
+        
+        # 提取真正的页面源码内容
+        raw_lua_text = pages[page_id]["revisions"][0]["slots"]["main"]["*"]
+        logger.info(f"成功获取原始 Lua 文本！长度: {len(raw_lua_text)} 字符")
+        
+        # 解析 Lua 数据
+        lua_table_str = raw_lua_text.split('return ')[1]
+        lua_table = slpp.SLPP().decode(lua_table_str)
+        logger.info(f"成功使用 slpp 解析，共获取到 {len(lua_table)} 条角色数据")
+        
+        return lua_table
+        
+    except requests.exceptions.RequestException as e:
+        logger.error(f"网络异常: {e}")
         return None
-    lua_table_str = textarea.get_text()
-    lua_table_str = lua_table_str.split('return ')[1]
-    lua_table = slpp.SLPP().decode(lua_table_str)
-    return lua_table
+    except Exception as e:
+        logger.error(f"解析 Lua 数据失败: {e}")
+        return None
 
 def filter_fields(lua_table):
     chara_data = []
