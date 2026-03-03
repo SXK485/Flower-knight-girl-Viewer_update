@@ -331,7 +331,44 @@ def askURL(url):
 
 # 爬取页面
 def getData(baseurl):
-    html = askURL(baseurl)  # 保存获取到的网页源码
+    # 使用 MediaWiki API 获取页面内容，避免 Cloudflare 验证
+    api_url = "https://flowerknight.fandom.com/api.php"
+    params = {
+        "action": "parse",
+        "format": "json",
+        "page": "List_of_Flower_Knights_by_ID",
+        "prop": "text"
+    }
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    }
+    
+    print(f"正在通过 API 请求数据: {api_url}")
+    
+    try:
+        response = requests.get(api_url, params=params, headers=headers, timeout=15)
+        print(f"HTTP 响应状态码: {response.status_code}")
+        
+        if response.status_code != 200:
+            print("API 请求失败，可能依然被拦截")
+            return
+        
+        data = response.json()
+        html = data.get("parse", {}).get("text", {}).get("*", "")
+        
+        if not html:
+            print("错误：无法获取页面内容")
+            return
+        
+        print(f"成功获取页面内容！长度: {len(html)} 字符")
+        
+    except requests.exceptions.RequestException as e:
+        print(f"网络异常: {e}")
+        return
+    except Exception as e:
+        print(f"解析数据失败: {e}")
+        return
+    
     bs = BeautifulSoup(html, "html.parser")
 
     # 更加稳健的查找方式：先找表格，再找 tbody
