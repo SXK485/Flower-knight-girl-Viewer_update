@@ -23,23 +23,55 @@ data_path = 'data.json'
 
 def get_scene_ids():
     scene_ids = []
-    for folder_name in os.listdir(scenes_path):
-        if folder_name.startswith("c"):
-            if "_" in folder_name:
-                # If the folder name is c110001_2, then we need to add 300000 to 110001 to get 410001
-                folder_id = int(folder_name[1:7]) + 300000
-            else:
-                # If the folder name is c100001, then we need to remove the first character to get 100001
-                folder_id = int(folder_name[1:])
-            scene_ids.append(folder_id)
-
+    try:
+        if not os.path.exists(scenes_path):
+            print(f"错误: scenes 文件夹不存在: {scenes_path}")
+            return scene_ids
+        
+        folder_list = os.listdir(scenes_path)
+        print(f"正在扫描 scenes 文件夹，共找到 {len(folder_list)} 个项目")
+        
+        for folder_name in folder_list:
+            if folder_name.startswith("c"):
+                try:
+                    if "_" in folder_name:
+                        folder_id = int(folder_name[1:7]) + 300000
+                    else:
+                        folder_id = int(folder_name[1:])
+                    scene_ids.append(folder_id)
+                except ValueError as e:
+                    # 如果玩家建了 "c10_bak" 这种无法转成数字的文件夹，直接跳过不管
+                    print(f"警告: 忽略无法识别的文件夹 {folder_name} (错误: {e})")
+                    continue
+                except Exception as e:
+                    print(f"错误: 处理文件夹 {folder_name} 时发生异常: {type(e).__name__}: {e}")
+                    continue
+        
+        print(f"成功识别 {len(scene_ids)} 个场景ID")
+    except Exception as e:
+        print(f"错误: 扫描 scenes 文件夹时发生异常: {type(e).__name__}: {e}")
+    
     return scene_ids
 
 
 def load_data():
-    with open(data_path, 'r', encoding="utf-8") as f:
-        data = json.load(f)
-    return data['charaData']
+    try:
+        if not os.path.exists(data_path):
+            print(f"错误: 数据文件不存在: {data_path}")
+            return []
+        
+        with open(data_path, 'r', encoding="utf-8") as f:
+            data = json.load(f)
+        
+        chara_data = data.get('charaData', [])
+        print(f"成功加载 {len(chara_data)} 个角色数据")
+        return chara_data
+    except json.JSONDecodeError as e:
+        print(f"错误: JSON 解析失败: {e}")
+        return []
+    except Exception as e:
+        print(f"错误: 加载数据文件时发生异常: {type(e).__name__}: {e}")
+        return []
 
 def get_aliases(name):
     # mecab = MeCab.Tagger("-Owakati")
@@ -98,8 +130,19 @@ def get_form_name(form):
 
 
 def generate_meta():
+    print("=" * 50)
+    print("开始生成 meta.js 文件")
+    print("=" * 50)
+    
     scene_ids = get_scene_ids()
+    if not scene_ids:
+        print("错误: 没有找到任何场景ID，无法生成 meta.js")
+        return
+    
     chara_data = load_data()
+    if not chara_data:
+        print("错误: 没有加载到任何角色数据，无法生成 meta.js")
+        return
 
     artist_dict = {}
     tag_dict = {}
@@ -204,20 +247,34 @@ def generate_meta():
 
 
 
-    output_path = "data\scripts\data"
-    if not os.path.exists(output_path):
-        os.makedirs(output_path)
-    output = os.path.join(output_path, 'meta.js')
-    with open(output, 'w', encoding="utf-8") as f:
-        meta = f"var ARTIST = {json.dumps(artist_dict, ensure_ascii=False, indent=2)}\n\nvar CV = {json.dumps(cv_dict, ensure_ascii=False, indent=2)}\n\n" \
-               f"var TAG = {json.dumps(tag_dict, ensure_ascii=False, indent=2)}\n\n" \
-               f"var CHAR = {json.dumps(char_dict, ensure_ascii=False, indent=2)}\n\nvar SCENE = {json.dumps(scene_dict, ensure_ascii=False, indent=2)}"
-        meta = re.sub(r'"ARTIST\.(.*?)"', r'ARTIST.\1', meta)
-        meta = re.sub(r'"CV\.(.*?)"', r'CV.\1', meta)
-        meta = re.sub(r'"CHAR\.(.*?)"', r'CHAR.\1', meta)
-        meta = re.sub(r'"(.*?)":', r'\1:', meta)
-        f.write(meta)
-        print("meta.js已修复完毕！")
+    try:
+        output_path = "data\scripts\data"
+        if not os.path.exists(output_path):
+            print(f"创建输出目录: {output_path}")
+            os.makedirs(output_path)
+        
+        output = os.path.join(output_path, 'meta.js')
+        print(f"正在写入文件: {output}")
+        
+        with open(output, 'w', encoding="utf-8") as f:
+            meta = f"var ARTIST = {json.dumps(artist_dict, ensure_ascii=False, indent=2)}\n\nvar CV = {json.dumps(cv_dict, ensure_ascii=False, indent=2)}\n\n" \
+                   f"var TAG = {json.dumps(tag_dict, ensure_ascii=False, indent=2)}\n\n" \
+                   f"var CHAR = {json.dumps(char_dict, ensure_ascii=False, indent=2)}\n\nvar SCENE = {json.dumps(scene_dict, ensure_ascii=False, indent=2)}"
+            meta = re.sub(r'"ARTIST\.(.*?)"', r'ARTIST.\1', meta)
+            meta = re.sub(r'"CV\.(.*?)"', r'CV.\1', meta)
+            meta = re.sub(r'"CHAR\.(.*?)"', r'CHAR.\1', meta)
+            # meta = re.sub(r'"(.*?)":', r'\1:', meta)
+            f.write(meta)
+        
+        print("=" * 50)
+        print("meta.js 已成功生成！")
+        print(f"文件位置: {os.path.abspath(output)}")
+        print(f"包含 {len(char_dict)} 个角色，{len(scene_dict)} 个场景")
+        print("=" * 50)
+    except PermissionError as e:
+        print(f"错误: 没有权限写入文件: {e}")
+    except Exception as e:
+        print(f"错误: 写入 meta.js 时发生异常: {type(e).__name__}: {e}")
 
 def askURL(url):
     headers_list = [
@@ -401,10 +458,17 @@ def getData(baseurl):
                     newDict['id'] = data
                 newList.append(newDict)
 
-    dataObj = {"charaData": newList}
-    with open("data.json", 'w', encoding="utf-8") as fp:
-        fp.write(json.dumps(dataObj, indent=2, ensure_ascii=False))
-    print(f"成功更新 data.json，共抓取到 {len(idList)} 个角色，匹配到 {len(newList)} 个场景。")
+    try:
+        dataObj = {"charaData": newList}
+        with open("data.json", 'w', encoding="utf-8") as fp:
+            fp.write(json.dumps(dataObj, indent=2, ensure_ascii=False))
+        print("=" * 50)
+        print(f"成功更新 data.json")
+        print(f"共抓取到 {len(idList)} 个角色")
+        print(f"匹配到 {len(newList)} 个场景")
+        print("=" * 50)
+    except Exception as e:
+        print(f"错误: 保存 data.json 时发生异常: {type(e).__name__}: {e}")
 
 
 def process_item(item1):
@@ -428,36 +492,60 @@ def process_item(item1):
 
     except (IndexError, ValueError) as e:
         # 打印错误行方便排查，但跳过不处理
+        print(f"警告: 解析角色数据行失败: {type(e).__name__}: {e}")
+        return None
+    except Exception as e:
+        print(f"错误: 处理角色数据时发生异常: {type(e).__name__}: {e}")
         return None
     return res_dict
 
 def main():
-    baseurl = "https://flowerknight.fandom.com/wiki/List_of_Flower_Knights_by_ID"
+    try:
+        print("FKG Meta 生成工具启动")
+        print(f"当前工作目录: {os.getcwd()}")
+        print(f"Scenes 路径: {scenes_path}")
+        print()
+        
+        baseurl = "https://flowerknight.fandom.com/wiki/List_of_Flower_Knights_by_ID"
 
-    # 将时间间隔转换为天数
-    YOUR_TIME_INTERVAL = 30  # 7天
+        # 将时间间隔转换为天数
+        YOUR_TIME_INTERVAL = 30  # 30天
 
-    # 将时间间隔转换为秒
-    time_interval_in_seconds = YOUR_TIME_INTERVAL * 24 * 60 * 60
+        # 将时间间隔转换为秒
+        time_interval_in_seconds = YOUR_TIME_INTERVAL * 24 * 60 * 60
 
-    # 检查文件是否存在
-    if os.path.isfile("data.json"):
-        # 如果文件存在，则获取文件的修改时间
-        file_time = os.path.getmtime("data.json")
-        # 获取当前时间
-        current_time = time.time()
-        # 计算文件的年龄（以秒为单位）
-        file_age = current_time - file_time
-        # 如果文件的年龄超过指定时间，则重新获取数据
-        if file_age > time_interval_in_seconds:
+        # 检查文件是否存在
+        if os.path.isfile("data.json"):
+            # 如果文件存在，则获取文件的修改时间
+            file_time = os.path.getmtime("data.json")
+            # 获取当前时间
+            current_time = time.time()
+            # 计算文件的年龄（以秒为单位）
+            file_age = current_time - file_time
+            file_age_days = file_age / (24 * 60 * 60)
+            print(f"data.json 已存在，文件年龄: {file_age_days:.1f} 天")
+            
+            # 如果文件的年龄超过指定时间，则重新获取数据
+            if file_age > time_interval_in_seconds:
+                print(f"文件超过 {YOUR_TIME_INTERVAL} 天，需要更新")
+                getData(baseurl)
+            else:
+                print(f"文件未超过 {YOUR_TIME_INTERVAL} 天，使用现有数据")
+        else:
+            # 如果文件不存在，则重新获取
+            print("data.json 不存在，开始从网络获取数据")
             getData(baseurl)
-    else:
-        # 如果文件不存在，则重新获取
-        getData(baseurl)
 
-    generate_meta()
-
-    input("按下Enter键退出...")
+        generate_meta()
+        
+    except KeyboardInterrupt:
+        print("\n\n程序被用户中断")
+    except Exception as e:
+        print(f"\n\n程序发生未捕获的异常: {type(e).__name__}: {e}")
+        import traceback
+        traceback.print_exc()
+    finally:
+        input("\n按下Enter键退出...")
 
 if __name__ == "__main__":
     main()
