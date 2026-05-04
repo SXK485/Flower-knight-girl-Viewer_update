@@ -397,16 +397,17 @@ def get_sceneData():
 
     logger.info(f"正在生成 sceneData.js，共计处理 {count} 个场景文件夹")
 
-    output_path = 'data/scripts/data'
+    output_path = os.path.join('data', 'scripts', 'data')
     if not os.path.exists(output_path):
         os.makedirs(output_path)
         logger.info(f"创建输出目录: {output_path}")
 
     # 输出sceneData.js
     scene_data_js = f"{scene_data_name} = {json.dumps(scene_data, indent=2, ensure_ascii=False)}"
-    with open(f'data\scripts\data\{scene_data_name}.js', 'w', encoding='utf-8') as f:
+    output_file = os.path.join(output_path, f'{scene_data_name}.js')
+    with open(output_file, 'w', encoding='utf-8') as f:
         f.write(scene_data_js)
-    logger.info("sceneData.js 已成功保存到 data/scripts/data/sceneData.js")
+    logger.info(f"sceneData.js 已成功保存到 {output_file}")
 
 # 定义一个函数，用于下载图片，并保存为jpg格式
 def download_image(url, file_name, image_path, image_num):
