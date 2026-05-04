@@ -1,5 +1,7 @@
 # Flower-knight-girl-Viewer_update
 
+[中文版 (Chinese Version)](README.md)
+
 Update tool for Flower Knight Girl Viewer. Place it in the package.nw directory (same level as the scenes directory) to update.
 
 If you encounter errors when running the update program, try turning your proxy on or off.

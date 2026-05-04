@@ -1,4 +1,7 @@
 # Flower-knight-girl-Viewer_update
+
+[English Version (英文版)](README_EN.md)
+
 Flower knight girl Viewer专用更新程序，放到package.nw目录里（跟scenes目录同级）更新即可。
 
 如果运行更新程序时遇到错误，请尝试关闭或开启代理。
