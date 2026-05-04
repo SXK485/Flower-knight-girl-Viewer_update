@@ -48,7 +48,7 @@ def main():
     try:
         logger.info("Flower knight girl Viewer更新程序开始运行...")
         # 将时间间隔转换为天数
-        YOUR_TIME_INTERVAL = 30  # 7天
+        YOUR_TIME_INTERVAL = 30  # 30天
 
         # 将时间间隔转换为秒
         time_interval_in_seconds = YOUR_TIME_INTERVAL * 24 * 60 * 60
@@ -93,6 +93,10 @@ def main():
         else:
             logger.info(f"发现 {len(datalist)} 个新角色需要下载。")
             sub(datalist)
+
+        # 更新完成后，自动生成或更新 meta.js
+        logger.info("开始生成/更新搜索索引 (meta.js)...")
+        update_meta_if_needed(time_interval_in_seconds)
 
         logger.info("所有操作已完成！")
 
@@ -777,6 +781,352 @@ def download_spine(id, folder_name, url_r18):
             img.save(os.path.join(path_per_id, webpsavename + '.png'), 'png')
         else:
             print('not found for '+id+': ' + str(i + 1), file=sys.stderr)
+
+
+# ==================== 搜索功能修复 (Meta.js 生成) ====================
+
+def get_scene_ids_for_meta():
+    """获取本地 scenes 文件夹中的所有场景ID"""
+    scene_ids = []
+    try:
+        if not os.path.exists(SCENE_PATH):
+            logger.warning(f"scenes 文件夹不存在: {SCENE_PATH}")
+            return scene_ids
+        
+        folder_list = os.listdir(SCENE_PATH)
+        logger.info(f"正在扫描 scenes 文件夹，共找到 {len(folder_list)} 个项目")
+        
+        for folder_name in folder_list:
+            if folder_name.startswith("c"):
+                try:
+                    if "_" in folder_name:
+                        folder_id = int(folder_name[1:7]) + 300000
+                    else:
+                        folder_id = int(folder_name[1:])
+                    scene_ids.append(folder_id)
+                except ValueError:
+                    logger.debug(f"忽略无法识别的文件夹: {folder_name}")
+                    continue
+        
+        logger.info(f"成功识别 {len(scene_ids)} 个场景ID")
+    except Exception as e:
+        logger.error(f"扫描 scenes 文件夹时发生异常: {e}")
+    
+    return scene_ids
+
+
+def load_character_data():
+    """从 data.json 加载角色数据"""
+    data_path = 'data.json'
+    try:
+        if not os.path.exists(data_path):
+            logger.warning(f"数据文件不存在: {data_path}")
+            return []
+        
+        with open(data_path, 'r', encoding="utf-8") as f:
+            data = json.load(f)
+        
+        chara_data = data.get('charaData', [])
+        logger.info(f"成功加载 {len(chara_data)} 个角色数据")
+        return chara_data
+    except json.JSONDecodeError as e:
+        logger.error(f"JSON 解析失败: {e}")
+        return []
+    except Exception as e:
+        logger.error(f"加载数据文件时发生异常: {e}")
+        return []
+
+
+def get_aliases(name):
+    """获取日文名称的别名（按空格分割）"""
+    name = name.replace('(', ' ').replace(')', ' ')
+    aliases = name.split()
+    return aliases
+
+
+def get_eng_aliases(eng_name):
+    """获取英文名称的别名"""
+    parts = eng_name.replace('(', '').replace(')', '').split()
+    aliases = []
+    
+    for i in range(0, len(parts), 2):
+        aliases.append(parts[i])
+        if i + 1 < len(parts):
+            aliases.append(parts[i + 1] + ' ' + parts[i])
+            aliases.append(parts[i + 1])
+    
+    return aliases
+
+
+def get_eng_name(eng_name):
+    """解析英文名称和形态"""
+    name = eng_name
+    
+    if "(" in name:
+        parts = name.split("(")
+        name = parts[0].strip()
+        form = parts[1][:-1].replace("-", "_")
+    else:
+        form = None
+    
+    name = name.upper().replace(" ", "_").replace("-", "_").replace("'", "")
+    
+    return name, form
+
+
+def get_form_name(form):
+    """获取形态名称"""
+    if not form:
+        return None
+    
+    parts = form.split()
+    if len(parts) > 1:
+        return parts[-1].lower()
+    else:
+        return form.lower()
+
+
+def fetch_character_data_from_wiki():
+    """从 Wiki 抓取角色数据并保存到 data.json"""
+    api_url = "https://flowerknight.fandom.com/api.php"
+    params = {
+        "action": "parse",
+        "format": "json",
+        "page": "List_of_Flower_Knights_by_ID",
+        "prop": "text"
+    }
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    }
+    
+    logger.info("正在从 Wiki 获取角色列表数据...")
+    
+    try:
+        response = requests.get(api_url, params=params, headers=headers, timeout=15)
+        
+        if response.status_code != 200:
+            logger.error("API 请求失败")
+            return False
+        
+        data = response.json()
+        html = data.get("parse", {}).get("text", {}).get("*", "")
+        
+        if not html:
+            logger.error("无法获取页面内容")
+            return False
+        
+        logger.info(f"成功获取页面内容，长度: {len(html)} 字符")
+        
+    except Exception as e:
+        logger.error(f"获取 Wiki 数据失败: {e}")
+        return False
+    
+    # 解析 HTML
+    bs = BeautifulSoup(html, "html.parser")
+    table = bs.find('table', class_='wikitable')
+    if not table:
+        logger.error("找不到角色数据表格")
+        return False
+    
+    tbody = table.find('tbody')
+    rows = tbody.find_all('tr')[2:] if tbody else table.find_all('tr')[2:]
+    
+    # 解析角色数据
+    id_list = []
+    for row in rows:
+        cells = row.find_all('td')
+        if len(cells) < 4:
+            continue
+        
+        try:
+            char_id = int(cells[1].get_text(strip=True))
+            jap_link = cells[2].find('a')
+            jap_name = jap_link.get_text(strip=True) if jap_link else cells[2].get_text(strip=True)
+            eng_link = cells[3].find('a')
+            eng_name = eng_link.get_text(strip=True) if eng_link else cells[3].get_text(strip=True)
+            
+            id_list.append({
+                'id': char_id,
+                'name': jap_name,
+                'engName': eng_name
+            })
+        except (IndexError, ValueError) as e:
+            logger.debug(f"解析角色数据行失败: {e}")
+            continue
+    
+    logger.info(f"共抓取到 {len(id_list)} 个角色")
+    
+    # 只保存本地存在的角色
+    scene_ids = get_scene_ids_for_meta()
+    filtered_list = []
+    for char in id_list:
+        if char['id'] in scene_ids or (char['id'] + 300000) in scene_ids:
+            filtered_list.append(char)
+            # 如果开花形态存在，也添加
+            if (char['id'] + 300000) in scene_ids:
+                bloomed = char.copy()
+                bloomed['id'] = char['id'] + 300000
+                filtered_list.append(bloomed)
+    
+    logger.info(f"匹配到 {len(filtered_list)} 个本地场景")
+    
+    # 保存到 data.json
+    try:
+        data_obj = {"charaData": filtered_list}
+        with open("data.json", 'w', encoding="utf-8") as fp:
+            json.dump(data_obj, fp, indent=2, ensure_ascii=False)
+        logger.info("成功保存 data.json")
+        return True
+    except Exception as e:
+        logger.error(f"保存 data.json 失败: {e}")
+        return False
+
+
+def generate_meta():
+    """生成 meta.js 文件"""
+    logger.info("=" * 50)
+    logger.info("开始生成 meta.js 文件")
+    logger.info("=" * 50)
+    
+    scene_ids = get_scene_ids_for_meta()
+    if not scene_ids:
+        logger.error("没有找到任何场景ID，无法生成 meta.js")
+        return False
+    
+    chara_data = load_character_data()
+    if not chara_data:
+        logger.error("没有加载到任何角色数据，无法生成 meta.js")
+        return False
+    
+    artist_dict = {}
+    tag_dict = {}
+    cv_dict = {}
+    char_dict = {}
+    scene_dict = {}
+    
+    for chara in chara_data:
+        char_id = chara['id']
+        
+        if char_id in scene_ids:
+            name = chara['name']
+            eng_name, form = get_eng_name(chara['engName'])
+            form_name = get_form_name(form)
+            aliases = get_aliases(chara['name'])
+            eng_alias = get_eng_aliases(chara['engName'])
+            
+            if eng_name not in char_dict:
+                char_dict[eng_name] = {"base": {}}
+            
+            if form:
+                if "form" not in char_dict[eng_name]:
+                    char_dict[eng_name]["form"] = {}
+                char_dict[eng_name]["form"][form_name] = {
+                    "name": {
+                        "eng": chara['engName'],
+                        "engAlias": eng_alias,
+                        "jap": name,
+                        "japAlias": aliases,
+                    }
+                }
+            else:
+                char_dict[eng_name]["base"]["name"] = {
+                    "eng": chara['engName'],
+                    "engAlias": eng_alias,
+                    "jap": name,
+                    "japAlias": aliases
+                }
+                char_dict[eng_name]["base"]["tags"] = []
+                char_dict[eng_name]["base"]["gender"] = "female"
+                char_dict[eng_name]["base"]["artist"] = "ARTIST.IGNORE"
+                char_dict[eng_name]["base"]["cv"] = "CV.IGNORE"
+            
+            # 生成场景字典
+            scene_id_str = str(char_id) if char_id < 300000 else f"{char_id - 300000}_2"
+            scene_dict[f'c{scene_id_str}'] = {
+                'character': [f"CHAR.{eng_name}"],
+                'tags': {
+                    "female": [],
+                    "male": [],
+                    "location": [],
+                    "misc": []
+                },
+                'ignoredCharacterTags': []
+            }
+            if form_name:
+                scene_dict[f'c{scene_id_str}']['form'] = [form_name]
+    
+    # 填充空的 base
+    for char_name, char_info in char_dict.items():
+        if not char_info["base"]:
+            base_key = list(char_info["form"].keys())[0]
+            char_info["base"] = char_info["form"][base_key].copy()
+            char_info["base"]["tags"] = []
+            char_info["base"]["gender"] = "female"
+            char_info["base"]["artist"] = "ARTIST.IGNORE"
+            char_info["base"]["cv"] = "CV.IGNORE"
+    
+    # 添加默认的 IGNORE 项
+    artist_dict["IGNORE"] = {"eng": "", "engAlias": [], "jap": "", "japAlias": []}
+    tag_dict["IGNORE"] = {"name": "", "aliases": [], "parents": []}
+    cv_dict["IGNORE"] = {"eng": "", "engAlias": [], "jap": "", "japAlias": []}
+    
+    # 写入文件
+    try:
+        output_path = os.path.join('data', 'scripts', 'data')
+        if not os.path.exists(output_path):
+            os.makedirs(output_path)
+            logger.info(f"创建输出目录: {output_path}")
+        
+        output_file = os.path.join(output_path, 'meta.js')
+        logger.info(f"正在写入文件: {output_file}")
+        
+        with open(output_file, 'w', encoding="utf-8") as f:
+            meta = f"var ARTIST = {json.dumps(artist_dict, ensure_ascii=False, indent=2)}\n\n"
+            meta += f"var CV = {json.dumps(cv_dict, ensure_ascii=False, indent=2)}\n\n"
+            meta += f"var TAG = {json.dumps(tag_dict, ensure_ascii=False, indent=2)}\n\n"
+            meta += f"var CHAR = {json.dumps(char_dict, ensure_ascii=False, indent=2)}\n\n"
+            meta += f"var SCENE = {json.dumps(scene_dict, ensure_ascii=False, indent=2)}"
+            
+            # 替换引用为变量
+            import re
+            meta = re.sub(r'"ARTIST\.(.*?)"', r'ARTIST.\1', meta)
+            meta = re.sub(r'"CV\.(.*?)"', r'CV.\1', meta)
+            meta = re.sub(r'"CHAR\.(.*?)"', r'CHAR.\1', meta)
+            
+            f.write(meta)
+        
+        logger.info("=" * 50)
+        logger.info("meta.js 已成功生成！")
+        logger.info(f"文件位置: {os.path.abspath(output_file)}")
+        logger.info(f"包含 {len(char_dict)} 个角色，{len(scene_dict)} 个场景")
+        logger.info("=" * 50)
+        return True
+    except Exception as e:
+        logger.error(f"写入 meta.js 时发生异常: {e}")
+        return False
+
+
+def update_meta_if_needed(time_interval_in_seconds):
+    """检查并更新 meta.js（如果需要）"""
+    data_json_path = 'data.json'
+    
+    # 检查 data.json 是否需要更新
+    if os.path.isfile(data_json_path):
+        file_time = os.path.getmtime(data_json_path)
+        current_time = time.time()
+        file_age = current_time - file_time
+        file_age_days = file_age / (24 * 60 * 60)
+        logger.info(f"data.json 已存在，文件年龄: {file_age_days:.1f} 天")
+        
+        if file_age > time_interval_in_seconds:
+            logger.info(f"data.json 超过 30 天，需要更新")
+            fetch_character_data_from_wiki()
+    else:
+        logger.info("data.json 不存在，开始从网络获取数据")
+        fetch_character_data_from_wiki()
+    
+    # 生成 meta.js
+    generate_meta()
 
 
 if __name__ == "__main__":
