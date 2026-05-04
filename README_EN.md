@@ -4,6 +4,8 @@
 
 Update tool for Flower Knight Girl Viewer. Place it in the package.nw directory (same level as the scenes directory) to update.
 
+**The update program now includes integrated search functionality fix. After updating, it will automatically generate the meta.js file, eliminating the need to run the search fix tool separately.**
+
 If you encounter errors when running the update program, try turning your proxy on or off.
 
 For the latest version, please download from the tags section. The programs in the win7 and win10 directories are older versions.
