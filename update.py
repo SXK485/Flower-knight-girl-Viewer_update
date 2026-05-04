@@ -99,6 +99,7 @@ def main():
         update_meta_if_needed(time_interval_in_seconds)
 
         logger.info("所有操作已完成！")
+        input("按下Enter键退出...")
 
     except Exception as e:
         logger.error(f"程序运行发生致命错误: {str(e)}", exc_info=True)
@@ -126,8 +127,6 @@ def sub(datalist):
 
     #获取sceneData.js
     get_sceneData()
-
-    input("按下Enter键退出...")
 
 def download_role(id):
     # 已知无场景的联动角色ID（转生史莱姆）
