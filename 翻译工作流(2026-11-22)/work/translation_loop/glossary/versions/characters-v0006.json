@@ -1,0 +1,9285 @@
+{
+  "unit": "characters",
+  "version": 6,
+  "generated_at": "2026-11-22T07:39:29+08:00",
+  "source": "FlowerKnightGirl_原文/译文/人名清单.csv",
+  "characters": [
+    {
+      "ja": "スイカズラ",
+      "zh": "忍冬",
+      "aliases": [
+        "忍冬",
+        "金银花",
+        "忍冬藤",
+        "金银花露",
+        "二宝藤",
+        "二色花藤",
+        "右转藤",
+        "子风藤",
+        "老翁须",
+        "荵苳"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ジニア",
+      "zh": "百日菊",
+      "aliases": [
+        "百日菊",
+        "百日草",
+        "节节高",
+        "步步登高",
+        "火毡花",
+        "鱼尾菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒャクニチソウ",
+      "zh": "百日草",
+      "aliases": [
+        "百日草",
+        "百日菊",
+        "节节高",
+        "步步登高",
+        "火毡花",
+        "鱼尾菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "コルベット",
+      "zh": "科贝特",
+      "aliases": [
+        "科贝特",
+        "科尔贝特"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ジュズダマ",
+      "zh": "薏苡",
+      "aliases": [
+        "薏苡",
+        "数珠玉",
+        "菩提珠",
+        "草珠子",
+        "薏仁米"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "タケ",
+      "zh": "竹",
+      "aliases": [
+        "竹"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヤクノヒナホシ",
+      "zh": "屋久雏星",
+      "aliases": [
+        "屋久雏星"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スノーベリー",
+      "zh": "白雪果",
+      "aliases": [
+        "白雪果",
+        "雪梅"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カゲツ",
+      "zh": "翡翠木",
+      "aliases": [
+        "翡翠木",
+        "花月"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リサ",
+      "zh": "丽莎",
+      "aliases": [
+        "丽莎",
+        "丽莎·埃奥斯托雷",
+        "莉莎"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リースヴェルヌ",
+      "zh": "莉丝维尔奴",
+      "aliases": [
+        "莉丝维尔奴",
+        "莉丝维尔努",
+        "丽丝维尔努"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ウルザ・プラナアイス",
+      "zh": "乌鲁泽·普拉纳爱斯",
+      "aliases": [
+        "乌鲁泽·普拉纳爱斯",
+        "乌鲁泽",
+        "乌尔莎·普拉纳艾斯",
+        "乌尔萨·普拉纳伊斯"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キチジョウソウ",
+      "zh": "吉祥草",
+      "aliases": [
+        "吉祥草",
+        "吉祥写",
+        "银边吉祥草",
+        "滇吉祥草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シギラリア",
+      "zh": "封印木",
+      "aliases": [
+        "封印木"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ウィン",
+      "zh": "温",
+      "aliases": [
+        "温",
+        "温恩"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヤクーツク",
+      "zh": "雅库茨克",
+      "aliases": [
+        "雅库茨克"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ナイドホグル",
+      "zh": "奈德霍格尔",
+      "aliases": [
+        "奈德霍格尔",
+        "奈德霍格"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "藍原しおん",
+      "zh": "蓝原紫苑",
+      "aliases": [
+        "蓝原紫苑",
+        "蓝原诗音"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "朱雀院椿",
+      "zh": "朱雀院椿",
+      "aliases": [
+        "朱雀院椿",
+        "椿姐",
+        "椿姐姐",
+        "刀仕襧宜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "水城ゆきかぜ",
+      "zh": "水城雪风",
+      "aliases": [
+        "水城雪风",
+        "水城雪風",
+        "雪风"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "コットン",
+      "zh": "棉花",
+      "aliases": [
+        "棉花",
+        "科顿"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アリッサム",
+      "zh": "香雪球",
+      "aliases": [
+        "香雪球",
+        "庭荠"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スズシロ",
+      "zh": "萝卜",
+      "aliases": [
+        "萝卜",
+        "莱菔",
+        "大根",
+        "菜头",
+        "清白"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イオノプシジウム",
+      "zh": "钻石花",
+      "aliases": [
+        "钻石花",
+        "紫芥"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ジャーマンアイリス",
+      "zh": "德国鸢尾",
+      "aliases": [
+        "德国鸢尾"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サフラン",
+      "zh": "番红花",
+      "aliases": [
+        "番红花",
+        "藏红花",
+        "西红花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オジギソウ",
+      "zh": "含羞草",
+      "aliases": [
+        "含羞草",
+        "怕丑草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シーマニア",
+      "zh": "红岩桐",
+      "aliases": [
+        "红岩桐",
+        "小圆彤"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "デージー",
+      "zh": "雏菊",
+      "aliases": [
+        "雏菊",
+        "长命菊",
+        "延命菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サイネリア",
+      "zh": "瓜叶菊",
+      "aliases": [
+        "瓜叶菊",
+        "富贵菊",
+        "黄瓜花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カレンデュラ",
+      "zh": "欧洲金盏花",
+      "aliases": [
+        "欧洲金盏花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サンビタリア",
+      "zh": "蛇目菊",
+      "aliases": [
+        "蛇目菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ピンポンマム",
+      "zh": "杭白菊",
+      "aliases": [
+        "杭白菊",
+        "乒乓菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カカリア",
+      "zh": "绒缨菊",
+      "aliases": [
+        "绒缨菊",
+        "绘笔菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ウィンターコスモス",
+      "zh": "鬼针草",
+      "aliases": [
+        "鬼针草",
+        "栴檀草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ノースポール",
+      "zh": "白晶菊",
+      "aliases": [
+        "白晶菊",
+        "小白菊",
+        "雪地菊",
+        "晶晶菊",
+        "寒白菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ブラキカム",
+      "zh": "鹅河菊",
+      "aliases": [
+        "鹅河菊",
+        "姬秋樱",
+        "姬嫁菜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ディモルフォセカ",
+      "zh": "异果菊",
+      "aliases": [
+        "异果菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "フキ",
+      "zh": "蜂斗菜",
+      "aliases": [
+        "蜂斗菜",
+        "蕗",
+        "蛇头草",
+        "八角亭",
+        "水钟流头",
+        "蜂斗叶",
+        "蛇头号草",
+        "白花蜂斗菜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アーティチョーク",
+      "zh": "菜蓟",
+      "aliases": [
+        "菜蓟",
+        "亚枝竹",
+        "朝鲜蓟",
+        "洋蓟",
+        "阿枝竹",
+        "雅枝竹",
+        "食托菜蓟"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヴァルンボン",
+      "zh": "瓦伦波恩",
+      "aliases": [
+        "瓦伦波恩",
+        "瓦尔邦",
+        "秋之麒麟草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ユリオプスデージー",
+      "zh": "梳黄菊",
+      "aliases": [
+        "梳黄菊",
+        "黄金菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ゴールドメダル",
+      "zh": "金勋章",
+      "aliases": [
+        "金勋章"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "プリムラ",
+      "zh": "报春花",
+      "aliases": [
+        "报春花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シャコバサボテン",
+      "zh": "蟹爪兰",
+      "aliases": [
+        "蟹爪兰",
+        "螃蟹兰",
+        "虾蛄叶仙人掌"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サルビア",
+      "zh": "一串红",
+      "aliases": [
+        "一串红",
+        "绯衣草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "チェリーセージ",
+      "zh": "樱桃鼠尾草",
+      "aliases": [
+        "樱桃鼠尾草",
+        "小叶鼠尾草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ローズマリー",
+      "zh": "迷迭香",
+      "aliases": [
+        "迷迭香"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "レオノチス",
+      "zh": "狮耳花",
+      "aliases": [
+        "狮耳花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ホワイトパンジー",
+      "zh": "白花三色堇",
+      "aliases": [
+        "白花三色堇"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イエローパンジー",
+      "zh": "黄花三色堇",
+      "aliases": [
+        "黄花三色堇"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "パープルパンジー",
+      "zh": "紫花三色堇",
+      "aliases": [
+        "紫花三色堇"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イヌタデ",
+      "zh": "长鬃蓼",
+      "aliases": [
+        "长鬃蓼",
+        "睫穗蓼",
+        "犬蓼"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ツバキ",
+      "zh": "山茶",
+      "aliases": [
+        "山茶",
+        "山茶花",
+        "椿"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ブラックバッカラ",
+      "zh": "黑巴克",
+      "aliases": [
+        "黑巴克",
+        "黑色巴卡拉",
+        "黑蔷薇",
+        "黑巴克月季"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ロイヤルプリンセス",
+      "zh": "皇家公主蔷薇",
+      "aliases": [
+        "皇家公主蔷薇",
+        "白玫瑰",
+        "戴安娜玫瑰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ノヴァーリス",
+      "zh": "诺瓦利斯",
+      "aliases": [
+        "诺瓦利斯"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "モケ",
+      "zh": "木瓜",
+      "aliases": [
+        "木瓜",
+        "木桃"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ビワ",
+      "zh": "枇杷",
+      "aliases": [
+        "枇杷"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ノイバラ",
+      "zh": "野蔷薇",
+      "aliases": [
+        "野蔷薇"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ミニバラ",
+      "zh": "迷你玫瑰",
+      "aliases": [
+        "迷你玫瑰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ジャコウバラ",
+      "zh": "麝香蔷薇",
+      "aliases": [
+        "麝香蔷薇"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スノードロップ",
+      "zh": "雪花莲",
+      "aliases": [
+        "雪花莲",
+        "雪滴花",
+        "待雪草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "エウカリス",
+      "zh": "亚马逊百合",
+      "aliases": [
+        "亚马逊百合",
+        "拟宝珠水仙"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スイセン",
+      "zh": "水仙",
+      "aliases": [
+        "水仙",
+        "欧洲水仙",
+        "多花水仙"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ケイトウ",
+      "zh": "青葙",
+      "aliases": [
+        "青葙",
+        "鸡头",
+        "野鸡冠花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アエルバ",
+      "zh": "漠棉苋",
+      "aliases": [
+        "漠棉苋",
+        "白花苋"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ミモザ",
+      "zh": "银荆",
+      "aliases": [
+        "银荆",
+        "鱼骨松"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アルストロメリア",
+      "zh": "六出花",
+      "aliases": [
+        "六出花",
+        "水仙百合",
+        "六出花（向未来的感谢）"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "プルモナリア",
+      "zh": "肺草",
+      "aliases": [
+        "肺草",
+        "蓝花肺草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オンシジューム",
+      "zh": "文心兰",
+      "aliases": [
+        "文心兰",
+        "文心兰 文心酱"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シンビジューム",
+      "zh": "大花蕙兰",
+      "aliases": [
+        "大花蕙兰",
+        "栗山未来"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "デンドロビウム",
+      "zh": "石斛兰",
+      "aliases": [
+        "石斛兰",
+        "师匠"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カトレア",
+      "zh": "卡特兰",
+      "aliases": [
+        "卡特兰",
+        "嘉德丽亚兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イオノシジウム",
+      "zh": "小文心兰",
+      "aliases": [
+        "小文心兰",
+        "紫罗兰文心",
+        "日本小文心兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "パフィオペディルム",
+      "zh": "兜兰",
+      "aliases": [
+        "兜兰",
+        "拖鞋兰",
+        "仙履兰",
+        "芭菲尔鞋兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スイセイラン",
+      "zh": "齿舌兰",
+      "aliases": [
+        "齿舌兰",
+        "彗星兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アングレカム",
+      "zh": "彗星兰",
+      "aliases": [
+        "彗星兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "トリカブト",
+      "zh": "乌头",
+      "aliases": [
+        "乌头",
+        "附子",
+        "乌头草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ミスミソウ",
+      "zh": "三角草",
+      "aliases": [
+        "三角草",
+        "獐耳细辛"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ニリンソウ",
+      "zh": "鹅掌草",
+      "aliases": [
+        "鹅掌草",
+        "二轮草",
+        "林荫银莲花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "レシュノルティア",
+      "zh": "初恋草",
+      "aliases": [
+        "初恋草",
+        "花环花",
+        "风扇花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "コーレア",
+      "zh": "折瓣钟南香",
+      "aliases": [
+        "折瓣钟南香"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ユズ",
+      "zh": "香橙",
+      "aliases": [
+        "香橙",
+        "柚子",
+        "香橼",
+        "橙子",
+        "香圆",
+        "橙子核",
+        "橙子皮"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オリーブ",
+      "zh": "橄榄",
+      "aliases": [
+        "橄榄",
+        "油橄榄",
+        "木犀榄"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オウバイ",
+      "zh": "迎春花",
+      "aliases": [
+        "迎春花",
+        "黄梅",
+        "迎春",
+        "迎春花根",
+        "串串金",
+        "迎春花叶",
+        "重瓣迎春"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "エノコログサ",
+      "zh": "狗尾草",
+      "aliases": [
+        "狗尾草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ジャノメエリカ",
+      "zh": "圣诞欧石楠",
+      "aliases": [
+        "圣诞欧石楠",
+        "蛇眼欧石楠"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "チェッカーベリー",
+      "zh": "平铺白珠树",
+      "aliases": [
+        "平铺白珠树",
+        "姬柑子"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヘザー",
+      "zh": "帚石楠",
+      "aliases": [
+        "帚石楠",
+        "帚石南"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "エリカ・クリスマスパレード",
+      "zh": "埃丽卡·圣诞游行",
+      "aliases": [
+        "埃丽卡·圣诞游行"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "レウコフィルム",
+      "zh": "红花玉芙蓉",
+      "aliases": [
+        "红花玉芙蓉",
+        "银叶树",
+        "德州鼠尾草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "エレモフィラ",
+      "zh": "喜沙木",
+      "aliases": [
+        "喜沙木",
+        "荒漠木"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オキザリス",
+      "zh": "双色酢浆草",
+      "aliases": [
+        "双色酢浆草",
+        "霜淇淋酢浆草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "マネッチア",
+      "zh": "蔓炎花",
+      "aliases": [
+        "蔓炎花",
+        "火焰草",
+        "糖果玉米藤"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ブバルディア",
+      "zh": "寒丁子",
+      "aliases": [
+        "寒丁子"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒナソウ",
+      "zh": "美耳草",
+      "aliases": [
+        "美耳草",
+        "雏草",
+        "美耳草（童话绽放）"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ルクリア",
+      "zh": "馥郁滇丁香",
+      "aliases": [
+        "馥郁滇丁香"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヤツデ",
+      "zh": "八角金盘",
+      "aliases": [
+        "八角金盘",
+        "八手",
+        "手树"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シンクライリアナ",
+      "zh": "珊瑚塔",
+      "aliases": [
+        "珊瑚塔",
+        "美丽单药花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハートツリー",
+      "zh": "心叶树",
+      "aliases": [
+        "心叶树",
+        "心形树"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ブルーエルフィン",
+      "zh": "紫蝶花",
+      "aliases": [
+        "紫蝶花",
+        "蓝蝴蝶"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クラリンドウ",
+      "zh": "垂茉莉",
+      "aliases": [
+        "垂茉莉",
+        "白玉蝴蝶"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ポインセチア",
+      "zh": "圣诞红",
+      "aliases": [
+        "圣诞红",
+        "一品红"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハツユキソウ",
+      "zh": "银边翠",
+      "aliases": [
+        "银边翠",
+        "初雪草",
+        "高山积雪"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ユキハナソウ",
+      "zh": "雪华草",
+      "aliases": [
+        "雪华草",
+        "綺良雪"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ホーリー",
+      "zh": "欧洲冬青",
+      "aliases": [
+        "欧洲冬青",
+        "枸骨叶冬青",
+        "圣诞冬青",
+        "圣诞树"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ソヨゴ",
+      "zh": "具柄冬青",
+      "aliases": [
+        "具柄冬青",
+        "刻脉冬青",
+        "一口红",
+        "长梗冬青"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ブルードラゴン",
+      "zh": "蓝龙",
+      "aliases": [
+        "蓝龙"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アロエ",
+      "zh": "芦荟",
+      "aliases": [
+        "芦荟"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ロウバイ",
+      "zh": "腊梅",
+      "aliases": [
+        "腊梅",
+        "蜡梅",
+        "黄梅花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ストレリチア",
+      "zh": "鹤望兰",
+      "aliases": [
+        "鹤望兰",
+        "天堂鸟",
+        "极乐鸟花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ベルゲニア",
+      "zh": "岩白菜",
+      "aliases": [
+        "岩白菜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ツキトジ",
+      "zh": "月兔耳",
+      "aliases": [
+        "月兔耳",
+        "褐斑伽蓝"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カランコエ",
+      "zh": "伽蓝菜",
+      "aliases": [
+        "伽蓝菜",
+        "灯笼草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハカラメ",
+      "zh": "落地生根",
+      "aliases": [
+        "落地生根",
+        "灯笼草",
+        "大还魂",
+        "打不死",
+        "倒吊莲",
+        "倒地莲",
+        "古仔灯",
+        "叶生根",
+        "天灯笼",
+        "番鬼牡丹"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クリスマスベゴニア",
+      "zh": "冬海棠",
+      "aliases": [
+        "冬海棠",
+        "圣诞秋海棠"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リトープス",
+      "zh": "生石花",
+      "aliases": [
+        "生石花",
+        "石头玉"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "セルリア",
+      "zh": "新娘花",
+      "aliases": [
+        "新娘花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "チューベローズ",
+      "zh": "晚香玉",
+      "aliases": [
+        "晚香玉",
+        "月下香"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ウェルウィッチア",
+      "zh": "百岁兰",
+      "aliases": [
+        "百岁兰",
+        "二叶树",
+        "奇想天外",
+        "沙漠万年青"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ノラナ",
+      "zh": "假茄",
+      "aliases": [
+        "假茄",
+        "小钟花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ホウセンカ",
+      "zh": "凤仙花",
+      "aliases": [
+        "凤仙花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ナツメ",
+      "zh": "枣",
+      "aliases": [
+        "枣"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "インパチェンス",
+      "zh": "非洲凤仙花",
+      "aliases": [
+        "非洲凤仙花",
+        "苏丹凤仙花",
+        "指甲花",
+        "玻璃翠",
+        "非洲凤仙",
+        "勿碰我",
+        "急性子",
+        "矮凤仙"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サテラ",
+      "zh": "萨特拉",
+      "aliases": [
+        "萨特拉",
+        "莎缇拉"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リンネソウ",
+      "zh": "北极花",
+      "aliases": [
+        "北极花",
+        "北极林奈草",
+        "林奈木",
+        "林奈花",
+        "林奈草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "エスカロニア",
+      "zh": "南鼠刺",
+      "aliases": [
+        "南鼠刺"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クリスマスブッシュ",
+      "zh": "朱萼梅",
+      "aliases": [
+        "朱萼梅",
+        "圣诞丛木"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ソテツ",
+      "zh": "苏铁",
+      "aliases": [
+        "苏铁",
+        "琉球苏铁",
+        "避火蕉",
+        "台东苏铁",
+        "凤尾草",
+        "铁树",
+        "凤尾松",
+        "凤尾蕉",
+        "辟火蕉",
+        "美叶苏铁"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "トリトマ",
+      "zh": "火把莲",
+      "aliases": [
+        "火把莲",
+        "赤熊百合"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "デイゴ",
+      "zh": "刺桐",
+      "aliases": [
+        "刺桐",
+        "山芙蓉",
+        "刺桐花",
+        "海桐皮",
+        "刺桐树",
+        "莿桐树",
+        "鸡公树",
+        "纳塔尔刺桐",
+        "龙牙花",
+        "海桐"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クロサンドラ",
+      "zh": "十字爵床",
+      "aliases": [
+        "十字爵床",
+        "鸟尾花",
+        "半边黄",
+        "橙色鸟尾花",
+        "橙花鸟尾花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "タッカ・シャントリエリ",
+      "zh": "箭根薯",
+      "aliases": [
+        "箭根薯",
+        "老虎须",
+        "黑蝙蝠花",
+        "蒟蒻薯"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "メイ",
+      "zh": "小梅",
+      "aliases": [
+        "小梅",
+        "梅伊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハル",
+      "zh": "哈尔",
+      "aliases": [
+        "哈尔",
+        "春"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "一ノ瀬鈴夏",
+      "zh": "一之濑铃夏",
+      "aliases": [
+        "一之濑铃夏"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イリス",
+      "zh": "伊里斯",
+      "aliases": [
+        "伊里斯",
+        "鸢尾"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "さんご",
+      "zh": "珊瑚",
+      "aliases": [
+        "珊瑚"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒヨコマメ",
+      "zh": "鹰嘴豆",
+      "aliases": [
+        "鹰嘴豆",
+        "回回豆",
+        "回鹘豆",
+        "桃豆",
+        "香子豆",
+        "鸡心豆",
+        "鸡豆",
+        "准噶尔鹰嘴豆"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サン",
+      "zh": "SUN",
+      "aliases": [
+        "SUN",
+        "桑",
+        "太阳"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ビカクシダ",
+      "zh": "鹿角蕨",
+      "aliases": [
+        "鹿角蕨"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スターグラス",
+      "zh": "白鹭莞",
+      "aliases": [
+        "白鹭莞",
+        "星光草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "エンドウ",
+      "zh": "豌豆",
+      "aliases": [
+        "豌豆",
+        "豌豆花",
+        "豌",
+        "豌豆苗",
+        "青豆",
+        "雪豆",
+        "蜜糖豆",
+        "豆",
+        "荷兰豆",
+        "豌豆荚"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "テトラスティグマ",
+      "zh": "崖爬藤",
+      "aliases": [
+        "崖爬藤"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "レモン",
+      "zh": "柠檬",
+      "aliases": [
+        "柠檬"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リン",
+      "zh": "琳",
+      "aliases": [
+        "琳",
+        "林恩"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ビバーナム",
+      "zh": "荚蒾",
+      "aliases": [
+        "荚蒾"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハイビスカス",
+      "zh": "朱槿",
+      "aliases": [
+        "朱槿",
+        "扶桑花",
+        "大红花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ビロードアオイ",
+      "zh": "苘麻",
+      "aliases": [
+        "苘麻",
+        "绒叶锦葵"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クレナイ",
+      "zh": "红紫阳",
+      "aliases": [
+        "红紫阳"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アジサイ",
+      "zh": "绣球花",
+      "aliases": [
+        "绣球花",
+        "紫阳花",
+        "八仙花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "グラジオラス",
+      "zh": "唐菖蒲",
+      "aliases": [
+        "唐菖蒲"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "モントブレチア",
+      "zh": "射干菖蒲",
+      "aliases": [
+        "射干菖蒲",
+        "雄黄兰",
+        "火星花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キキョウ",
+      "zh": "桔梗",
+      "aliases": [
+        "桔梗"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カンパニュラ",
+      "zh": "风铃草",
+      "aliases": [
+        "风铃草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒマワリ",
+      "zh": "向日葵",
+      "aliases": [
+        "向日葵"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ガイラルディア",
+      "zh": "天人菊",
+      "aliases": [
+        "天人菊",
+        "虎皮菊",
+        "特攻花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヘレニウム",
+      "zh": "堆心菊",
+      "aliases": [
+        "堆心菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ガザニア",
+      "zh": "勋章菊",
+      "aliases": [
+        "勋章菊",
+        "勋章花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "フジバカマ",
+      "zh": "泽兰",
+      "aliases": [
+        "泽兰",
+        "白头婆",
+        "藤袴"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ルドベキア",
+      "zh": "金光菊",
+      "aliases": [
+        "金光菊",
+        "金光菊（忍者）"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヘリクリサム",
+      "zh": "麦杆菊",
+      "aliases": [
+        "麦杆菊",
+        "蜡菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "チトニア",
+      "zh": "肿柄菊",
+      "aliases": [
+        "肿柄菊",
+        "王爷葵",
+        "提汤菊",
+        "狄氏菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ウサギギク",
+      "zh": "兔菊",
+      "aliases": [
+        "兔菊",
+        "金车菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ソリダスター",
+      "zh": "一枝菀",
+      "aliases": [
+        "一枝菀",
+        "加拿大一枝黄花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シルフィウム",
+      "zh": "指南菊",
+      "aliases": [
+        "指南菊",
+        "松香草",
+        "突拔小车"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "チコリー",
+      "zh": "菊苣",
+      "aliases": [
+        "菊苣",
+        "菊苣子",
+        "菊苣根",
+        "蓝花菊苣"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヘリアンサス",
+      "zh": "向日葵（赫利安萨斯）",
+      "aliases": [
+        "向日葵（赫利安萨斯）",
+        "赫利安萨斯",
+        "葵花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "バードック",
+      "zh": "牛蒡",
+      "aliases": [
+        "牛蒡"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヘリオプシス",
+      "zh": "赛菊芋",
+      "aliases": [
+        "赛菊芋"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "メランポジューム",
+      "zh": "黑足菊",
+      "aliases": [
+        "黑足菊",
+        "黄星菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "チコレ",
+      "zh": "栽培菊苣",
+      "aliases": [
+        "栽培菊苣",
+        "苦苣",
+        "菊莴苣"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アンモビウム",
+      "zh": "银苞菊",
+      "aliases": [
+        "银苞菊",
+        "翼枝菊",
+        "银包菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "チシャ",
+      "zh": "莴苣",
+      "aliases": [
+        "莴苣",
+        "白苣",
+        "苦菜",
+        "生菜",
+        "唐生菜",
+        "苣胜子",
+        "莴苣子",
+        "叶用莴苣",
+        "叶莴苣"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒャクリョウ",
+      "zh": "百两金",
+      "aliases": [
+        "百两金",
+        "开喉箭",
+        "八爪金龙",
+        "朱砂根",
+        "龙爪金龙"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ジュウリョウ",
+      "zh": "紫金牛",
+      "aliases": [
+        "紫金牛",
+        "矮茶",
+        "矮地茶",
+        "不出林",
+        "短脚三郎",
+        "矮爪",
+        "矮脚樟茶",
+        "老勿大",
+        "小青",
+        "平地木"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "バニーカクタス",
+      "zh": "黄毛掌",
+      "aliases": [
+        "黄毛掌",
+        "兔耳仙人掌"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "エイル",
+      "zh": "艾露",
+      "aliases": [
+        "艾露",
+        "艾尔",
+        "百里香"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "レッドジンジャー",
+      "zh": "红姜花",
+      "aliases": [
+        "红姜花",
+        "赤穗月桃",
+        "红花月桃"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クルクマ",
+      "zh": "姜荷花",
+      "aliases": [
+        "姜荷花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ゲットウ",
+      "zh": "月桃",
+      "aliases": [
+        "月桃",
+        "艳山姜",
+        "箭杆风",
+        "垂花山姜",
+        "土砂仁",
+        "大良姜",
+        "大草寇",
+        "枸姜",
+        "熊竹兰",
+        "良姜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スイレン",
+      "zh": "睡莲",
+      "aliases": [
+        "睡莲"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アカバナスイレン",
+      "zh": "红花睡莲",
+      "aliases": [
+        "红花睡莲"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オオオニバス",
+      "zh": "王莲",
+      "aliases": [
+        "王莲",
+        "大鬼莲"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "タイガーロータス",
+      "zh": "虎斑睡莲",
+      "aliases": [
+        "虎斑睡莲",
+        "虎莲"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イブキトラノオ",
+      "zh": "椭圆叶蓼",
+      "aliases": [
+        "椭圆叶蓼",
+        "拳参",
+        "伊吹虎尾"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イタドリ",
+      "zh": "虎杖",
+      "aliases": [
+        "虎杖",
+        "日本蓼",
+        "大接骨",
+        "斑庄根",
+        "虎仗",
+        "贯脚",
+        "酸桶芦",
+        "酸筒杆",
+        "黄药子"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スイバ",
+      "zh": "酸模",
+      "aliases": [
+        "酸模",
+        "酸溜溜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒメシャラ",
+      "zh": "日本紫茎",
+      "aliases": [
+        "日本紫茎",
+        "姬沙罗"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サカキ",
+      "zh": "红淡比",
+      "aliases": [
+        "红淡比",
+        "榊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "グリーンベル",
+      "zh": "白玉草",
+      "aliases": [
+        "白玉草",
+        "风铃花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "レインボーローズ",
+      "zh": "彩虹玫瑰",
+      "aliases": [
+        "彩虹玫瑰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ブラックベリー",
+      "zh": "黑莓",
+      "aliases": [
+        "黑莓"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "モスローズ",
+      "zh": "苔蔷薇",
+      "aliases": [
+        "苔蔷薇",
+        "洋蔷薇"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カライトソウ",
+      "zh": "日本地榆",
+      "aliases": [
+        "日本地榆",
+        "白山花",
+        "唐糸草",
+        "大白花地榆"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ゼフィランサス",
+      "zh": "韭莲",
+      "aliases": [
+        "韭莲",
+        "红玉帘",
+        "韭兰",
+        "风雨花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "レインリリー",
+      "zh": "葱兰",
+      "aliases": [
+        "葱兰",
+        "葱莲",
+        "玉帘",
+        "风雨兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハブランサス",
+      "zh": "大韭兰",
+      "aliases": [
+        "大韭兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アガパンサス",
+      "zh": "百子莲",
+      "aliases": [
+        "百子莲",
+        "南非百子莲"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒルガオ",
+      "zh": "昼颜牵牛花",
+      "aliases": [
+        "昼颜牵牛花",
+        "日本打碗花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヨルガオ",
+      "zh": "月光花",
+      "aliases": [
+        "月光花",
+        "夜颜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アサガオ",
+      "zh": "牵牛花",
+      "aliases": [
+        "牵牛花",
+        "喇叭花",
+        "朝颜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ルコウソウ",
+      "zh": "茑萝",
+      "aliases": [
+        "茑萝",
+        "茑萝松",
+        "缕红草",
+        "南瓜朝颜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カイコウズ",
+      "zh": "鸡冠刺桐",
+      "aliases": [
+        "鸡冠刺桐",
+        "海红豆",
+        "赛波树"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カズラ",
+      "zh": "葛",
+      "aliases": [
+        "葛",
+        "鸡齐根"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒスイカズラ",
+      "zh": "绿玉藤",
+      "aliases": [
+        "绿玉藤",
+        "翡翠葛",
+        "圆萼藤"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サイトウ",
+      "zh": "斋藤",
+      "aliases": [
+        "斋藤"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カサブランカ",
+      "zh": "香水百合",
+      "aliases": [
+        "香水百合",
+        "卡萨布兰卡",
+        "天上百合"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヤマユリ",
+      "zh": "天香百合",
+      "aliases": [
+        "天香百合",
+        "山百合"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オトメユリ",
+      "zh": "乙女百合",
+      "aliases": [
+        "乙女百合",
+        "姬早百合",
+        "姬小百合",
+        "春百合",
+        "会津百合"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒメユリ",
+      "zh": "姬百合",
+      "aliases": [
+        "姬百合",
+        "渥丹百合",
+        "山丹丹",
+        "晨星百合"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サンダーソニア",
+      "zh": "宫灯百合",
+      "aliases": [
+        "宫灯百合",
+        "提灯百合",
+        "圣诞风铃"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ユリ",
+      "zh": "百合",
+      "aliases": [
+        "百合"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カノコユリ",
+      "zh": "鹿子百合",
+      "aliases": [
+        "鹿子百合",
+        "土用百合",
+        "七夕百合"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クルマユリ",
+      "zh": "浙江百合",
+      "aliases": [
+        "浙江百合",
+        "车百合"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "グロリオサ",
+      "zh": "嘉兰",
+      "aliases": [
+        "嘉兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ベッセラ",
+      "zh": "珊瑚坠",
+      "aliases": [
+        "珊瑚坠",
+        "贝瑟拉",
+        "珊瑚兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヘメロカリス",
+      "zh": "萱草",
+      "aliases": [
+        "萱草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ウバユリ",
+      "zh": "姥百合",
+      "aliases": [
+        "姥百合",
+        "心叶大百合"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ミルトニア",
+      "zh": "堇花兰",
+      "aliases": [
+        "堇花兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "コランバイン",
+      "zh": "耧斗菜",
+      "aliases": [
+        "耧斗菜",
+        "苎环"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヘンルーダ",
+      "zh": "芸香",
+      "aliases": [
+        "芸香",
+        "臭草",
+        "芸香草",
+        "香草",
+        "小叶香",
+        "百应草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "タチバナ",
+      "zh": "桔",
+      "aliases": [
+        "桔",
+        "橘柑"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ファンフラワー",
+      "zh": "紫扇花",
+      "aliases": [
+        "紫扇花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アンスリウム",
+      "zh": "火鹤花",
+      "aliases": [
+        "火鹤花",
+        "红团扇",
+        "花烛"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ローマンカモミール",
+      "zh": "果香菊",
+      "aliases": [
+        "果香菊",
+        "罗马洋甘菊",
+        "白花春黄菊",
+        "罗马揩暮米辣"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ライムギ",
+      "zh": "黑麦",
+      "aliases": [
+        "黑麦",
+        "裸麦"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "レモングラス",
+      "zh": "柠檬草",
+      "aliases": [
+        "柠檬草",
+        "柠檬茅",
+        "香茅草",
+        "风茅",
+        "香矛草",
+        "香茅",
+        "大风草",
+        "香麻",
+        "柠檬香茅"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒペリカム",
+      "zh": "金丝桃",
+      "aliases": [
+        "金丝桃"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オシロイバナ",
+      "zh": "紫茉莉",
+      "aliases": [
+        "紫茉莉",
+        "白粉花",
+        "地雷花",
+        "胭脂花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カラスウリ",
+      "zh": "王瓜",
+      "aliases": [
+        "王瓜",
+        "乌瓜",
+        "玉章",
+        "瓜叶栝楼"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ペポ",
+      "zh": "夏南瓜",
+      "aliases": [
+        "夏南瓜",
+        "西葫芦",
+        "美国南瓜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オオバコ",
+      "zh": "车前",
+      "aliases": [
+        "车前",
+        "车前草",
+        "猪耳草",
+        "田灌草",
+        "车轮草",
+        "车轮菜子",
+        "车轱辘菜",
+        "蛤蟆草",
+        "太阳针",
+        "平车前"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ツキミソウ",
+      "zh": "四翅月见草",
+      "aliases": [
+        "四翅月见草",
+        "待宵草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ゴデチア",
+      "zh": "古代稀",
+      "aliases": [
+        "古代稀",
+        "送春花",
+        "送别花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アンゲロニア",
+      "zh": "天使花",
+      "aliases": [
+        "天使花",
+        "水仙女"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リシアンサス",
+      "zh": "洋桔梗",
+      "aliases": [
+        "洋桔梗"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "エキザカム",
+      "zh": "紫芳草",
+      "aliases": [
+        "紫芳草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カタバミ",
+      "zh": "酢浆草",
+      "aliases": [
+        "酢浆草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サオトメバナ",
+      "zh": "鸡屎藤",
+      "aliases": [
+        "鸡屎藤",
+        "早乙女花",
+        "屁粪葛"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クチナシ",
+      "zh": "栀子花",
+      "aliases": [
+        "栀子花",
+        "支子花",
+        "木丹"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キヌタソウ",
+      "zh": "砧草",
+      "aliases": [
+        "砧草",
+        "显脉拉拉藤"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サンタンカ",
+      "zh": "仙丹花",
+      "aliases": [
+        "仙丹花",
+        "山丹花",
+        "三段花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "コフェア",
+      "zh": "咖啡树",
+      "aliases": [
+        "咖啡树"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アカンサス",
+      "zh": "叶蓟",
+      "aliases": [
+        "叶蓟",
+        "老鼠簕"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ベロペロネ",
+      "zh": "小虾花",
+      "aliases": [
+        "小虾花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アフェランドラ",
+      "zh": "单药花",
+      "aliases": [
+        "单药花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ディプラデニア",
+      "zh": "飘香藤",
+      "aliases": [
+        "飘香藤",
+        "红皱藤",
+        "双腺藤",
+        "红蝉花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "プルメリア",
+      "zh": "缅栀花",
+      "aliases": [
+        "缅栀花",
+        "缅栀",
+        "鸡蛋花",
+        "印度素馨"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ニチニチソウ",
+      "zh": "长春花",
+      "aliases": [
+        "长春花",
+        "日日春",
+        "日日草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ランタナ",
+      "zh": "马缨丹",
+      "aliases": [
+        "马缨丹",
+        "马樱丹"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "フォックスフェイス",
+      "zh": "乳茄",
+      "aliases": [
+        "乳茄",
+        "五指茄",
+        "牛角茄",
+        "黄金果",
+        "狐茄"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ベラドンナ",
+      "zh": "颠茄",
+      "aliases": [
+        "颠茄"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ワルナスビ",
+      "zh": "恶茄子",
+      "aliases": [
+        "恶茄子",
+        "北美刺龙葵"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハバネロ",
+      "zh": "哈瓦那辣椒",
+      "aliases": [
+        "哈瓦那辣椒"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヤコウボク",
+      "zh": "夜来香",
+      "aliases": [
+        "夜来香",
+        "夜香树",
+        "夜香木",
+        "鹿脂",
+        "夜丁香",
+        "夜光花",
+        "洋素馨"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ホップ",
+      "zh": "蛇麻",
+      "aliases": [
+        "蛇麻",
+        "啤酒花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キャッツテール",
+      "zh": "猫尾红",
+      "aliases": [
+        "猫尾红",
+        "石蚕叶铁苋菜",
+        "红尾铁苋菜",
+        "铁苋菜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クロトン",
+      "zh": "变叶木",
+      "aliases": [
+        "变叶木",
+        "洒金榕"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハナキリン",
+      "zh": "虎刺梅",
+      "aliases": [
+        "虎刺梅",
+        "铁海棠",
+        "虎刺",
+        "刺蓬花",
+        "麒麟刺",
+        "麒麟花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "マンリョウ",
+      "zh": "朱砂根",
+      "aliases": [
+        "朱砂根",
+        "万两金"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "センリョウ",
+      "zh": "草珊瑚",
+      "aliases": [
+        "草珊瑚",
+        "千两",
+        "红果金粟兰",
+        "仙蓼"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カカオ",
+      "zh": "可可树",
+      "aliases": [
+        "可可树"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ギンバイソウ",
+      "zh": "银梅草",
+      "aliases": [
+        "银梅草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ロエオ",
+      "zh": "紫背万年青",
+      "aliases": [
+        "紫背万年青",
+        "青红兰",
+        "蚌兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "エケベリア",
+      "zh": "拟石莲花",
+      "aliases": [
+        "拟石莲花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ロケア",
+      "zh": "绯红青锁龙",
+      "aliases": [
+        "绯红青锁龙",
+        "红景天"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ムーングロウ",
+      "zh": "月光",
+      "aliases": [
+        "月光"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ポーチュラカ",
+      "zh": "马齿苋",
+      "aliases": [
+        "马齿苋",
+        "猪母乳",
+        "滑苋",
+        "马齿牡丹"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ザクロ",
+      "zh": "石榴",
+      "aliases": [
+        "石榴",
+        "安石榴"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キウイ",
+      "zh": "奇异果",
+      "aliases": [
+        "奇异果",
+        "猕猴桃"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ライオンゴロシ",
+      "zh": "魔鬼爪",
+      "aliases": [
+        "魔鬼爪"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "セリ",
+      "zh": "水芹",
+      "aliases": [
+        "水芹",
+        "白根草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キャロット",
+      "zh": "胡萝卜",
+      "aliases": [
+        "胡萝卜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サラセニア",
+      "zh": "瓶子草",
+      "aliases": [
+        "瓶子草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "プラタナス",
+      "zh": "悬铃木",
+      "aliases": [
+        "悬铃木"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シバザクラ",
+      "zh": "芝樱",
+      "aliases": [
+        "芝樱",
+        "花诘草",
+        "丛生福禄考",
+        "针叶天蓝绣球"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "セアノサス",
+      "zh": "美洲茶",
+      "aliases": [
+        "美洲茶",
+        "美洲紫丁香"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "グーズベリー",
+      "zh": "醋栗",
+      "aliases": [
+        "醋栗",
+        "鹅莓"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ギリア",
+      "zh": "吉利花",
+      "aliases": [
+        "吉利花",
+        "吉利亚",
+        "介代花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スキラ",
+      "zh": "绵枣儿",
+      "aliases": [
+        "绵枣儿"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ネコヤナギ",
+      "zh": "细柱柳",
+      "aliases": [
+        "细柱柳",
+        "猫柳",
+        "红毛柳",
+        "银芽柳"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スグリ",
+      "zh": "茶藨子",
+      "aliases": [
+        "茶藨子",
+        "醋栗",
+        "酸块"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "バーゼリア",
+      "zh": "饰球花",
+      "aliases": [
+        "饰球花",
+        "刻球花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イセビ",
+      "zh": "伊势",
+      "aliases": [
+        "伊势"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "グミ",
+      "zh": "胡颓子",
+      "aliases": [
+        "胡颓子"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ミツマタ",
+      "zh": "结香",
+      "aliases": [
+        "结香",
+        "金腰带",
+        "雪里开",
+        "山棉皮",
+        "黄瑞香",
+        "三叉树",
+        "三桠皮",
+        "岩泽兰",
+        "打结花",
+        "梦花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シィル・プライン",
+      "zh": "希露·普莱恩",
+      "aliases": [
+        "希露·普莱恩",
+        "希尔·普莱恩",
+        "希露"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ジンチョウゲ",
+      "zh": "瑞香",
+      "aliases": [
+        "瑞香",
+        "铁牛皮",
+        "千里香",
+        "夺皮香",
+        "沈丁花",
+        "瑞兰",
+        "瑞香根",
+        "瑞香花",
+        "睡香",
+        "蓬莱紫"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アマドコロ",
+      "zh": "玉竹",
+      "aliases": [
+        "玉竹",
+        "欧玉竹",
+        "萎",
+        "铃铛菜",
+        "香黄精",
+        "丢竹",
+        "萎蕤",
+        "地管子",
+        "尾参"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スィーリア",
+      "zh": "苏利亚",
+      "aliases": [
+        "苏利亚·库玛尼·安特里",
+        "苏利亚",
+        "希莉亚"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "美桜",
+      "zh": "美樱",
+      "aliases": [
+        "美樱"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カシス",
+      "zh": "黑茶藨子",
+      "aliases": [
+        "黑茶藨子",
+        "黑加仑",
+        "黑豆",
+        "哈日一哈达",
+        "旱葡萄",
+        "茶藨子",
+        "黑加仑子",
+        "黑果茶藨",
+        "黑果镳",
+        "黑穗醋栗"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハシバミ",
+      "zh": "榛",
+      "aliases": [
+        "榛",
+        "榛树",
+        "川榛",
+        "榛子",
+        "平榛"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "葛城真理奈",
+      "zh": "葛城真理奈",
+      "aliases": [
+        "葛城真理奈",
+        "葛城真理奈（EXSTIA）",
+        "葛城真理奈（艾克斯蒂亚）",
+        "葛城真理奈（埃斯提亚）"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アオキ",
+      "zh": "青木",
+      "aliases": [
+        "青木",
+        "东瀛珊瑚"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "マリア・カスタード",
+      "zh": "玛丽亚·卡斯塔多",
+      "aliases": [
+        "玛丽亚·卡斯塔多",
+        "玛利亚·卡斯塔多",
+        "玛利亚·卡斯达特",
+        "玛丽亚·卡斯塔德"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カンガルーポー",
+      "zh": "袋鼠爪",
+      "aliases": [
+        "袋鼠爪"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ブロス",
+      "zh": "布罗斯",
+      "aliases": [
+        "布罗斯"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "九鬼旭",
+      "zh": "九鬼旭",
+      "aliases": [
+        "九鬼旭"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "風嶺雪月花",
+      "zh": "风岭雪月花",
+      "aliases": [
+        "风岭雪月花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カベルネ・ソーヴィニヨン",
+      "zh": "赤霞珠",
+      "aliases": [
+        "赤霞珠",
+        "卡本内苏维浓",
+        "解百纳"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ソーヴィニヨン・ブラン",
+      "zh": "长相思",
+      "aliases": [
+        "长相思",
+        "白苏维浓",
+        "长相思葡萄"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ブナ",
+      "zh": "日本山毛榉",
+      "aliases": [
+        "日本山毛榉",
+        "圆齿水青冈"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キングスクロス",
+      "zh": "国王十字",
+      "aliases": [
+        "国王十字"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヴィクトリア",
+      "zh": "维多利亚",
+      "aliases": [
+        "维多利亚",
+        "维多利亚女王"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ウメ",
+      "zh": "梅",
+      "aliases": [
+        "梅"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "さくらんぼ",
+      "zh": "樱桃（水果联动）",
+      "aliases": [
+        "樱桃（水果联动）",
+        "樱珠"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ケヤキ",
+      "zh": "榉树",
+      "aliases": [
+        "榉树",
+        "榉",
+        "光光榆",
+        "光叶榉",
+        "光叶榉树",
+        "台湾榉",
+        "台湾铁",
+        "椎油",
+        "榉木",
+        "榉榆"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ゴッホ",
+      "zh": "梵高",
+      "aliases": [
+        "梵高"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クインズウェイ",
+      "zh": "女王大道",
+      "aliases": [
+        "女王大道"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イズリントン",
+      "zh": "伊斯灵顿",
+      "aliases": [
+        "伊斯灵顿"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ソラマメ",
+      "zh": "蚕豆",
+      "aliases": [
+        "蚕豆",
+        "胡豆",
+        "佛豆",
+        "竖豆",
+        "南豆",
+        "川豆",
+        "开花豆",
+        "罗汉豆"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "レンブラント",
+      "zh": "伦勃朗",
+      "aliases": [
+        "伦勃朗"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アニソドンテア",
+      "zh": "小木槿",
+      "aliases": [
+        "小木槿",
+        "玲珑扶桑",
+        "南非葵"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "セレスタ",
+      "zh": "塞莱斯塔",
+      "aliases": [
+        "塞莱斯塔"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アブラナ",
+      "zh": "油菜花",
+      "aliases": [
+        "油菜花",
+        "油菜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イベリス",
+      "zh": "屈曲花",
+      "aliases": [
+        "屈曲花",
+        "蜂室花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ムラサキハナナ",
+      "zh": "诸葛菜",
+      "aliases": [
+        "诸葛菜",
+        "紫花菜",
+        "二月兰",
+        "紫金草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "マルコミア",
+      "zh": "希腊芥",
+      "aliases": [
+        "希腊芥",
+        "马康草",
+        "马尔科米亚",
+        "涩荠"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "フリージア",
+      "zh": "小苍兰",
+      "aliases": [
+        "小苍兰",
+        "香雪兰",
+        "菖蒲水仙"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イキシア",
+      "zh": "小鸢尾",
+      "aliases": [
+        "小鸢尾",
+        "枪水仙",
+        "玉米百合"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "セントポーリア",
+      "zh": "非洲堇",
+      "aliases": [
+        "非洲堇",
+        "非洲紫罗兰",
+        "非洲紫苣苔",
+        "圣保罗花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒポシルタ",
+      "zh": "袋鼠花",
+      "aliases": [
+        "袋鼠花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "マーガレット",
+      "zh": "玛格丽特",
+      "aliases": [
+        "玛格丽特",
+        "木茼蒿",
+        "蓬蒿菊",
+        "木春菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ダリア",
+      "zh": "大丽菊",
+      "aliases": [
+        "大丽菊",
+        "大丽花",
+        "大理花",
+        "天竺牡丹"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ローダンセ",
+      "zh": "鳞托菊",
+      "aliases": [
+        "鳞托菊",
+        "姬麦杆",
+        "大羽冠毛菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キンセンカ",
+      "zh": "金盏花",
+      "aliases": [
+        "金盏花",
+        "金盏菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハルジオン",
+      "zh": "春紫菀",
+      "aliases": [
+        "春紫菀"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アザミ",
+      "zh": "蓟",
+      "aliases": [
+        "蓟",
+        "蓟草",
+        "大蓟",
+        "南国蓟"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "フェリシア",
+      "zh": "费利西亚",
+      "aliases": [
+        "费利西亚",
+        "费莉西娅"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クレピス",
+      "zh": "桃色蒲公英",
+      "aliases": [
+        "桃色蒲公英",
+        "还阳参"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スピランサス",
+      "zh": "桂圆菊",
+      "aliases": [
+        "桂圆菊",
+        "千日菊",
+        "金钮扣",
+        "鸽笼菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キクナ",
+      "zh": "茼蒿",
+      "aliases": [
+        "茼蒿",
+        "春菊",
+        "菊菜",
+        "菊花菜",
+        "蓬蒿"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サンチョーク",
+      "zh": "菊芋",
+      "aliases": [
+        "菊芋",
+        "洋姜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カウスリップ",
+      "zh": "黄花九轮草",
+      "aliases": [
+        "黄花九轮草",
+        "黄花九轮樱"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アナガリス",
+      "zh": "琉璃繁缕",
+      "aliases": [
+        "琉璃繁缕",
+        "海绿"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サボテン",
+      "zh": "仙人掌",
+      "aliases": [
+        "仙人掌",
+        "霸王树"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ホシクジャク",
+      "zh": "假昙花",
+      "aliases": [
+        "假昙花",
+        "星孔雀",
+        "复活节仙人掌"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スズラン",
+      "zh": "铃兰",
+      "aliases": [
+        "铃兰",
+        "山谷百合",
+        "风铃草",
+        "君影草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スミレ",
+      "zh": "紫花地丁",
+      "aliases": [
+        "紫花地丁",
+        "东北堇菜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ビオラ",
+      "zh": "堇菜",
+      "aliases": [
+        "堇菜",
+        "三色堇",
+        "锤王"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キランソウ",
+      "zh": "筋骨草",
+      "aliases": [
+        "筋骨草",
+        "金疮小草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "コマチソウ",
+      "zh": "高雪轮",
+      "aliases": [
+        "高雪轮",
+        "小町草",
+        "虫取抚子"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シャボンソウ",
+      "zh": "肥皂草",
+      "aliases": [
+        "肥皂草",
+        "道灌草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハコベラ",
+      "zh": "繁缕",
+      "aliases": [
+        "繁缕",
+        "蘩蒌"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イチゴ",
+      "zh": "草莓",
+      "aliases": [
+        "草莓"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "バラ",
+      "zh": "蔷薇",
+      "aliases": [
+        "蔷薇",
+        "玫瑰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サクラ",
+      "zh": "樱",
+      "aliases": [
+        "樱",
+        "傻哭啦",
+        "樱（围裙版）"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ユキヤナギ",
+      "zh": "珍珠绣线菊",
+      "aliases": [
+        "珍珠绣线菊",
+        "雪柳"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "モモ",
+      "zh": "桃",
+      "aliases": [
+        "桃"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハナモモ",
+      "zh": "花桃",
+      "aliases": [
+        "花桃",
+        "桃花",
+        "碧桃"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サクランボ",
+      "zh": "樱桃",
+      "aliases": [
+        "樱桃"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アプリコット",
+      "zh": "杏",
+      "aliases": [
+        "杏",
+        "杏花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カンヒザクラ",
+      "zh": "绯寒樱",
+      "aliases": [
+        "绯寒樱",
+        "寒绯樱",
+        "钟花樱花",
+        "山樱花",
+        "台湾樱"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "プラム",
+      "zh": "李",
+      "aliases": [
+        "李"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キジムシロ",
+      "zh": "莓叶委陵菜",
+      "aliases": [
+        "莓叶委陵菜",
+        "毛猴子",
+        "雉子筵",
+        "雉子筵根",
+        "委陵菜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "プルーン",
+      "zh": "西梅",
+      "aliases": [
+        "西梅",
+        "欧洲李",
+        "西洋李",
+        "八担杏",
+        "巴旦杏",
+        "话梅",
+        "软壳甜扁桃",
+        "甜味扁桃",
+        "苦味扁桃"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ジューンベリー",
+      "zh": "加拿大唐棣",
+      "aliases": [
+        "加拿大唐棣",
+        "加拿大服务莓"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ゴールドバニー",
+      "zh": "金绣娃",
+      "aliases": [
+        "金绣娃",
+        "金兔",
+        "黄金兔"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アーモンド",
+      "zh": "扁桃",
+      "aliases": [
+        "扁桃",
+        "巴旦木",
+        "八担杏",
+        "巴旦杏",
+        "甜扁桃"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヘビイチゴ",
+      "zh": "蛇莓",
+      "aliases": [
+        "蛇莓",
+        "蛇莓委陵菜",
+        "蛇莓萎陵菜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アマリリス",
+      "zh": "孤挺花",
+      "aliases": [
+        "孤挺花",
+        "朱顶红"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キルタンサス",
+      "zh": "垂筒花",
+      "aliases": [
+        "垂筒花",
+        "垂筒兰",
+        "火烧百合"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イフェイオン",
+      "zh": "花韭",
+      "aliases": [
+        "花韭",
+        "紫星花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒノキ",
+      "zh": "桧",
+      "aliases": [
+        "桧",
+        "日本扁柏",
+        "黄桧"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "レンゲソウ",
+      "zh": "紫云英",
+      "aliases": [
+        "紫云英",
+        "莲华草",
+        "红花草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アカシア",
+      "zh": "金合欢",
+      "aliases": [
+        "金合欢",
+        "洋槐"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハリエンジュ",
+      "zh": "刺槐",
+      "aliases": [
+        "刺槐",
+        "针槐"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ルピナス",
+      "zh": "羽扇豆",
+      "aliases": [
+        "羽扇豆",
+        "鲁冰花",
+        "叶团扇豆",
+        "昇藤"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キヌサヤ",
+      "zh": "豌豆（绢荚）",
+      "aliases": [
+        "豌豆（绢荚）",
+        "绢荚",
+        "青豆"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハーデンベルギア",
+      "zh": "紫珊豆",
+      "aliases": [
+        "紫珊豆",
+        "紫一叶豆",
+        "紫哈登柏豆",
+        "小町藤"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "エニシダ",
+      "zh": "金雀儿",
+      "aliases": [
+        "金雀儿",
+        "金雀花",
+        "金雀枝"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ウマゴヤシ",
+      "zh": "南苜蓿",
+      "aliases": [
+        "南苜蓿",
+        "苜蓿",
+        "金花菜",
+        "多型苜蓿",
+        "小瘤苜蓿",
+        "目齐头",
+        "黄花草子"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ホウオウボク",
+      "zh": "凤凰木",
+      "aliases": [
+        "凤凰木",
+        "凤凰花",
+        "火树",
+        "红花楹",
+        "凤凰树",
+        "火凤凰",
+        "金凤花",
+        "红楹"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハクモクレン",
+      "zh": "白木莲",
+      "aliases": [
+        "白木莲",
+        "玉兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ナイトメア",
+      "zh": "恶梦(猪牙花)",
+      "aliases": [
+        "恶梦（猪牙花）",
+        "猪牙花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ナルコユリ",
+      "zh": "镰叶黄精",
+      "aliases": [
+        "镰叶黄精",
+        "鸣子百合"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "コチョウラン",
+      "zh": "蝴蝶兰",
+      "aliases": [
+        "蝴蝶兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "マスデバリア",
+      "zh": "三尖兰",
+      "aliases": [
+        "三尖兰",
+        "尾萼兰",
+        "马斯德瓦尔兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "エビネ",
+      "zh": "虾脊兰",
+      "aliases": [
+        "虾脊兰",
+        "海老根"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "バニラ",
+      "zh": "香草",
+      "aliases": [
+        "香草",
+        "香荚兰",
+        "云呢拿",
+        "扁叶香荚兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アネモネ",
+      "zh": "银莲花",
+      "aliases": [
+        "银莲花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クリスマスローズ",
+      "zh": "圣诞玫瑰",
+      "aliases": [
+        "圣诞玫瑰",
+        "黑嚏根草",
+        "属性判定是打击的魔法攻击"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "フクジュソウ",
+      "zh": "侧金盏花",
+      "aliases": [
+        "侧金盏花",
+        "福寿草",
+        "早春花",
+        "元日草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ラナンキュラス",
+      "zh": "洋牡丹",
+      "aliases": [
+        "洋牡丹",
+        "花毛茛",
+        "陆莲花",
+        "毛茛"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒメリュウキンカ",
+      "zh": "榕叶毛茛",
+      "aliases": [
+        "榕叶毛茛",
+        "姬立金花",
+        "牛角花",
+        "欧洲金凤花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アンリ",
+      "zh": "亨利(梅花落叶松草)",
+      "aliases": [
+        "亨利（梅花落叶松草）",
+        "唐松草叶银莲花",
+        "小银莲花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オキナグサ",
+      "zh": "白头翁",
+      "aliases": [
+        "白头翁",
+        "朝鲜白头翁",
+        "白头翁花",
+        "白头翁茎叶",
+        "虱草花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サザンクロス",
+      "zh": "南十字花",
+      "aliases": [
+        "南十字花",
+        "克罗威花",
+        "南十字圣帝"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オレンジ",
+      "zh": "柳橙",
+      "aliases": [
+        "柳橙",
+        "橙",
+        "黄果",
+        "金环"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ボロニア",
+      "zh": "石南香",
+      "aliases": [
+        "石南香",
+        "宝容木"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ユキモチソウ",
+      "zh": "灯台莲",
+      "aliases": [
+        "灯台莲",
+        "雪饼草",
+        "全缘灯台莲",
+        "斑杖"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ウサギノオ",
+      "zh": "兔尾草",
+      "aliases": [
+        "兔尾草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ペラルゴニウム",
+      "zh": "洋葵（天竺葵）",
+      "aliases": [
+        "洋葵（天竺葵）",
+        "洋葵"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ブーゲンビリア",
+      "zh": "叶子花",
+      "aliases": [
+        "叶子花",
+        "三角梅",
+        "九重葛",
+        "簕杜鹃",
+        "三角花",
+        "勒杜鹃",
+        "宝巾"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キンギョソウ",
+      "zh": "金鱼草",
+      "aliases": [
+        "金鱼草",
+        "龙口花",
+        "洋彩雀"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オオイヌノフグリ",
+      "zh": "阿拉伯婆婆纳",
+      "aliases": [
+        "阿拉伯婆婆纳",
+        "肾子草",
+        "波斯婆婆纳",
+        "灯笼婆婆纳",
+        "台北水苦荬"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ツツジ",
+      "zh": "杜鹃花",
+      "aliases": [
+        "杜鹃花",
+        "映山红",
+        "山踯躅",
+        "杜鹃花（新人）"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クランベリー",
+      "zh": "蔓越莓",
+      "aliases": [
+        "蔓越莓",
+        "小红莓"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アケビ",
+      "zh": "木通",
+      "aliases": [
+        "木通",
+        "五叶木通",
+        "野木瓜",
+        "通草",
+        "丁年藤",
+        "丁翁",
+        "万年藤",
+        "五拿绳",
+        "八月札",
+        "八月炸藤"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アセビ",
+      "zh": "马醉木",
+      "aliases": [
+        "马醉木",
+        "台湾马醉木",
+        "日本马醉木",
+        "梫木"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カルセオラリア",
+      "zh": "蒲包花",
+      "aliases": [
+        "蒲包花",
+        "荷包花",
+        "巾着草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ペリストロフェ",
+      "zh": "九头狮子草",
+      "aliases": [
+        "九头狮子草",
+        "观音草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ビンカ",
+      "zh": "蔓长春花",
+      "aliases": [
+        "蔓长春花",
+        "攀缠长春花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ワスレナグサ",
+      "zh": "勿忘草",
+      "aliases": [
+        "勿忘草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ボリジ",
+      "zh": "琉璃苣",
+      "aliases": [
+        "琉璃苣"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アンチューサ",
+      "zh": "牛舌草",
+      "aliases": [
+        "牛舌草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "メイゲツカエデ",
+      "zh": "羽扇槭",
+      "aliases": [
+        "羽扇槭",
+        "明月枫",
+        "名月枫",
+        "羽团扇枫"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "バーベナ",
+      "zh": "马鞭草",
+      "aliases": [
+        "马鞭草",
+        "美女樱"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カリブラコア",
+      "zh": "舞春花",
+      "aliases": [
+        "舞春花",
+        "百万小铃"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ユーカリ",
+      "zh": "尤加利树",
+      "aliases": [
+        "尤加利树",
+        "桉树"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "コータロ",
+      "zh": "小太郎",
+      "aliases": [
+        "小太郎"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ソータ",
+      "zh": "苍太",
+      "aliases": [
+        "苍太"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヤドリギ",
+      "zh": "槲寄生",
+      "aliases": [
+        "槲寄生",
+        "蛋糕花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "タツタソウ",
+      "zh": "鲜黄连",
+      "aliases": [
+        "鲜黄连",
+        "龙田草",
+        "太阳针",
+        "鲜黄莲"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リュウゼツラン",
+      "zh": "龙舌兰",
+      "aliases": [
+        "龙舌兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ユキザサ",
+      "zh": "鹿药",
+      "aliases": [
+        "鹿药",
+        "雪笹"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ムスカリ",
+      "zh": "葡萄风信子",
+      "aliases": [
+        "葡萄风信子",
+        "不显蓝壶花",
+        "蓝香蓝壶花",
+        "蓝香水仙"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ボタン",
+      "zh": "牡丹",
+      "aliases": [
+        "牡丹",
+        "木芍药"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ポピー",
+      "zh": "虞美人",
+      "aliases": [
+        "虞美人",
+        "罂粟花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "メコノプシス",
+      "zh": "绿绒蒿",
+      "aliases": [
+        "绿绒蒿",
+        "蓝罂粟",
+        "喜马拉雅罂粟",
+        "绿绒蒿（新人）"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オニゲシ",
+      "zh": "鬼罂粟",
+      "aliases": [
+        "鬼罂粟",
+        "东方罂粟"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ステファノティス",
+      "zh": "多花耳药藤",
+      "aliases": [
+        "多花耳药藤",
+        "耳药藤",
+        "马达加斯加茉莉",
+        "非洲茉莉",
+        "多花黑鳗藤",
+        "茉莉球兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "メギ",
+      "zh": "日本小檗",
+      "aliases": [
+        "日本小檗"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ゼブリナ",
+      "zh": "吊竹梅",
+      "aliases": [
+        "吊竹梅",
+        "吊竹草",
+        "水龟草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ブライダルベール",
+      "zh": "透明新娘草",
+      "aliases": [
+        "透明新娘草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "マロニエ",
+      "zh": "欧洲七叶树",
+      "aliases": [
+        "欧洲七叶树",
+        "西洋栃木"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ランプランサス",
+      "zh": "松叶菊",
+      "aliases": [
+        "松叶菊",
+        "松叶牡丹"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ピンクッション",
+      "zh": "针垫花",
+      "aliases": [
+        "针垫花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "マカダミア",
+      "zh": "澳洲坚果",
+      "aliases": [
+        "澳洲坚果",
+        "澳洲胡桃",
+        "夏威夷果",
+        "巴布果",
+        "昆士兰栗"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヨウラクボタン",
+      "zh": "荷包牡丹",
+      "aliases": [
+        "荷包牡丹",
+        "璎珞牡丹",
+        "华鬘草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ガジュマル",
+      "zh": "细叶榕",
+      "aliases": [
+        "细叶榕",
+        "正榕"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カカラ",
+      "zh": "菝葜",
+      "aliases": [
+        "菝葜",
+        "猿捕茨"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アベリア",
+      "zh": "大花六道木",
+      "aliases": [
+        "大花六道木"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ツルバキア",
+      "zh": "紫娇花",
+      "aliases": [
+        "紫娇花",
+        "紫瓣花",
+        "野蒜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ゼンマイ",
+      "zh": "紫萁",
+      "aliases": [
+        "紫萁",
+        "薇",
+        "发条 [1]"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ガーリックバイン",
+      "zh": "蒜香藤",
+      "aliases": [
+        "蒜香藤",
+        "紫铃藤",
+        "大蒜葛"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ミムルス",
+      "zh": "沟酸浆",
+      "aliases": [
+        "沟酸浆"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "コナラ",
+      "zh": "枹栎",
+      "aliases": [
+        "枹栎",
+        "短柄枹栎虫瘿",
+        "短柄枹栎",
+        "枹树",
+        "绒毛枹栎"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シイタケ",
+      "zh": "香菇",
+      "aliases": [
+        "香菇",
+        "冬菇",
+        "北菇",
+        "椎茸",
+        "香菇菌丝体",
+        "香菰",
+        "香蕈",
+        "冬菰",
+        "花菇"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "見当かなみ",
+      "zh": "见当加奈美",
+      "aliases": [
+        "见当加奈美",
+        "加奈美"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "茜",
+      "zh": "茜",
+      "aliases": [
+        "茜",
+        "东南茜草",
+        "主线草",
+        "红叶藤"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オモイグサ",
+      "zh": "思草",
+      "aliases": [
+        "思草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "上杉謙信",
+      "zh": "上杉谦信",
+      "aliases": [
+        "上杉谦信",
+        "越后之龙",
+        "军神"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オイランソウ",
+      "zh": "天蓝绣球",
+      "aliases": [
+        "天蓝绣球",
+        "宿根福禄考",
+        "花魁草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ルリマツリ",
+      "zh": "蓝花丹",
+      "aliases": [
+        "蓝花丹",
+        "蓝雪花",
+        "瑠璃茉莉",
+        "花绣球",
+        "蓝茉莉"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シラカバ",
+      "zh": "白桦",
+      "aliases": [
+        "白桦",
+        "桦树",
+        "桦皮树",
+        "白桦树",
+        "粉华",
+        "粉桦"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イヌマキ",
+      "zh": "罗汉松",
+      "aliases": [
+        "罗汉松",
+        "大叶罗汉松",
+        "小叶罗汉松",
+        "罗汉松叶",
+        "罗汉松实",
+        "罗汉松根皮",
+        "土杉",
+        "罗汉杉",
+        "狭叶罗汉松"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "十部梨々夢",
+      "zh": "十部梨梨梦",
+      "aliases": [
+        "十部梨梨梦"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "朱雀院紅葉",
+      "zh": "朱雀院红叶",
+      "aliases": [
+        "朱雀院红叶"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "マルバノキ",
+      "zh": "双花木",
+      "aliases": [
+        "双花木",
+        "长柄双花木"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ベル",
+      "zh": "贝尔",
+      "aliases": [
+        "贝尔"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヨシノ",
+      "zh": "吉野",
+      "aliases": [
+        "吉野"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ミヤコ",
+      "zh": "都",
+      "aliases": [
+        "都",
+        "宫子"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シダレヤナギ",
+      "zh": "垂柳",
+      "aliases": [
+        "垂柳",
+        "垂丝柳",
+        "杨柳枝",
+        "柳屑",
+        "柳白皮",
+        "柳花",
+        "清明柳",
+        "柳",
+        "水柳",
+        "柳枝"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ノウゼンカズラ",
+      "zh": "凌霄",
+      "aliases": [
+        "凌霄",
+        "紫葳",
+        "接骨丹",
+        "上树龙",
+        "凌霄花",
+        "堕胎花",
+        "紫葳根",
+        "苕华",
+        "五爪龙",
+        "九龙下海"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "秋山凜子",
+      "zh": "秋山凛子",
+      "aliases": [
+        "秋山凛子"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "鬼崎きらら",
+      "zh": "鬼崎绮罗罗",
+      "aliases": [
+        "鬼崎绮罗罗"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イチジク",
+      "zh": "无花果",
+      "aliases": [
+        "无花果",
+        "优昙钵",
+        "底珍",
+        "底珍树",
+        "映日果",
+        "无花果树",
+        "无花菓",
+        "阿驵",
+        "红心果"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "初代シモアマヅ",
+      "zh": "初代下天津",
+      "aliases": [
+        "初代下天津",
+        "初代下马津",
+        "下天津"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ニッドラ",
+      "zh": "尼德拉",
+      "aliases": [
+        "尼德拉"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キヌガワ",
+      "zh": "绢川",
+      "aliases": [
+        "绢川"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ウキツリボク",
+      "zh": "蔓性风铃花",
+      "aliases": [
+        "蔓性风铃花",
+        "红萼苘麻",
+        "浮钓木",
+        "灯笼扶桑"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハナオクラ",
+      "zh": "黄蜀葵",
+      "aliases": [
+        "黄蜀葵"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "パボニア",
+      "zh": "孔雀葵",
+      "aliases": [
+        "孔雀葵",
+        "帕蓬花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ガンライコウ",
+      "zh": "苋",
+      "aliases": [
+        "苋",
+        "雁来红",
+        "刺苋菜",
+        "苋菜",
+        "三色苋",
+        "红苋菜",
+        "红米菜",
+        "老少年",
+        "老来少",
+        "苋实"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ウツギ",
+      "zh": "溲疏",
+      "aliases": [
+        "溲疏",
+        "齿叶溲疏"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハナショウブ",
+      "zh": "花菖蒲",
+      "aliases": [
+        "花菖蒲",
+        "玉蝉花",
+        "紫花鸢尾"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ストレプトカーパス",
+      "zh": "堇兰",
+      "aliases": [
+        "堇兰",
+        "海角樱草",
+        "旋果苣苔"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ローレンティア",
+      "zh": "同瓣草",
+      "aliases": [
+        "同瓣草",
+        "流星花",
+        "彩星花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "コスモス",
+      "zh": "大波斯菊",
+      "aliases": [
+        "大波斯菊",
+        "秋樱",
+        "大春车菊",
+        "秋★樱老师",
+        "秋英"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "マリーゴールド",
+      "zh": "万寿菊",
+      "aliases": [
+        "万寿菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ガーベラ",
+      "zh": "非洲菊",
+      "aliases": [
+        "非洲菊",
+        "大丁草",
+        "五星四大天王之一"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "チョコレートコスモス",
+      "zh": "巧克力波斯菊",
+      "aliases": [
+        "巧克力波斯菊",
+        "巧克力秋英"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "エキナセア",
+      "zh": "紫锥花",
+      "aliases": [
+        "紫锥花",
+        "紫锥菊",
+        "紫马帘菊",
+        "松果菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヨモギ",
+      "zh": "五月艾",
+      "aliases": [
+        "五月艾",
+        "野艾蒿",
+        "蓬",
+        "魁蒿"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シオン",
+      "zh": "紫菀",
+      "aliases": [
+        "紫菀",
+        "还魂草",
+        "鬼之丑草",
+        "紫苑（野绀菊）"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イモーテル",
+      "zh": "永久花",
+      "aliases": [
+        "永久花",
+        "不凋花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アルテミシア",
+      "zh": "苦艾",
+      "aliases": [
+        "苦艾",
+        "苦蒿"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クラスペディア",
+      "zh": "金槌花",
+      "aliases": [
+        "金槌花",
+        "金仗花",
+        "黄金球",
+        "金绣球"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ゴギョウ",
+      "zh": "鼠麹草",
+      "aliases": [
+        "鼠麹草",
+        "御形",
+        "母子草",
+        "清明草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ピレスラム",
+      "zh": "除虫菊",
+      "aliases": [
+        "除虫菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ルリギク",
+      "zh": "琉璃菊",
+      "aliases": [
+        "琉璃菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クジャクソウ",
+      "zh": "孔雀草",
+      "aliases": [
+        "孔雀草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ミヤマヨメナ",
+      "zh": "忘都草",
+      "aliases": [
+        "忘都草",
+        "六月菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リュウノウギク",
+      "zh": "龙脑菊",
+      "aliases": [
+        "龙脑菊",
+        "日本菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シクラメン",
+      "zh": "仙客来",
+      "aliases": [
+        "仙客来",
+        "兔耳花",
+        "篝火花",
+        "翻瓣莲"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ゲッカビジン",
+      "zh": "昙花",
+      "aliases": [
+        "昙花",
+        "月下美人"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サンカクサボテン",
+      "zh": "量天尺",
+      "aliases": [
+        "量天尺",
+        "三角柱",
+        "百连阁",
+        "火龙果",
+        "△酱 [1]"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ミント",
+      "zh": "薄荷",
+      "aliases": [
+        "薄荷"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ラベンダー",
+      "zh": "薰衣草",
+      "aliases": [
+        "薰衣草",
+        "病娇2号小姐"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ワタチョロギ",
+      "zh": "绵毛水苏",
+      "aliases": [
+        "绵毛水苏",
+        "羊耳石蚕"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "コリウス",
+      "zh": "鞘蕊花",
+      "aliases": [
+        "鞘蕊花",
+        "彩叶草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ネペタ",
+      "zh": "荆芥",
+      "aliases": [
+        "荆芥",
+        "猫薄荷",
+        "线荠"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ホルムショルディア",
+      "zh": "冬红",
+      "aliases": [
+        "冬红",
+        "冬红花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ウエストリンギア",
+      "zh": "澳洲迷迭香",
+      "aliases": [
+        "澳洲迷迭香",
+        "西林草",
+        "西澳迷迭香"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ムラサキシキブ",
+      "zh": "紫式部",
+      "aliases": [
+        "紫式部",
+        "日本紫珠",
+        "女儿茶",
+        "紫珠"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ブルーロータス",
+      "zh": "蓝莲花",
+      "aliases": [
+        "蓝莲花",
+        "延药睡莲"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サザンカ",
+      "zh": "茶梅",
+      "aliases": [
+        "茶梅"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アイ",
+      "zh": "蓼蓝",
+      "aliases": [
+        "蓼蓝"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シノネ",
+      "zh": "忍音",
+      "aliases": [
+        "忍音"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クリンユキフデ",
+      "zh": "支柱蓼",
+      "aliases": [
+        "支柱蓼",
+        "支柱拳参",
+        "红三七"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ワレモコウ",
+      "zh": "地榆",
+      "aliases": [
+        "地榆",
+        "吾亦红",
+        "吾木香",
+        "黄瓜香",
+        "割木瓜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "チャノキ",
+      "zh": "茶树",
+      "aliases": [
+        "茶树"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ワビスケ",
+      "zh": "佗助山茶",
+      "aliases": [
+        "佗助山茶",
+        "太郎冠者"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オトメツバキ",
+      "zh": "乙女椿",
+      "aliases": [
+        "乙女椿"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ナデシコ",
+      "zh": "石竹花",
+      "aliases": [
+        "石竹花",
+        "抚子花",
+        "抚子",
+        "瞿麦",
+        "长萼瞿麦",
+        "长筒瞿麦",
+        "长萼石竹"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リクニス",
+      "zh": "剪秋罗",
+      "aliases": [
+        "剪秋罗",
+        "剪红纱花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "センニチコウ",
+      "zh": "千日红",
+      "aliases": [
+        "千日红",
+        "圆仔花",
+        "红绣球"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カリン",
+      "zh": "花梨",
+      "aliases": [
+        "花梨",
+        "榠楂",
+        "木瓜海棠",
+        "安兰树"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シモツケ",
+      "zh": "日本绣线菊",
+      "aliases": [
+        "日本绣线菊",
+        "粉花绣线菊",
+        "白升麻",
+        "绣线菊子",
+        "光叶粉花绣线菊",
+        "光叶绣线菊",
+        "吹火筒",
+        "火烧尖",
+        "绣线菊",
+        "绣线菊叶"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヤマブキ",
+      "zh": "棣棠花",
+      "aliases": [
+        "棣棠花",
+        "山吹花",
+        "棣呆"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ネリネ",
+      "zh": "娜丽花",
+      "aliases": [
+        "娜丽花",
+        "纳丽石蒜",
+        "纳丽花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒガンバナ",
+      "zh": "彼岸花",
+      "aliases": [
+        "彼岸花",
+        "石蒜",
+        "红花石蒜",
+        "曼珠沙华",
+        "狐花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スギ",
+      "zh": "日本柳杉",
+      "aliases": [
+        "日本柳杉",
+        "柳杉",
+        "圆头柳杉",
+        "孔雀松",
+        "日本香柏",
+        "猴抓杉",
+        "狼尾柳杉",
+        "猿尾柳杉",
+        "猴爪柳杉"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シロツメクサ",
+      "zh": "白三叶草",
+      "aliases": [
+        "白三叶草",
+        "白车轴草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "コキア",
+      "zh": "地肤",
+      "aliases": [
+        "地肤",
+        "帚木",
+        "扫帚草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キンモクセイ",
+      "zh": "丹桂",
+      "aliases": [
+        "丹桂",
+        "金木樨"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ストロベリーキャンドル",
+      "zh": "红花诘草",
+      "aliases": [
+        "红花诘草",
+        "绛三叶",
+        "绛车轴草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハギ",
+      "zh": "胡枝子",
+      "aliases": [
+        "胡枝子",
+        "萩"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クローバー",
+      "zh": "三叶草",
+      "aliases": [
+        "三叶草",
+        "车轴草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アズキ",
+      "zh": "红豆",
+      "aliases": [
+        "红豆",
+        "小豆",
+        "赤豆",
+        "赤小豆"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ジャスミン",
+      "zh": "茉莉",
+      "aliases": [
+        "茉莉",
+        "素馨",
+        "茉莉花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ホトトギス",
+      "zh": "硬毛油点草",
+      "aliases": [
+        "硬毛油点草",
+        "油点草",
+        "杜鹃草",
+        "紫毛油点草",
+        "毛油点草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リリオペ",
+      "zh": "阔叶麦门冬",
+      "aliases": [
+        "阔叶麦门冬",
+        "山麦冬",
+        "麦门冬",
+        "薮兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オニユリ",
+      "zh": "卷丹",
+      "aliases": [
+        "卷丹",
+        "鬼百合",
+        "虎皮百合"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "バンダ",
+      "zh": "万代兰",
+      "aliases": [
+        "万代兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クレマチス",
+      "zh": "铁线莲",
+      "aliases": [
+        "铁线莲",
+        "仙人草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シュウメイギク",
+      "zh": "秋牡丹",
+      "aliases": [
+        "秋牡丹",
+        "打破碗花花",
+        "秋明菊",
+        "秋芍药",
+        "野棉花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イヌショウマ",
+      "zh": "犬升麻",
+      "aliases": [
+        "犬升麻"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スキミア",
+      "zh": "茵芋",
+      "aliases": [
+        "茵芋"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カラタチ",
+      "zh": "枳",
+      "aliases": [
+        "枳",
+        "枸橘",
+        "枳橙"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アッシュ",
+      "zh": "阿什",
+      "aliases": [
+        "阿什",
+        "灰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ススキ",
+      "zh": "中国芒",
+      "aliases": [
+        "中国芒",
+        "芒草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アシ",
+      "zh": "芦苇",
+      "aliases": [
+        "芦苇",
+        "沙芦苇",
+        "热河芦苇",
+        "芦根",
+        "芦竹箨",
+        "芦茎",
+        "芦草",
+        "蒹葭",
+        "兼",
+        "芦"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "パンパスグラス",
+      "zh": "蒲苇",
+      "aliases": [
+        "蒲苇"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カンナ",
+      "zh": "美人蕉",
+      "aliases": [
+        "美人蕉",
+        "援蕉"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オトギリソウ",
+      "zh": "小连翘",
+      "aliases": [
+        "小连翘",
+        "弟切草",
+        "瑞香草",
+        "随意草",
+        "囊萼花",
+        "虎尾花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒョウタン",
+      "zh": "葫芦",
+      "aliases": [
+        "葫芦",
+        "瓠瓜",
+        "瓢箪"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヘチマ",
+      "zh": "丝瓜",
+      "aliases": [
+        "丝瓜",
+        "菜瓜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ブリオニア",
+      "zh": "泻根",
+      "aliases": [
+        "泻根"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "フクシア",
+      "zh": "吊钟花",
+      "aliases": [
+        "吊钟花",
+        "倒挂金钟",
+        "灯笼海棠",
+        "吊钟海棠"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ベロニカ",
+      "zh": "婆婆纳",
+      "aliases": [
+        "婆婆纳",
+        "琉璃虎尾",
+        "麻婆纳"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ラッセリア",
+      "zh": "爆仗竹",
+      "aliases": [
+        "爆仗竹",
+        "炮竹红",
+        "花丁子"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ステラ",
+      "zh": "百可花",
+      "aliases": [
+        "雪花蔓",
+        "雪朵花",
+        "白雪蔓",
+        "裂口花",
+        "白可花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ディアスキア",
+      "zh": "双矩花",
+      "aliases": [
+        "双矩花",
+        "二角草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ケロネ",
+      "zh": "鳌头花",
+      "aliases": [
+        "鳌头花",
+        "龟头花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ネメシア",
+      "zh": "龙面花",
+      "aliases": [
+        "龙面花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リンドウ",
+      "zh": "龙胆",
+      "aliases": [
+        "龙胆"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "センブリ",
+      "zh": "日本獐牙菜",
+      "aliases": [
+        "日本獐牙菜",
+        "千振"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リンガー",
+      "zh": "林格",
+      "aliases": [
+        "林格"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アカネ",
+      "zh": "茜草",
+      "aliases": [
+        "茜草",
+        "东南茜草",
+        "主线草",
+        "红叶藤"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アイビー",
+      "zh": "常春藤",
+      "aliases": [
+        "常春藤",
+        "长春藤",
+        "中二藤",
+        "†生命的守护者†"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カヤナ",
+      "zh": "爵床",
+      "aliases": [
+        "爵床"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ブルースター",
+      "zh": "蓝星花",
+      "aliases": [
+        "蓝星花",
+        "蓝星",
+        "天蓝尖瓣藤",
+        "天蓝尖瓣木",
+        "琉璃唐锦"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヘリオトロープ",
+      "zh": "南美天芥菜",
+      "aliases": [
+        "南美天芥菜",
+        "天芥菜",
+        "香水草",
+        "刷妹"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒギリ",
+      "zh": "赪桐",
+      "aliases": [
+        "赪桐",
+        "绯桐",
+        "唐桐",
+        "贞桐花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ランギク",
+      "zh": "灰叶莸",
+      "aliases": [
+        "灰叶莸",
+        "兰香草",
+        "兰菊",
+        "段菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "トウガラシ",
+      "zh": "辣椒",
+      "aliases": [
+        "辣椒",
+        "唐辛子",
+        "牛角椒",
+        "簇生椒",
+        "米椒",
+        "辣椒（小米辣）",
+        "辣椒叶",
+        "辣椒茎",
+        "野生小米辣",
+        "长辣椒"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キンレンカ",
+      "zh": "旱金莲",
+      "aliases": [
+        "旱金莲",
+        "金莲花",
+        "凌霄叶莲"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ギョリュウバイ",
+      "zh": "松红梅",
+      "aliases": [
+        "松红梅",
+        "御柳梅",
+        "柽柳梅",
+        "细子木",
+        "鱼柳梅",
+        "澳洲茶",
+        "麦卢卡"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒマ",
+      "zh": "蓖麻",
+      "aliases": [
+        "蓖麻",
+        "大麻子",
+        "篦麻",
+        "荜麻",
+        "萞麻"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サンカヨウ",
+      "zh": "山荷叶",
+      "aliases": [
+        "山荷叶",
+        "日本山荷叶",
+        "窝儿七"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リュウノヒゲ",
+      "zh": "沿阶草",
+      "aliases": [
+        "沿阶草",
+        "麦冬",
+        "书带草",
+        "麦门冬",
+        "绣墩草",
+        "金边阔叶麦冬",
+        "矮麦冬",
+        "狭叶麦冬",
+        "小麦冬",
+        "养神草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "バルーンバイン",
+      "zh": "倒地铃",
+      "aliases": [
+        "倒地铃",
+        "风船葛"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "バウエラ",
+      "zh": "车叶梅",
+      "aliases": [
+        "车叶梅",
+        "鲍威拉"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スイギョク",
+      "zh": "布袋莲",
+      "aliases": [
+        "布袋莲",
+        "凤眼蓝",
+        "水葫芦",
+        "蓝恶魔"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アエオニウム",
+      "zh": "莲花掌",
+      "aliases": [
+        "莲花掌"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ミセバヤ",
+      "zh": "日本圆扇八宝",
+      "aliases": [
+        "日本圆扇八宝",
+        "圆扇八寳",
+        "圆扇八宝",
+        "仙人宝",
+        "圆扇景天",
+        "金钱掌"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハゼラン",
+      "zh": "土人参",
+      "aliases": [
+        "土人参",
+        "爆兰",
+        "米花兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "レウイシア",
+      "zh": "岩花火",
+      "aliases": [
+        "岩花火",
+        "露薇花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "マツバボタン",
+      "zh": "松叶牡丹",
+      "aliases": [
+        "松叶牡丹",
+        "大花马齿苋",
+        "龙须牡丹",
+        "半枝莲",
+        "太阳花",
+        "午时花",
+        "半支莲",
+        "死不了",
+        "洋马齿苋",
+        "金丝杜鹃"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クフェア",
+      "zh": "萼距花",
+      "aliases": [
+        "萼距花",
+        "雪茄花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オミナエシ",
+      "zh": "败酱",
+      "aliases": [
+        "败酱",
+        "女郎花",
+        "血目草",
+        "黄花龙芽草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "エルダーフラワー",
+      "zh": "接骨木",
+      "aliases": [
+        "接骨木"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "パイナップル",
+      "zh": "凤梨",
+      "aliases": [
+        "凤梨",
+        "黄梨",
+        "菠萝"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "コルチカム",
+      "zh": "秋水仙",
+      "aliases": [
+        "秋水仙"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クルミ",
+      "zh": "胡桃",
+      "aliases": [
+        "胡桃",
+        "核桃"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "トケイソウ",
+      "zh": "西番莲",
+      "aliases": [
+        "西番莲",
+        "时计草",
+        "蓝花西番莲",
+        "蛇王藤",
+        "西洋鞠",
+        "转心莲",
+        "转枝莲",
+        "洋酸茄花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "モンヨウショウ",
+      "zh": "龟背竹",
+      "aliases": [
+        "龟背竹",
+        "蓬莱蕉"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "エノキ",
+      "zh": "朴",
+      "aliases": [
+        "朴",
+        "朴树",
+        "小叶朴",
+        "黄果朴",
+        "紫荆朴",
+        "青朴"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "魔想志津香",
+      "zh": "魔想志津香",
+      "aliases": [
+        "魔想志津香",
+        "志津香"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ゲッケイジュ",
+      "zh": "月桂",
+      "aliases": [
+        "月桂",
+        "月桂叶",
+        "月桂子",
+        "月桂树",
+        "月桂樱子",
+        "香叶"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒサカキ",
+      "zh": "柃木",
+      "aliases": [
+        "柃木",
+        "姬榊",
+        "日本柃木",
+        "海岸柃"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "天久保百合",
+      "zh": "天久保百合",
+      "aliases": [
+        "天久保百合",
+        "天久保百合（埃斯提亚·花神）",
+        "百合老师"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カノコソウ",
+      "zh": "缬草",
+      "aliases": [
+        "缬草",
+        "宽裂缬草",
+        "吉草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "マティア",
+      "zh": "玛蒂娅",
+      "aliases": [
+        "玛蒂娅",
+        "马蒂亚",
+        "问荆"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シナモン",
+      "zh": "锡兰肉桂",
+      "aliases": [
+        "锡兰肉桂",
+        "铁箍散",
+        "琉璃草",
+        "贴骨散",
+        "斯里兰卡肉桂"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アオ",
+      "zh": "青",
+      "aliases": [
+        "青"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シロ",
+      "zh": "白",
+      "aliases": [
+        "白"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ゴジアオイ",
+      "zh": "白毛岩蔷薇",
+      "aliases": [
+        "白毛岩蔷薇"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ラフレシア",
+      "zh": "大王花",
+      "aliases": [
+        "大王花",
+        "大花草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "りんご",
+      "zh": "苹果（水果联动）",
+      "aliases": [
+        "苹果（水果联动）",
+        "西洋苹果",
+        "柰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リリ",
+      "zh": "莉莉",
+      "aliases": [
+        "莉莉"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ルシフェル",
+      "zh": "路西法",
+      "aliases": [
+        "路西法"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ベルゼブブ",
+      "zh": "别西卜",
+      "aliases": [
+        "别西卜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ベリアル",
+      "zh": "贝利亚尔",
+      "aliases": [
+        "贝利亚尔"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "フリージア・ゴッドスピード",
+      "zh": "弗里西亚·戈德斯皮德",
+      "aliases": [
+        "弗里西亚·戈德斯皮德"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "上和泉桜夜",
+      "zh": "上和泉樱夜",
+      "aliases": [
+        "上和泉樱夜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヴィヴィアン",
+      "zh": "薇薇安",
+      "aliases": [
+        "薇薇安"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シロ　アオ",
+      "zh": "白 青",
+      "aliases": [
+        "白 青",
+        "白与青"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "モルチアナ",
+      "zh": "锦葵",
+      "aliases": [
+        "锦葵",
+        "钱葵"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "タチアオイ",
+      "zh": "蜀葵",
+      "aliases": [
+        "蜀葵",
+        "一丈红"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "パキラ",
+      "zh": "马拉巴栗",
+      "aliases": [
+        "马拉巴栗",
+        "中美木棉",
+        "瓜栗",
+        "发财树"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ルナリア",
+      "zh": "银扇草",
+      "aliases": [
+        "银扇草",
+        "金钱花",
+        "硬币草",
+        "合田草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アナベル",
+      "zh": "乔木绣球",
+      "aliases": [
+        "乔木绣球"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ルルーナ",
+      "zh": "露露娜",
+      "aliases": [
+        "露露娜",
+        "露露娜（山绣球）"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハボタン",
+      "zh": "叶牡丹",
+      "aliases": [
+        "叶牡丹",
+        "牡丹菜",
+        "羽衣甘蓝"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スズナ",
+      "zh": "芜菁",
+      "aliases": [
+        "芜菁",
+        "蔓菁",
+        "诸葛菜",
+        "大头菜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "エーデルワイス",
+      "zh": "雪绒花",
+      "aliases": [
+        "雪绒花",
+        "高山火绒草",
+        "西洋薄雪草",
+        "小白花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヘリコニア",
+      "zh": "赫蕉",
+      "aliases": [
+        "赫蕉",
+        "蝎尾蕉"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オトメギキョウ",
+      "zh": "乙女桔梗",
+      "aliases": [
+        "乙女桔梗",
+        "达尔马提亚风铃草",
+        "风铃草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ブルーベル",
+      "zh": "蓝铃花",
+      "aliases": [
+        "蓝铃花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ホタルブクロ",
+      "zh": "紫斑风铃草",
+      "aliases": [
+        "紫斑风铃草",
+        "萤袋",
+        "聚花风铃草",
+        "吊钟花",
+        "灯笼花",
+        "山萤袋"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヤツシロソウ",
+      "zh": "北疆风铃草",
+      "aliases": [
+        "北疆风铃草",
+        "聚花风铃草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "タンポポ",
+      "zh": "蒲公英",
+      "aliases": [
+        "蒲公英",
+        "黄花地丁",
+        "婆婆丁"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヤグルマギク",
+      "zh": "矢车菊",
+      "aliases": [
+        "矢车菊",
+        "蓝芙蓉",
+        "车轮花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アスター",
+      "zh": "翠菊",
+      "aliases": [
+        "翠菊",
+        "五月菊",
+        "江西蜡"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アキレア",
+      "zh": "蓍",
+      "aliases": [
+        "蓍",
+        "锯草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シロタエギク",
+      "zh": "银叶菊",
+      "aliases": [
+        "银叶菊",
+        "雪叶菊",
+        "白妙菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オナモミ",
+      "zh": "苍耳",
+      "aliases": [
+        "苍耳",
+        "羊带来",
+        "卷耳",
+        "苍耳子"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "タラゴン",
+      "zh": "龙蒿",
+      "aliases": [
+        "龙蒿",
+        "香艾菊",
+        "狭叶青蒿",
+        "蛇蒿"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ルリタマアザミ",
+      "zh": "硬叶蓝刺头",
+      "aliases": [
+        "硬叶蓝刺头",
+        "瑠璃玉蓟",
+        "瑠璃球蓟"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オステオスペルマム",
+      "zh": "蓝眼菊",
+      "aliases": [
+        "蓝眼菊",
+        "南非雏菊",
+        "海角雏菊",
+        "蓝眼雏菊",
+        "非洲雏菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サントリナ",
+      "zh": "绵杉菊",
+      "aliases": [
+        "绵杉菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リアトリス",
+      "zh": "蛇鞭菊",
+      "aliases": [
+        "蛇鞭菊",
+        "马尾花",
+        "麒麟菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サクラソウ",
+      "zh": "樱草",
+      "aliases": [
+        "樱草",
+        "翠蓝草",
+        "翠南报春"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "フィソステギア",
+      "zh": "随意草",
+      "aliases": [
+        "随意草",
+        "囊萼花",
+        "虎尾花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カーネーション",
+      "zh": "康乃馨",
+      "aliases": [
+        "康乃馨",
+        "香石竹",
+        "麝香抚子"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スイートウィリアム",
+      "zh": "须苞石竹",
+      "aliases": [
+        "须苞石竹",
+        "美国石竹",
+        "美女抚子"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アグロステンマ",
+      "zh": "麦仙翁",
+      "aliases": [
+        "麦仙翁"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "フランネルソウ",
+      "zh": "毛剪秋罗",
+      "aliases": [
+        "毛剪秋罗",
+        "醉仙翁",
+        "毛缕"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ビスカリア",
+      "zh": "鞠翠花",
+      "aliases": [
+        "鞠翠花",
+        "小麦仙翁"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "セラスチウム",
+      "zh": "夏雪草",
+      "aliases": [
+        "夏雪草",
+        "塞拉斯",
+        "银叶夏雪草",
+        "白耳菜草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カスミソウ",
+      "zh": "缕丝花",
+      "aliases": [
+        "缕丝花",
+        "满天星",
+        "霞草",
+        "丝石竹"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ナナカマド",
+      "zh": "合花楸",
+      "aliases": [
+        "七灶花楸",
+        "合花楸",
+        "七灶"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リンゴ",
+      "zh": "苹果",
+      "aliases": [
+        "苹果",
+        "林檎",
+        "柰",
+        "小呀小苹果"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ピラカンサ",
+      "zh": "火棘",
+      "aliases": [
+        "火棘",
+        "火刺木"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "コデマリ",
+      "zh": "麻叶绣线菊",
+      "aliases": [
+        "麻叶绣线菊",
+        "麻叶绣球",
+        "小手毬",
+        "铃挂"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "マルメロ",
+      "zh": "榅桲",
+      "aliases": [
+        "榅桲"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ゲウム",
+      "zh": "路边青",
+      "aliases": [
+        "路边青",
+        "水杨梅"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スノーフレーク",
+      "zh": "雪片莲",
+      "aliases": [
+        "雪片莲",
+        "雪铃花",
+        "铃兰水仙"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒメノカリス",
+      "zh": "水鬼蕉",
+      "aliases": [
+        "水鬼蕉",
+        "蜘蛛百合",
+        "蜘蛛兰",
+        "螯蟹花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イトスギ",
+      "zh": "柏木",
+      "aliases": [
+        "柏木"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スイートピー",
+      "zh": "香豌豆",
+      "aliases": [
+        "香豌豆"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ミヤコグサ",
+      "zh": "百脉根",
+      "aliases": [
+        "百脉根",
+        "牛角花",
+        "五叶草",
+        "地羊鹊",
+        "百脉根花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ライラック",
+      "zh": "欧丁香",
+      "aliases": [
+        "欧丁香",
+        "紫丁香",
+        "洋丁香"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クロユリ",
+      "zh": "黑百合",
+      "aliases": [
+        "黑百合",
+        "堪察加贝母",
+        "黑贝母"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "レッドチューリップ",
+      "zh": "红花郁金香",
+      "aliases": [
+        "红花郁金香"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イエローチューリップ",
+      "zh": "黄花郁金香",
+      "aliases": [
+        "黄花郁金香"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "パープルチューリップ",
+      "zh": "紫花郁金香",
+      "aliases": [
+        "紫花郁金香"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ホワイトチューリップ",
+      "zh": "白花郁金香",
+      "aliases": [
+        "白花郁金香"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リューココリーネ",
+      "zh": "阳光百合",
+      "aliases": [
+        "阳光百合",
+        "阳光葱"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アリウム",
+      "zh": "观赏葱",
+      "aliases": [
+        "观赏葱",
+        "葱花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "テッポウユリ",
+      "zh": "铁炮百合",
+      "aliases": [
+        "铁炮百合",
+        "麝香百合"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "フリチラリア",
+      "zh": "花贝母",
+      "aliases": [
+        "花贝母",
+        "璎珞百合",
+        "皇冠贝母",
+        "帝王贝母"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リーガルリリー",
+      "zh": "岷江百合",
+      "aliases": [
+        "岷江百合",
+        "王百合",
+        "峨眉百合",
+        "王香百合",
+        "千叶百合"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "タカサゴユリ",
+      "zh": "台湾百合",
+      "aliases": [
+        "台湾百合",
+        "高砂百合",
+        "香水百合"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ギンラン",
+      "zh": "银兰",
+      "aliases": [
+        "银兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "エピデンドラム",
+      "zh": "美洲石斛",
+      "aliases": [
+        "美洲石斛",
+        "芦茎树兰",
+        "海老天"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リカステ",
+      "zh": "捧心兰",
+      "aliases": [
+        "捧心兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ネジバナ",
+      "zh": "绶草",
+      "aliases": [
+        "绶草",
+        "亚太绶草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "デルフィニウム",
+      "zh": "翠雀",
+      "aliases": [
+        "翠雀",
+        "大飞燕草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ニゲラ",
+      "zh": "黑种草",
+      "aliases": [
+        "黑种草",
+        "茴香花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ラークスパー",
+      "zh": "千鸟草",
+      "aliases": [
+        "千鸟草",
+        "小飞燕草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キンポウゲ",
+      "zh": "毛茛",
+      "aliases": [
+        "毛茛",
+        "金凤花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ボタンヅル",
+      "zh": "女萎",
+      "aliases": [
+        "女萎",
+        "牡丹蔓"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ミカン",
+      "zh": "橘子",
+      "aliases": [
+        "橘子",
+        "蜜柑"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ブンタン",
+      "zh": "柚子",
+      "aliases": [
+        "柚子",
+        "文旦",
+        "香栾",
+        "谢文"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハナミズキ",
+      "zh": "大花四照花",
+      "aliases": [
+        "大花四照花",
+        "大花山茱萸",
+        "花水木",
+        "多花狗木",
+        "用匕首当法器"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ミズキ",
+      "zh": "灯台树",
+      "aliases": [
+        "灯台树",
+        "灯台树果",
+        "瑞木"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カラー",
+      "zh": "海芋",
+      "aliases": [
+        "海芋",
+        "马蹄莲"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "テンナンショウ",
+      "zh": "天南星",
+      "aliases": [
+        "天南星"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ポトス",
+      "zh": "绿萝",
+      "aliases": [
+        "绿萝",
+        "黄金葛",
+        "魔鬼藤",
+        "黄金藤",
+        "黄茎葛",
+        "小绿",
+        "小铁铲"
+      ],
+      "status": "canonical",
+      "ja_aliases": [
+        "スコップ",
+        "スコップちゃん"
+      ]
+    },
+    {
+      "ja": "シンゴニウム",
+      "zh": "合果芋",
+      "aliases": [
+        "合果芋"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "コムギ",
+      "zh": "小麦",
+      "aliases": [
+        "小麦"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ゼラニウム",
+      "zh": "天竺葵",
+      "aliases": [
+        "天竺葵",
+        "石腊红",
+        "入腊红"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ギンリョウソウ",
+      "zh": "球果假水晶兰",
+      "aliases": [
+        "球果假水晶兰",
+        "银龙草",
+        "长白假水晶兰",
+        "幽灵花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スズランノキ",
+      "zh": "酸模树",
+      "aliases": [
+        "酸模树"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サツキ",
+      "zh": "皋月杜鹃",
+      "aliases": [
+        "皋月杜鹃",
+        "皋月踯躅"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カルミア",
+      "zh": "山月桂",
+      "aliases": [
+        "山月桂",
+        "花笠石楠花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "コケモモ",
+      "zh": "越橘",
+      "aliases": [
+        "越橘",
+        "苔桃"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ブルーベリー",
+      "zh": "蓝莓",
+      "aliases": [
+        "蓝莓",
+        "祖愉莓",
+        "山桑子"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "エノテラ",
+      "zh": "月见草",
+      "aliases": [
+        "月见草",
+        "美丽月见草",
+        "粉晚樱草",
+        "粉花月见草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ナイトフロックス",
+      "zh": "夜色福禄考",
+      "aliases": [
+        "夜色福禄考",
+        "夜色太太"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ペンステモン",
+      "zh": "钓钟柳",
+      "aliases": [
+        "钓钟柳",
+        "吊钟柳"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "トレニア",
+      "zh": "蓝猪耳",
+      "aliases": [
+        "蓝猪耳",
+        "蝴蝶草",
+        "夏堇",
+        "兰猪耳"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "バーバスカム",
+      "zh": "毛蕊花",
+      "aliases": [
+        "毛蕊花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヘーベ",
+      "zh": "长阶花",
+      "aliases": [
+        "长阶花",
+        "拟婆婆纳",
+        "赫柏"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ペンタス",
+      "zh": "繁星花",
+      "aliases": [
+        "繁星花",
+        "五星花",
+        "草三丹花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "バンテイシ",
+      "zh": "六月雪",
+      "aliases": [
+        "六月雪",
+        "白丁花",
+        "满天星"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サンゴバナ",
+      "zh": "珊瑚花",
+      "aliases": [
+        "珊瑚花",
+        "巴西羽花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ニシキギ",
+      "zh": "卫矛",
+      "aliases": [
+        "卫矛"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "モミジ",
+      "zh": "红叶",
+      "aliases": [
+        "红叶",
+        "枫树"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イチョウ",
+      "zh": "银杏",
+      "aliases": [
+        "银杏",
+        "公孙树",
+        "鸭脚树"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "デュランタ",
+      "zh": "假连翘",
+      "aliases": [
+        "假连翘",
+        "金露花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クマツヅラ",
+      "zh": "熊葛（马鞭草）",
+      "aliases": [
+        "熊葛（马鞭草）",
+        "熊葛",
+        "铁马鞭",
+        "透骨草",
+        "兔子草",
+        "土马鞭",
+        "粘身蓝被",
+        "蛤蟆棵",
+        "蜻蜓草",
+        "蜻蜓饭",
+        "风须草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ホオズキ",
+      "zh": "酸浆",
+      "aliases": [
+        "酸浆",
+        "GP-02 酸浆",
+        "鬼灯",
+        "金灯",
+        "锦灯笼"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ポテト",
+      "zh": "阳芋",
+      "aliases": [
+        "阳芋",
+        "马铃薯",
+        "土豆"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ブロワリア",
+      "zh": "蓝英花",
+      "aliases": [
+        "蓝英花",
+        "布洛华丽",
+        "布洛瓦丽"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ニコチアナ",
+      "zh": "花烟草",
+      "aliases": [
+        "花烟草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ティーツリー",
+      "zh": "澳洲茶树",
+      "aliases": [
+        "澳洲茶树",
+        "互叶白千层"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "モミノキ",
+      "zh": "冷杉",
+      "aliases": [
+        "冷杉",
+        "枞树"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "マツ",
+      "zh": "松树",
+      "aliases": [
+        "松树"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "プロテア",
+      "zh": "海神花",
+      "aliases": [
+        "海神花",
+        "普洛提亚"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒトリシズカ",
+      "zh": "银线草",
+      "aliases": [
+        "银线草",
+        "一人静"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ナンテン",
+      "zh": "南天竹",
+      "aliases": [
+        "南天竹",
+        "南天竺",
+        "南天烛",
+        "毛笔",
+        "灵魂画师"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イカリソウ",
+      "zh": "淫羊藿",
+      "aliases": [
+        "淫羊藿",
+        "锚草",
+        "碇草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ブローディア",
+      "zh": "紫灯花",
+      "aliases": [
+        "紫灯花",
+        "无味韭",
+        "紫灯韭"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シャクヤク",
+      "zh": "芍药",
+      "aliases": [
+        "芍药"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シャムサクララン",
+      "zh": "心叶球兰",
+      "aliases": [
+        "心叶球兰",
+        "心叶毬兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハートカズラ",
+      "zh": "爱之蔓",
+      "aliases": [
+        "爱之蔓",
+        "吊灯花",
+        "鸽蔓花",
+        "心蔓"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ユキノシタ",
+      "zh": "虎耳草",
+      "aliases": [
+        "虎耳草",
+        "雪之下"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クモマグサ",
+      "zh": "云间草",
+      "aliases": [
+        "云间草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒューケラ",
+      "zh": "珊瑚钟",
+      "aliases": [
+        "珊瑚钟",
+        "矾根"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ネモフィラ",
+      "zh": "粉蝶花",
+      "aliases": [
+        "粉蝶花",
+        "瑠璃唐草",
+        "喜林草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ツユクサ",
+      "zh": "鸭跖草",
+      "aliases": [
+        "鸭跖草",
+        "露草",
+        "月草",
+        "萤草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キリンソウ",
+      "zh": "费菜",
+      "aliases": [
+        "费菜",
+        "麒麟草",
+        "黄轮草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハゼ",
+      "zh": "野漆",
+      "aliases": [
+        "野漆",
+        "栌木"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スモークツリー",
+      "zh": "欧黄栌",
+      "aliases": [
+        "欧黄栌",
+        "黄栌",
+        "黄栌根",
+        "红叶",
+        "路木炸",
+        "浓茂树"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アナナス",
+      "zh": "观赏凤梨",
+      "aliases": [
+        "观赏凤梨"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ペペロミア",
+      "zh": "草胡椒",
+      "aliases": [
+        "草胡椒",
+        "佐田草",
+        "椒草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ユズリハ",
+      "zh": "交让木",
+      "aliases": [
+        "交让木",
+        "亲子草",
+        "楪",
+        "让叶"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "パクチー",
+      "zh": "芫荽",
+      "aliases": [
+        "芫荽",
+        "胡荽",
+        "香菜",
+        "盐须"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ディル",
+      "zh": "莳萝",
+      "aliases": [
+        "莳萝",
+        "香叶",
+        "洋茴香",
+        "野茴香",
+        "香叶天竺葵",
+        "土茴香",
+        "莳萝子",
+        "莳萝苗",
+        "香叶天竹葵"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ブルーレースフラワー",
+      "zh": "翠珠花",
+      "aliases": [
+        "翠珠花",
+        "蓝蕾丝花",
+        "天蓝翠珠花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "チャービル",
+      "zh": "雪维菜",
+      "aliases": [
+        "雪维菜",
+        "蜡叶峨参",
+        "法国芫荽"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "コマクサ",
+      "zh": "驹草",
+      "aliases": [
+        "驹草",
+        "奇妙荷包牡丹"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リムナンテス",
+      "zh": "池花",
+      "aliases": [
+        "池花",
+        "沼花",
+        "泽花",
+        "荷包蛋花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サンデリアーナ",
+      "zh": "富贵竹",
+      "aliases": [
+        "富贵竹",
+        "辛氏龙血树",
+        "竹蕉",
+        "万年竹"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アサザ",
+      "zh": "莕菜",
+      "aliases": [
+        "莕菜",
+        "浅沙"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ミツガシワ",
+      "zh": "睡菜",
+      "aliases": [
+        "睡菜",
+        "三槲"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クワイ",
+      "zh": "慈姑",
+      "aliases": [
+        "慈姑",
+        "茨菰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "タイリンオモダカ",
+      "zh": "蒙特登慈姑",
+      "aliases": [
+        "蒙特登慈姑",
+        "爆米花慈姑",
+        "大轮面高"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ウサギゴケ",
+      "zh": "兔兔苔",
+      "aliases": [
+        "兔兔苔",
+        "小白兔狸藻",
+        "桑德森狸藻"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "バイカソウ",
+      "zh": "梅花草",
+      "aliases": [
+        "梅花草",
+        "梅钵草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スターチス",
+      "zh": "星辰花",
+      "aliases": [
+        "星辰花",
+        "花滨匙"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ニレ",
+      "zh": "榆",
+      "aliases": [
+        "榆"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "エリンギ",
+      "zh": "杏鲍菇",
+      "aliases": [
+        "杏鲍菇",
+        "刺芹侧耳"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "マイヅルソウ",
+      "zh": "舞鹤草",
+      "aliases": [
+        "舞鹤草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "パピルス",
+      "zh": "纸莎草",
+      "aliases": [
+        "纸莎草",
+        "纸草",
+        "埃及莎草",
+        "纸蚊帐吊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヤブデマリ",
+      "zh": "粉团",
+      "aliases": [
+        "粉团",
+        "雪球荚蒾",
+        "蝴蝶树"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クレオメ",
+      "zh": "醉蝶花",
+      "aliases": [
+        "醉蝶花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "プミラ",
+      "zh": "薜荔",
+      "aliases": [
+        "薜荔",
+        "石壁莲",
+        "凉粉子",
+        "凉粉果",
+        "壁石虎",
+        "木瓜藤",
+        "木莲",
+        "木馒头",
+        "薜苈",
+        "风不动"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ツリフネソウ",
+      "zh": "野凤仙花",
+      "aliases": [
+        "野凤仙花",
+        "野鳯仙花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ミズヒナゲシ",
+      "zh": "水金英",
+      "aliases": [
+        "水金英",
+        "水罂粟"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ドラセナ",
+      "zh": "龙血树",
+      "aliases": [
+        "龙血树"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "マジナータ",
+      "zh": "红龙草",
+      "aliases": [
+        "红龙草",
+        "洋苋"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アルメリア",
+      "zh": "海石竹",
+      "aliases": [
+        "海石竹"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アザリン",
+      "zh": "阿萨琳",
+      "aliases": [
+        "阿萨琳",
+        "阿萨琳（埃斯提亚·魔力）"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "モウセンゴケ",
+      "zh": "圆叶茅膏菜",
+      "aliases": [
+        "圆叶茅膏菜",
+        "叉梗茅膏菜",
+        "圆叶毛毡苔",
+        "毛毡苔"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "レン",
+      "zh": "莲",
+      "aliases": [
+        "莲",
+        "荷花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "井河アサギ",
+      "zh": "井河浅葱",
+      "aliases": [
+        "井河浅葱",
+        "井河阿莎姬",
+        "阿莎姬"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "プトラ",
+      "zh": "普特拉",
+      "aliases": [
+        "普特拉"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "メルエル",
+      "zh": "梅露艾尔",
+      "aliases": [
+        "梅露艾尔"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハナイ",
+      "zh": "花蔺",
+      "aliases": [
+        "花蔺"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ムクゲ",
+      "zh": "木槿",
+      "aliases": [
+        "木槿",
+        "木棉",
+        "白花单瓣木槿",
+        "紫花重瓣木槿",
+        "荆条",
+        "朝天子",
+        "朝开暮落花",
+        "木槿叶",
+        "木槿花",
+        "无穷花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ラバテラ",
+      "zh": "花葵",
+      "aliases": [
+        "花葵"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クレソン",
+      "zh": "西洋菜",
+      "aliases": [
+        "西洋菜",
+        "豆瓣菜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ストック",
+      "zh": "紫罗兰",
+      "aliases": [
+        "紫罗兰",
+        "紫罗栏"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カルダミネ・リラタ",
+      "zh": "水田碎米荠",
+      "aliases": [
+        "水田碎米荠",
+        "苹果草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アイリス",
+      "zh": "鸢尾花",
+      "aliases": [
+        "鸢尾花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カキツバタ",
+      "zh": "燕子花",
+      "aliases": [
+        "燕子花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ニワゼキショウ",
+      "zh": "庭菖蒲",
+      "aliases": [
+        "庭菖蒲",
+        "庭石菖"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スパラキシス",
+      "zh": "水仙菖蒲",
+      "aliases": [
+        "水仙菖蒲",
+        "魔杖花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アヤメ",
+      "zh": "溪荪",
+      "aliases": [
+        "溪荪",
+        "东方鸢尾"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "トリトニア",
+      "zh": "观音兰",
+      "aliases": [
+        "观音兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イチハツ",
+      "zh": "一初",
+      "aliases": [
+        "一初",
+        "鸢尾",
+        "鸢尾草",
+        "紫蝴蝶",
+        "屋顶鸢尾",
+        "扁竹花",
+        "蓝蝴蝶",
+        "蛤蟆七",
+        "鸢根",
+        "老鸹蒜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シャガ",
+      "zh": "蝴蝶花",
+      "aliases": [
+        "蝴蝶花",
+        "日本鸢尾",
+        "开喉箭",
+        "豆豉草",
+        "扁竹",
+        "兰花草",
+        "剑刀草",
+        "扁担叶",
+        "扁竹根",
+        "铁豆柴"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スミシアンサ",
+      "zh": "垂筒苣苔",
+      "aliases": [
+        "垂筒苣苔"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アキメネス",
+      "zh": "长筒花",
+      "aliases": [
+        "长筒花",
+        "戏法草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ロベリア",
+      "zh": "六倍利",
+      "aliases": [
+        "六倍利",
+        "琉璃沟隐"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "サワギキョウ",
+      "zh": "山梗菜",
+      "aliases": [
+        "山梗菜",
+        "泽桔梗"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヨメナ",
+      "zh": "嫁菜",
+      "aliases": [
+        "嫁菜",
+        "夜目菜",
+        "锐齿马兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "コオニタビラコ",
+      "zh": "稻槎菜",
+      "aliases": [
+        "稻槎菜",
+        "小鬼田平子",
+        "佛座"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イソギク",
+      "zh": "矶菊",
+      "aliases": [
+        "矶菊",
+        "太平洋菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アステリカリス",
+      "zh": "滨海叶苞菊",
+      "aliases": [
+        "滨海叶苞菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ツワブキ",
+      "zh": "大吴风草",
+      "aliases": [
+        "大吴风草",
+        "石蕗",
+        "艳蕗",
+        "山菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハマシオン",
+      "zh": "海紫菀",
+      "aliases": [
+        "海紫菀",
+        "滨紫苑",
+        "浦菊",
+        "滨紫菀"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ソリダゴ",
+      "zh": "一枝黄花",
+      "aliases": [
+        "一枝黄花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハマギク",
+      "zh": "日本滨菊",
+      "aliases": [
+        "日本滨菊"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リシマキア",
+      "zh": "珍珠菜",
+      "aliases": [
+        "珍珠菜",
+        "遍地金"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クリンソウ",
+      "zh": "日本樱草",
+      "aliases": [
+        "日本樱草",
+        "九轮草",
+        "七重草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ラミウム",
+      "zh": "野芝麻",
+      "aliases": [
+        "野芝麻",
+        "踊子草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "バジル",
+      "zh": "罗勒",
+      "aliases": [
+        "罗勒",
+        "七层塔",
+        "九层塔",
+        "千层塔",
+        "金不换",
+        "香草",
+        "兰香",
+        "零陵香",
+        "荆芥",
+        "香荆芥"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "タツナミソウ",
+      "zh": "韩信草",
+      "aliases": [
+        "韩信草",
+        "黄芩",
+        "立浪草",
+        "顺经草",
+        "烟管草",
+        "偏向花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オレガノ",
+      "zh": "牛至",
+      "aliases": [
+        "牛至",
+        "俄勒冈",
+        "披萨草",
+        "花薄荷"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒメオドリコソウ",
+      "zh": "圆齿野芝麻",
+      "aliases": [
+        "圆齿野芝麻",
+        "大苞野芝麻",
+        "姬踊子草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "トゥルシー",
+      "zh": "圣罗勒",
+      "aliases": [
+        "圣罗勒",
+        "打抛叶",
+        "嘎抛",
+        "打抛",
+        "神罗勒"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オドリコソウ",
+      "zh": "山苏子",
+      "aliases": [
+        "山苏子",
+        "短柄野芝麻",
+        "踊子草",
+        "野芝麻",
+        "独一味",
+        "白花野芝麻"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒツジグサ",
+      "zh": "子午莲",
+      "aliases": [
+        "子午莲",
+        "未草",
+        "侏儒睡莲"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ミズヒキ",
+      "zh": "金线草",
+      "aliases": [
+        "金线草",
+        "水引草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ミゾソバ",
+      "zh": "戟叶蓼",
+      "aliases": [
+        "戟叶蓼",
+        "沟荞麦"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハマナデシコ",
+      "zh": "日本石竹",
+      "aliases": [
+        "日本石竹",
+        "滨瞿麦",
+        "滨抚子",
+        "藤抚子"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハマナス",
+      "zh": "滨茄子",
+      "aliases": [
+        "滨茄子",
+        "滨梨",
+        "玫瑰",
+        "刺玫"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クロバナロウゲ",
+      "zh": "沼委陵菜",
+      "aliases": [
+        "沼委陵菜",
+        "黑花狼牙",
+        "半边苏"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キクモモ",
+      "zh": "菊桃",
+      "aliases": [
+        "菊桃"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クリナム",
+      "zh": "文殊兰",
+      "aliases": [
+        "文殊兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "チャイブ",
+      "zh": "细香葱",
+      "aliases": [
+        "细香葱",
+        "北葱",
+        "虾夷葱",
+        "大蒜",
+        "香葱"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "コンボルブルス",
+      "zh": "三色旋花",
+      "aliases": [
+        "三色旋花",
+        "旋花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ネムノキ",
+      "zh": "合欢",
+      "aliases": [
+        "合欢",
+        "合欢树",
+        "绒花树",
+        "眠姬",
+        "合欢树（谈梦的花之圣女）"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "バイケイソウ",
+      "zh": "梅蕙草",
+      "aliases": [
+        "梅蕙草",
+        "尖被藜芦"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スカシユリ",
+      "zh": "透百合",
+      "aliases": [
+        "透百合",
+        "斑点百合"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "トキソウ",
+      "zh": "朱兰",
+      "aliases": [
+        "朱兰",
+        "朱鹭草",
+        "鸨草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "バイカモ",
+      "zh": "梅花藻",
+      "aliases": [
+        "梅花藻"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キツネノボタン",
+      "zh": "钩柱毛茛",
+      "aliases": [
+        "钩柱毛茛",
+        "狐牡丹"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リュウキンカ",
+      "zh": "驴蹄草",
+      "aliases": [
+        "驴蹄草",
+        "立金花",
+        "马蹄草",
+        "沼泽金盏花",
+        "驴蹄菜",
+        "马蹄叶"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "スパティフィラム",
+      "zh": "白鹤芋",
+      "aliases": [
+        "白鹤芋"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ミズバショウ",
+      "zh": "水芭蕉",
+      "aliases": [
+        "水芭蕉",
+        "堪察加沼芋"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒメカイウ",
+      "zh": "水芋",
+      "aliases": [
+        "水芋",
+        "水浮莲",
+        "金盏菊根",
+        "水葫芦",
+        "紫杆水芋"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "トウカ",
+      "zh": "稻禾",
+      "aliases": [
+        "稻禾"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ホルデュウム",
+      "zh": "大麦",
+      "aliases": [
+        "大麦"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ムギ",
+      "zh": "麦",
+      "aliases": [
+        "麦"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "フウロソウ",
+      "zh": "老鹳草",
+      "aliases": [
+        "老鹳草",
+        "风露草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヤマゴーヤ",
+      "zh": "毒瓜",
+      "aliases": [
+        "毒瓜",
+        "双轮瓜",
+        "冲绳雀瓜",
+        "琉球玩具瓜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ジギタリス",
+      "zh": "毛地黄",
+      "aliases": [
+        "毛地黄",
+        "实芰答里斯"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オオカワヂシャ",
+      "zh": "北水苦荬",
+      "aliases": [
+        "北水苦荬",
+        "仙桃草",
+        "箭刀草",
+        "水苦荬",
+        "水苦荬婆婆纳"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ガウラ",
+      "zh": "山桃草",
+      "aliases": [
+        "山桃草",
+        "白蝶草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ミズタマソウ",
+      "zh": "南方露珠草",
+      "aliases": [
+        "南方露珠草",
+        "水玉草",
+        "细毛谷蓼",
+        "细毛谷蓼露珠草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ミズバコパ",
+      "zh": "水过长沙",
+      "aliases": [
+        "水过长沙",
+        "卡罗莱纳过长沙",
+        "海洋之星",
+        "卡罗来纳假马齿苋",
+        "巴戈草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リンデルニア",
+      "zh": "水精灵",
+      "aliases": [
+        "水精灵",
+        "天使之泪",
+        "瞳草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クガイソウ",
+      "zh": "日本腹水草",
+      "aliases": [
+        "日本腹水草",
+        "九阶草",
+        "九盖草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リナリア",
+      "zh": "柳穿鱼",
+      "aliases": [
+        "柳穿鱼",
+        "小龙口花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "パキスタキス",
+      "zh": "金苞花",
+      "aliases": [
+        "金苞花",
+        "黄虾花",
+        "黄虾衣花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アデニウム",
+      "zh": "沙漠玫瑰",
+      "aliases": [
+        "沙漠玫瑰",
+        "天宝花",
+        "富贵花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キョウチクトウ",
+      "zh": "夹竹桃",
+      "aliases": [
+        "夹竹桃",
+        "欧洲夹竹桃",
+        "洋夹竹桃",
+        "红花夹竹桃"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "メルテンシア",
+      "zh": "滨紫草",
+      "aliases": [
+        "滨紫草",
+        "海滨紫草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リッピア",
+      "zh": "姬岩垂草",
+      "aliases": [
+        "姬岩垂草",
+        "过江藤"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クコ",
+      "zh": "枸杞",
+      "aliases": [
+        "枸杞"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "フユサンゴ",
+      "zh": "玉珊瑚",
+      "aliases": [
+        "玉珊瑚",
+        "冬珊瑚",
+        "珊瑚豆"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シザンサス",
+      "zh": "蛾蝶花",
+      "aliases": [
+        "蛾蝶花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハシリドコロ",
+      "zh": "东莨菪",
+      "aliases": [
+        "东莨菪",
+        "日本欧莨菪"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ダチュラ",
+      "zh": "曼陀罗",
+      "aliases": [
+        "曼陀罗"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "クローブ",
+      "zh": "丁香",
+      "aliases": [
+        "丁香",
+        "丁子"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "マンチニール",
+      "zh": "毒疮树",
+      "aliases": [
+        "毒疮树",
+        "毒番石榴",
+        "死亡之树"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ニコレッタ・パガニーニ",
+      "zh": "妮可莱塔·帕格尼尼",
+      "aliases": [
+        "妮可莱塔·帕格尼尼"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヒヤシンス",
+      "zh": "风信子",
+      "aliases": [
+        "风信子"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ホスタ",
+      "zh": "玉簪",
+      "aliases": [
+        "玉簪"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "チオノドクサ",
+      "zh": "雪光花",
+      "aliases": [
+        "雪光花",
+        "雪宝花",
+        "雪百合"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "オーニソガラム",
+      "zh": "伞花虎眼万年青",
+      "aliases": [
+        "伞花虎眼万年青",
+        "虎眼万年青"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "カガミ",
+      "zh": "萝藦",
+      "aliases": [
+        "萝藦",
+        "镜芋",
+        "芄兰"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ダイモンジソウ",
+      "zh": "大文字草",
+      "aliases": [
+        "大文字草",
+        "齿瓣虎耳草",
+        "中华虎耳草",
+        "华中虎耳草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ミズアオイ",
+      "zh": "雨久花",
+      "aliases": [
+        "雨久花",
+        "水葵",
+        "水葱",
+        "菜葱"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ポンテデリア",
+      "zh": "梭鱼草",
+      "aliases": [
+        "梭鱼草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "コナギ",
+      "zh": "鸭舌草",
+      "aliases": [
+        "鸭舌草",
+        "鸭跖草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "インクバナ",
+      "zh": "紫露草",
+      "aliases": [
+        "紫露草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "セダム",
+      "zh": "景天",
+      "aliases": [
+        "景天",
+        "佛甲草",
+        "万年草"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "イワレンゲ",
+      "zh": "钝叶瓦松",
+      "aliases": [
+        "钝叶瓦松",
+        "玄海岩瓦松",
+        "岩莲华",
+        "瓦松",
+        "埃瓦仁景天",
+        "玄海岩莲华"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヘナ",
+      "zh": "散沫花",
+      "aliases": [
+        "散沫花",
+        "指甲花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ミソハギ",
+      "zh": "千屈菜",
+      "aliases": [
+        "千屈菜",
+        "光千屈菜"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ウルシ",
+      "zh": "漆树",
+      "aliases": [
+        "漆树"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "フェンネル",
+      "zh": "茴香",
+      "aliases": [
+        "茴香"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アンゼリカ",
+      "zh": "欧白芷",
+      "aliases": [
+        "欧白芷",
+        "西洋当归"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "エリンジウム",
+      "zh": "刺芹",
+      "aliases": [
+        "刺芹",
+        "松笠蓟"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ブプレウルム",
+      "zh": "柴胡",
+      "aliases": [
+        "柴胡"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ヘムロック",
+      "zh": "毒参",
+      "aliases": [
+        "毒参",
+        "毒芹"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ハス",
+      "zh": "莲花",
+      "aliases": [
+        "莲花",
+        "荷花"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ケペラ",
+      "zh": "凯布利",
+      "aliases": [
+        "凯布利",
+        "凯佩拉"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "シルキト",
+      "zh": "希尔基特",
+      "aliases": [
+        "希尔基特"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "リコ",
+      "zh": "莉可",
+      "aliases": [
+        "莉可"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アルカ",
+      "zh": "阿尔卡",
+      "aliases": [
+        "阿尔卡",
+        "古果阿尔卡",
+        "古果 阿尔卡",
+        "阿尔卡埃弗鲁克图斯"
+      ],
+      "status": "canonical",
+      "ja_aliases": [
+        "アルカエフルクトゥス",
+        "夢の花アルカエフルクトゥス"
+      ]
+    },
+    {
+      "ja": "フラスベルグ",
+      "zh": "弗拉斯贝格",
+      "aliases": [
+        "弗拉斯贝格"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "アマル",
+      "zh": "阿玛尔",
+      "aliases": [
+        "阿玛尔"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "ニーム",
+      "zh": "印度苦楝树",
+      "aliases": [
+        "印度苦楝树",
+        "印度楝",
+        "印度楝树",
+        "印度苦楝",
+        "印楝"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "デーツ",
+      "zh": "椰枣",
+      "aliases": [
+        "椰枣",
+        "海枣",
+        "枣椰子",
+        "伊拉克蜜枣"
+      ],
+      "status": "canonical"
+    },
+    {
+      "ja": "キンラン",
+      "zh": "金兰",
+      "aliases": [
+        "金兰",
+        "碧江头蕊兰"
+      ],
+      "status": "canonical"
+    }
+  ],
+  "address_forms_default": {
+    "団長": {
+      "default": "团长",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生",
+        "团长君",
+        "团长酱",
+        "团长喵",
+        "团长小弟",
+        "团长同学",
+        "团长哥哥"
+      ],
+      "allow_pronoun": true
+    },
+    "団長さん": {
+      "default": "团长",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生"
+      ],
+      "allow_pronoun": true
+    },
+    "団長様": {
+      "default": "团长大人",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生"
+      ],
+      "allow_pronoun": true
+    },
+    "団長さま": {
+      "default": "团长大人",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生"
+      ],
+      "allow_pronoun": true
+    },
+    "団長サマ": {
+      "default": "团长大人",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生"
+      ],
+      "allow_pronoun": true
+    },
+    "団長しゃま": {
+      "default": "团长大人",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生"
+      ],
+      "allow_pronoun": true
+    },
+    "団長大人": {
+      "default": "团长大人",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生"
+      ],
+      "allow_pronoun": true
+    },
+    "団長殿": {
+      "default": "团长大人",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生",
+        "团长殿",
+        "团长殿下"
+      ],
+      "allow_pronoun": true
+    },
+    "団長どの": {
+      "default": "团长大人",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生",
+        "团长殿",
+        "团长殿下"
+      ],
+      "allow_pronoun": true
+    },
+    "団長君": {
+      "default": "团长君",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生",
+        "团长君",
+        "团长小弟",
+        "团长同学",
+        "团长弟弟"
+      ],
+      "allow_pronoun": true
+    },
+    "団長くん": {
+      "default": "团长君",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生",
+        "团长君",
+        "团长小弟",
+        "团长同学",
+        "团长弟弟"
+      ],
+      "allow_pronoun": true
+    },
+    "団長クン": {
+      "default": "团长君",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生",
+        "团长君",
+        "团长小弟",
+        "团长同学",
+        "团长弟弟"
+      ],
+      "allow_pronoun": true
+    },
+    "団長ちゃん": {
+      "default": "团长酱",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生",
+        "团长酱"
+      ],
+      "allow_pronoun": true
+    },
+    "団長ちゃ": {
+      "default": "团长酱",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生",
+        "团长酱"
+      ],
+      "allow_pronoun": true
+    },
+    "団長にゃん": {
+      "default": "团长喵",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生",
+        "团长喵"
+      ],
+      "allow_pronoun": true
+    },
+    "団長にゃ": {
+      "default": "团长喵",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生",
+        "团长喵"
+      ],
+      "allow_pronoun": true
+    },
+    "団長しゃん": {
+      "default": "团长大人",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生",
+        "团长酱",
+        "团长喵"
+      ],
+      "allow_pronoun": true
+    },
+    "団長しゃ～ん": {
+      "default": "团长大人",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生",
+        "团长酱",
+        "团长喵"
+      ],
+      "allow_pronoun": true
+    },
+    "団長しゃーん": {
+      "default": "团长大人",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生",
+        "团长酱",
+        "团长喵"
+      ],
+      "allow_pronoun": true
+    },
+    "団長しゃ": {
+      "default": "团长大人",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生",
+        "团长酱",
+        "团长喵"
+      ],
+      "allow_pronoun": true
+    },
+    "団長サン": {
+      "default": "团长",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生"
+      ],
+      "allow_pronoun": true
+    },
+    "団長ひゃん": {
+      "default": "团长",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生"
+      ],
+      "allow_pronoun": true
+    },
+    "団長さ": {
+      "default": "团长",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生"
+      ],
+      "allow_pronoun": true
+    },
+    "だんちょ": {
+      "default": "团长",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生",
+        "团长君",
+        "团长酱",
+        "团长喵",
+        "团长小弟",
+        "团长同学",
+        "团长哥哥",
+        "团长弟弟"
+      ],
+      "allow_pronoun": true
+    },
+    "らんちょ": {
+      "default": "团长",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生",
+        "团长君",
+        "团长酱",
+        "团长喵",
+        "团长小弟",
+        "团长同学",
+        "团长哥哥",
+        "团长弟弟"
+      ],
+      "allow_pronoun": true
+    },
+    "らんひょ": {
+      "default": "团长",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生",
+        "团长君",
+        "团长酱",
+        "团长喵",
+        "团长小弟",
+        "团长同学",
+        "团长哥哥",
+        "团长弟弟"
+      ],
+      "allow_pronoun": true
+    },
+    "だっさん": {
+      "default": "团长",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生",
+        "团长君",
+        "团长酱",
+        "团长喵",
+        "团长小弟",
+        "团长同学",
+        "团长哥哥",
+        "团长弟弟"
+      ],
+      "allow_pronoun": true
+    },
+    "ダンチョー": {
+      "default": "团长",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生",
+        "团长君",
+        "团长酱",
+        "团长喵",
+        "团长小弟",
+        "团长同学",
+        "团长哥哥",
+        "团长弟弟"
+      ],
+      "allow_pronoun": true
+    },
+    "ダンナ": {
+      "default": "老板",
+      "allowed": [
+        "老板",
+        "老板大人",
+        "老公"
+      ],
+      "allow_pronoun": true
+    },
+    "お兄さん": {
+      "default": "哥哥",
+      "allowed": [
+        "哥哥",
+        "哥哥亲"
+      ],
+      "allow_pronoun": true
+    },
+    "団長っち": {
+      "default": "团长亲",
+      "allowed": [
+        "团长",
+        "团长大人",
+        "团长先生",
+        "团长亲",
+        "团长酱"
+      ],
+      "allow_pronoun": true
+    }
+  },
+  "overrides": {
+    "スイカズラ": {
+      "zh_primary": "忍冬",
+      "address_forms": {
+        "団長": {
+          "default": "团长",
+          "allowed": [
+            "团长"
+          ]
+        }
+      },
+      "notes": "已有 c100001 标准；常直呼团长。"
+    },
+    "バーバスカム": {
+      "zh_primary": "毛蕊花",
+      "address_forms": {
+        "団長様": {
+          "default": "团长大人",
+          "allowed": [
+            "团长大人"
+          ]
+        }
+      },
+      "notes": "已有 c154413 标准；使用敬称。"
+    }
+  },
+  "known_issues": {
+    "variant_speaker_mismatch": [],
+    "multi_character_families": [
+      "c100841",
+      "c100843",
+      "c100845",
+      "c135801",
+      "c150025",
+      "c150051",
+      "c163405",
+      "c163407"
+    ],
+    "duplicate_chinese_groups": [],
+    "status": "resolved",
+    "variant_speaker_mismatch_resolved": [
+      "c100841",
+      "c100843",
+      "c100845",
+      "c135801"
+    ],
+    "variant_speaker_mismatch_note": "4 组均经 task-8/task-11 剧情审计确认为双人格/人偶设计差异；保留 multi_character_families。",
+    "duplicate_chinese_groups_resolved": [
+      {
+        "group": "G1",
+        "old_shared_zh": "梅",
+        "members": [
+          "メイ",
+          "ウメ"
+        ],
+        "new_names": {
+          "メイ": "小梅",
+          "ウメ": "梅"
+        }
+      },
+      {
+        "group": "G4",
+        "old_shared_zh": "萼距花",
+        "members": [
+          "コフェア",
+          "クフェア"
+        ],
+        "new_names": {
+          "コフェア": "咖啡树",
+          "クフェア": "萼距花"
+        }
+      },
+      {
+        "group": "G5",
+        "old_shared_zh": "樱桃",
+        "members": [
+          "さくらんぼ",
+          "サクランボ"
+        ],
+        "new_names": {
+          "さくらんぼ": "樱桃（水果联动）",
+          "サクランボ": "樱桃"
+        }
+      },
+      {
+        "group": "G7",
+        "old_shared_zh": "马鞭草",
+        "members": [
+          "バーベナ",
+          "クマツヅラ"
+        ],
+        "new_names": {
+          "バーベナ": "马鞭草",
+          "クマツヅラ": "熊葛（马鞭草）"
+        }
+      },
+      {
+        "group": "G8",
+        "old_shared_zh": "苹果",
+        "members": [
+          "りんご",
+          "リンゴ"
+        ],
+        "new_names": {
+          "りんご": "苹果（水果联动）",
+          "リンゴ": "苹果"
+        }
+      },
+      {
+        "group": "G2",
+        "old_shared_zh": "豌豆",
+        "members": [
+          "エンドウ",
+          "キヌサヤ"
+        ],
+        "new_names": {
+          "エンドウ": "豌豆",
+          "キヌサヤ": "豌豆（绢荚）"
+        },
+        "note": "task-18：用户确认区分名"
+      },
+      {
+        "group": "G3",
+        "old_shared_zh": "向日葵",
+        "members": [
+          "ヒマワリ",
+          "ヘリアンサス"
+        ],
+        "new_names": {
+          "ヒマワリ": "向日葵",
+          "ヘリアンサス": "向日葵（赫利安萨斯）"
+        },
+        "note": "task-18：用户确认区分名"
+      },
+      {
+        "group": "G6",
+        "old_shared_zh": "天竺葵",
+        "members": [
+          "ゼラニウム",
+          "ペラルゴニウム"
+        ],
+        "new_names": {
+          "ゼラニウム": "天竺葵",
+          "ペラルゴニウム": "洋葵（天竺葵）"
+        },
+        "note": "task-18：用户确认区分名"
+      }
+    ],
+    "duplicate_chinese_groups_status": {
+      "G1": {
+        "shared_zh_old": "梅",
+        "members": [
+          "メイ",
+          "ウメ"
+        ],
+        "status": "resolved",
+        "new_names": {
+          "メイ": "小梅",
+          "ウメ": "梅"
+        },
+        "note": "task-14：联动角色メイ采用社区名小梅，ウメ保持梅。"
+      },
+      "G2": {
+        "shared_zh_old": "豌豆",
+        "members": [
+          "エンドウ",
+          "キヌサヤ"
+        ],
+        "status": "resolved",
+        "new_names": {
+          "エンドウ": "豌豆",
+          "キヌサヤ": "豌豆（绢荚）"
+        },
+        "note": "task-18：用户确认キヌサヤ采用豌豆（绢荚）；エンドウ保持豌豆。"
+      },
+      "G3": {
+        "shared_zh_old": "向日葵",
+        "members": [
+          "ヒマワリ",
+          "ヘリアンサス"
+        ],
+        "status": "resolved",
+        "new_names": {
+          "ヒマワリ": "向日葵",
+          "ヘリアンサス": "向日葵（赫利安萨斯）"
+        },
+        "note": "task-18：用户确认ヘリアンサス采用向日葵（赫利安萨斯）；ヒマワリ保持向日葵。"
+      },
+      "G4": {
+        "shared_zh_old": "萼距花",
+        "members": [
+          "コフェア",
+          "クフェア"
+        ],
+        "status": "resolved",
+        "new_names": {
+          "コフェア": "咖啡树",
+          "クフェア": "萼距花"
+        },
+        "note": "task-14：コフェア=Coffea 咖啡树，クフェア=Cuphea 萼距花。"
+      },
+      "G5": {
+        "shared_zh_old": "樱桃",
+        "members": [
+          "さくらんぼ",
+          "サクランボ"
+        ],
+        "status": "resolved",
+        "new_names": {
+          "さくらんぼ": "樱桃（水果联动）",
+          "サクランボ": "樱桃"
+        },
+        "note": "task-14：Fruits Fulcute 联动角色加限定。"
+      },
+      "G6": {
+        "shared_zh_old": "天竺葵",
+        "members": [
+          "ゼラニウム",
+          "ペラルゴニウム"
+        ],
+        "status": "resolved",
+        "new_names": {
+          "ゼラニウム": "天竺葵",
+          "ペラルゴニウム": "洋葵（天竺葵）"
+        },
+        "note": "task-18：用户确认ペラルゴニウム采用洋葵（天竺葵）；ゼラニウム保持天竺葵。"
+      },
+      "G7": {
+        "shared_zh_old": "马鞭草",
+        "members": [
+          "バーベナ",
+          "クマツヅラ"
+        ],
+        "status": "resolved",
+        "new_names": {
+          "バーベナ": "马鞭草",
+          "クマツヅラ": "熊葛（马鞭草）"
+        },
+        "note": "task-14：采用巴哈姆特社区区分名。"
+      },
+      "G8": {
+        "shared_zh_old": "苹果",
+        "members": [
+          "りんご",
+          "リンゴ"
+        ],
+        "status": "resolved",
+        "new_names": {
+          "りんご": "苹果（水果联动）",
+          "リンゴ": "苹果"
+        },
+        "note": "task-14：Fruits Fulcute 联动角色加限定。"
+      }
+    },
+    "duplicate_chinese_groups_pending": [],
+    "duplicate_chinese_groups_note": "task-18：用户确认 G2/G3/G6 区分方案后，8/8 组均已 resolved；duplicate_chinese_groups 与 pending 均为空。"
+  },
+  "version_label": "v0006",
+  "supersedes": "v0005",
+  "changelog": {
+    "scope": "仅扩展 address_forms_default；characters/aliases/overrides/known_issues 与 v0002 相同。",
+    "not_published": true,
+    "notes": "等待人工确认后再 publish；current.json 仍指向 v0002。",
+    "address_forms_added": [
+      "団長さま",
+      "団長サマ",
+      "団長サン",
+      "団長しゃん",
+      "団長しゃ～ん",
+      "団長しゃーん",
+      "団長しゃ",
+      "団長どの",
+      "団長君",
+      "団長くん",
+      "団長クン",
+      "団長ちゃん",
+      "団長ちゃ",
+      "団長にゃん",
+      "団長にゃ",
+      "団長しゃま",
+      "団長ひゃん",
+      "団長大人",
+      "団長さ",
+      "だんちょ",
+      "らんちょ",
+      "らんひょ",
+      "だっさん",
+      "ダンチョー",
+      "団長っち"
+    ],
+    "task12_note": "新增 団長っち（角色语癖 团长亲）；其余 104 行为 token 修正/精确 tokenizer 修正。",
+    "task14_sharedname_updates": {
+      "resolved_groups": [
+        "G1",
+        "G4",
+        "G5",
+        "G7",
+        "G8"
+      ],
+      "pending_groups": [
+        "G2",
+        "G3",
+        "G6"
+      ],
+      "renames": {
+        "メイ": "小梅",
+        "コフェア": "咖啡树",
+        "さくらんぼ": "樱桃（水果联动）",
+        "りんご": "苹果（水果联动）",
+        "クマツヅラ": "熊葛（马鞭草）"
+      },
+      "note": "speaker/正文改名按 shared-names-research.md 限定文件与命中行执行；未做全局替换。"
+    },
+    "task18_sharedname_updates": {
+      "resolved_groups": [
+        "G2",
+        "G3",
+        "G6"
+      ],
+      "renames": {
+        "キヌサヤ": "豌豆（绢荚）",
+        "ヘリアンサス": "向日葵（赫利安萨斯）",
+        "ペラルゴニウム": "洋葵（天竺葵）"
+      },
+      "unchanged_partners": {
+        "エンドウ": "豌豆",
+        "ヒマワリ": "向日葵",
+        "ゼラニウム": "天竺葵"
+      },
+      "note": "基于 v0003，仅 update 3 个角色 zh/aliases 与 G2/G3/G6 known_issues 状态；未 publish。"
+    },
+    "task22_arca_alias": {
+      "changed_character": "アルカ",
+      "aliases": [
+        "阿尔卡",
+        "古果阿尔卡",
+        "古果 阿尔卡",
+        "阿尔卡埃弗鲁克图斯"
+      ],
+      "ja_aliases": [
+        "アルカエフルクトゥス",
+        "夢の花アルカエフルクトゥス"
+      ],
+      "note": "canonical 保持 阿尔卡；补中/日别名，未 publish。"
+    },
+    "task24_npc_alias": {
+      "changed_character": "ポトス",
+      "aliases_added": [
+        "小铁铲"
+      ],
+      "ja_aliases_added": [
+        "スコップ",
+        "スコップちゃん"
+      ],
+      "npcs_added": [
+        "ランス"
+      ],
+      "note": "仅补 alias/NPC，不入 speaker 数组；未 publish。"
+    }
+  },
+  "address_audit_policy": {
+    "exact_token_longest_match": true,
+    "allow_pronoun_default": true,
+    "pronoun_note": "中文在源文把称呼嵌在句中时，可自然改用「你/您」或省略；此类记录为 address_pronoun_allowed，不再算 address_not_in_allowed。",
+    "canonical_common": [
+      "团长",
+      "团长大人",
+      "团长先生"
+    ]
+  },
+  "npcs": [
+    {
+      "ja": "ランス",
+      "zh": "兰斯",
+      "subtype": "non_speaker_collab_npc",
+      "collab": "Rance 10",
+      "note": "人名与普通名词ランス=长枪同形，禁止自动替换"
+    }
+  ]
+}

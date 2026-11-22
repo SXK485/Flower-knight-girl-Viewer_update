@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "files": {
+    "c130901": {
+      "source_blocks": 73,
+      "game_blocks": 74,
+      "extra_game_lines_1based": [
+        10
+      ],
+      "source_anchor_before_1based": 9,
+      "source_anchor_after_1based": 10,
+      "action": "preserve_existing_out_of_scope",
+      "packet_action": "insert_blank_at_game_line",
+      "note": "游戏脚本多出的旧译文块，原文中没有对应内容；按忠实原文原则不翻译、不重写，装回时留空以保留游戏现有文本。"
+    },
+    "c131925_2": {
+      "source_blocks": 74,
+      "game_blocks": 75,
+      "extra_game_lines_1based": [
+        65
+      ],
+      "source_anchor_before_1based": 64,
+      "source_anchor_after_1based": 65,
+      "action": "preserve_existing_out_of_scope",
+      "packet_action": "insert_blank_at_game_line",
+      "note": "游戏脚本多出的旧译文块，原文中没有对应内容；按忠实原文原则不翻译、不重写，装回时留空以保留游戏现有文本。"
+    },
+    "c144403": {
+      "source_blocks": 74,
+      "game_blocks": 75,
+      "extra_game_lines_1based": [
+        56
+      ],
+      "source_anchor_before_1based": 55,
+      "source_anchor_after_1based": 56,
+      "action": "preserve_existing_out_of_scope",
+      "packet_action": "insert_blank_at_game_line",
+      "note": "游戏脚本多出的旧译文块，原文中没有对应内容；按忠实原文原则不翻译、不重写，装回时留空以保留游戏现有文本。"
+    },
+    "c147501_2": {
+      "source_blocks": 54,
+      "game_blocks": 55,
+      "extra_game_lines_1based": [
+        8
+      ],
+      "source_anchor_before_1based": 7,
+      "source_anchor_after_1based": 8,
+      "action": "preserve_existing_out_of_scope",
+      "packet_action": "insert_blank_at_game_line",
+      "note": "游戏脚本多出的旧译文块，原文中没有对应内容；按忠实原文原则不翻译、不重写，装回时留空以保留游戏现有文本。"
+    },
+    "c162701": {
+      "source_blocks": 64,
+      "game_blocks": 65,
+      "extra_game_lines_1based": [
+        62
+      ],
+      "source_anchor_before_1based": 61,
+      "source_anchor_after_1based": 62,
+      "action": "preserve_existing_out_of_scope",
+      "packet_action": "insert_blank_at_game_line",
+      "note": "游戏脚本多出的旧译文块，原文中没有对应内容；按忠实原文原则不翻译、不重写，装回时留空以保留游戏现有文本。"
+    }
+  },
+  "needsHuman": {}
+}

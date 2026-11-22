@@ -1,0 +1,19 @@
+{
+  "unit": "style",
+  "version": 2,
+  "generated_at": "2026-11-22T01:35:00+08:00",
+  "quotes": {
+    "speaker_outer": "preserve_source_outer",
+    "apply_to_narration": false,
+    "notes": "台词源文最外层有「」，译文保留一对；源文没有，则去掉译文额外包上的外层「」。旁白不改。"
+  },
+  "newline": "literal_backslash_n",
+  "forbidden_tags": [
+    "<NAME_PLATE>",
+    "<PAUSE>"
+  ],
+  "japanese_only_han": [
+    "膣"
+  ],
+  "version_label": "v0002"
+}

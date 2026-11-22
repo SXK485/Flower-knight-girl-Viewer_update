@@ -1,0 +1,12 @@
+{
+  "terms_version": "v0006",
+  "characters_version": "v0006",
+  "style_version": "v0002",
+  "terms_file": "versions/terms-v0006.json",
+  "characters_file": "versions/characters-v0006.json",
+  "style_file": "versions/style-v0002.json",
+  "terms_sha256": "23f02bf8ed0877c00cc8f4c785c096d4569db5057b72817f8c29bdf1e935d333",
+  "characters_sha256": "4fe6c8d65ac5e0e6c8f1a8bc56676c75ad6e98c9b4f4c33a0714967383b21224",
+  "style_sha256": "267565124c9a6869c069c1bbf7267b28089debd43407b6de31bbd33b00e1fcf7",
+  "published_at": "2026-11-22T07:40:43+08:00"
+}
