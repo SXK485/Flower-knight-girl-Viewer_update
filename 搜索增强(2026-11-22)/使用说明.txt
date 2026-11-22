@@ -1,0 +1,34 @@
+Flower Knight Girl Viewer 中文 / 系列搜索增强
+日期：2026-11-22
+
+功能：
+- Character 搜索支持中文角色名、中文别名
+- 支持按角色形态系列搜索：
+  - 生命树的祝福 / 生命树祝福
+  - 新春 / 新年
+  - 平行学园 / 学园 / 校园
+  - 泳装、圣诞节、情人节、六月新娘、万圣节、浴衣、女仆、
+    典礼礼服、深层记录、十周年、女儿节等
+- 自动补全选中系列名后保留系列名，返回整个系列，而不是单个角色
+
+要求：
+- 适用于 Flower Knight Girl Viewer 1.1 的 package.nw 目录结构
+- Python 3.10+
+- 安装前关闭 Viewer
+
+安装（在本目录执行）：
+  python install_cn_search.py "/path/to/package.nw"
+
+安装脚本会：
+- 备份原来的 search.js、autocomplete.js 和 Viewer HTML
+- 复制本目录 files/ 下的 JS 到 data/scripts/
+- 在 meta.js 后插入 cn-search.js 的 script 标签
+- 把 Character 输入框提示改为包含“系列”
+
+不会修改 scenes、图片、语音或翻译数据。
+
+文件：
+- files/cn-names.js       中文名/别名映射
+- files/cn-search.js      注入中文名和形态系列别名
+- files/search.js         中文查找和中文系列匹配
+- files/autocomplete.js   系列感知的自动补全
