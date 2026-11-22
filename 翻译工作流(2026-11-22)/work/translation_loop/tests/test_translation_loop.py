@@ -15,6 +15,25 @@ tl = importlib.util.module_from_spec(spec)
 sys.modules[spec.name] = tl
 spec.loader.exec_module(tl)
 
+REQUIRED_SOURCES = (
+    "c100001.txt",
+    "c100001_2.txt",
+    "c130901.txt",
+    "c150051.txt",
+    "c154413.txt",
+)
+
+
+def setUpModule():
+    missing = [name for name in REQUIRED_SOURCES if not (tl.SOURCE_ROOT / name).is_file()]
+    if missing:
+        raise unittest.SkipTest(
+            "source fixtures not included; place the original scene files under FlowerKnightGirl_原文/ "
+            "and set FKG_GAME_SCENES")
+    if not tl.DEFAULT_GAME_SCENES.is_dir():
+        raise unittest.SkipTest(
+            "game scenes not found; set FKG_GAME_SCENES to package.nw/scenes")
+
 
 class BuildSceneTests(unittest.TestCase):
     def test_all_preflight_overrides_build_with_one_preserved_line(self) -> None:

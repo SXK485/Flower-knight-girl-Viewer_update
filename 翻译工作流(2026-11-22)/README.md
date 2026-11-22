@@ -65,6 +65,7 @@ FlowerKnightGirl_原文/c100001_2.txt
 
 ```bash
 export FKG_GAME_PACKAGE="/path/to/Flower Knight Girl 1.1/package.nw"
+export FKG_GAME_SCENES="$FKG_GAME_PACKAGE/scenes"
 ```
 
 DeepSeek 适配器默认从：
@@ -188,3 +189,13 @@ python3 work/translation_loop/translation_loop.py review <scene_id>
 ## 6. 版权
 
 本目录只放翻译流程与工具，不包含游戏资源或原始完整脚本。译文和游戏素材的使用请遵守原作品版权及所在地区法律。
+
+
+## 7. 自测
+
+```bash
+export FKG_GAME_SCENES="$FKG_GAME_PACKAGE/scenes"
+python3 -m unittest discover -s work/translation_loop/tests -v
+```
+
+测试需要原始 `c100001.txt` 等场景文件和本地 `package.nw/scenes`；如果未提供，会整体 skip，不会误报失败。

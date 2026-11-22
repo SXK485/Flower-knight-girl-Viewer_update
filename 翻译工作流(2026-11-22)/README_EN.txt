@@ -70,3 +70,14 @@ The exported `json_cn.zip` matches the format used by previous translation
 packs in this repository: a `json_cn/` directory of per-scene JSON arrays.
 
 No game assets are included.
+
+
+## Self-test
+
+```bash
+export FKG_GAME_SCENES="$FKG_GAME_PACKAGE/scenes"
+python3 -m unittest discover -s work/translation_loop/tests -v
+```
+
+The tests skip cleanly when the original scene fixtures or local game scenes are
+not present.
