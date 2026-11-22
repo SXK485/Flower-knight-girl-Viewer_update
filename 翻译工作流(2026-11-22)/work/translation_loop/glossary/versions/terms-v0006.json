@@ -1,0 +1,433 @@
+{
+  "unit": "terms",
+  "version": 6,
+  "generated_at": "2026-11-22T06:48:33+08:00",
+  "entries": [
+    {
+      "id": "term-vagina-inner",
+      "ja": [
+        "膣内"
+      ],
+      "zh": {
+        "default": "小穴里",
+        "variants": [
+          "阴道内"
+        ]
+      },
+      "category": "explicit",
+      "allow_variants": true,
+      "notes": "按语境选择；禁止保留日文专用汉字「膣」。"
+    },
+    {
+      "id": "term-vagina-deep",
+      "ja": [
+        "膣奥"
+      ],
+      "zh": {
+        "default": "小穴深处",
+        "variants": [
+          "阴道深处"
+        ]
+      },
+      "category": "explicit",
+      "allow_variants": true,
+      "notes": "由 v0002 term-vagina-canal 拆分：专指深处；禁止保留日文专用汉字「膣」。"
+    },
+    {
+      "id": "term-vagina-canal",
+      "ja": [
+        "膣道"
+      ],
+      "zh": {
+        "default": "阴道",
+        "variants": [
+          "小穴"
+        ]
+      },
+      "category": "explicit",
+      "allow_variants": true,
+      "notes": "由 v0002 term-vagina-canal 拆分：仅指阴道/腔道本身；深处见 term-vagina-deep。禁止保留「膣」。"
+    },
+    {
+      "id": "term-penis",
+      "ja": [
+        "ペニス",
+        "肉茎",
+        "肉棒",
+        "おちんちん",
+        "ちんちん",
+        "男根"
+      ],
+      "zh": {
+        "default": "阴茎",
+        "variants": [
+          "肉棒",
+          "鸡巴"
+        ]
+      },
+      "category": "explicit",
+      "allow_variants": true,
+      "notes": "按角色语气和露骨度选词；同一场景内不要机械重复同一个词。"
+    },
+    {
+      "id": "term-breasts",
+      "ja": [
+        "おっぱい",
+        "乳房"
+      ],
+      "zh": {
+        "default": "奶子",
+        "variants": [
+          "乳房",
+          "胸部"
+        ]
+      },
+      "category": "explicit",
+      "allow_variants": true,
+      "notes": "露骨语境优先「奶子」；角色自称或叙述可据语境用「乳房」。「胸」不单独映射，避免非色情语境误伤。"
+    },
+    {
+      "id": "term-vulva",
+      "ja": [
+        "おまんこ",
+        "まんこ"
+      ],
+      "zh": {
+        "default": "小穴",
+        "variants": [
+          "逼"
+        ]
+      },
+      "category": "explicit",
+      "allow_variants": true,
+      "notes": "与「膣内」区分；不要统一成「阴道」。「小穴」作为中文候选，不作为日文触发词，避免误伤字面意义。"
+    },
+    {
+      "id": "term-semen",
+      "ja": [
+        "精液",
+        "ザーメン"
+      ],
+      "zh": {
+        "default": "精液",
+        "variants": []
+      },
+      "category": "explicit",
+      "allow_variants": false,
+      "notes": "保持原文露骨度。"
+    },
+    {
+      "id": "term-fluid",
+      "ja": [
+        "愛液",
+        "淫水"
+      ],
+      "zh": {
+        "default": "淫水",
+        "variants": [
+          "爱液"
+        ]
+      },
+      "category": "explicit",
+      "allow_variants": true,
+      "notes": "按语境选择。"
+    },
+    {
+      "id": "term-orgasm",
+      "ja": [
+        "イク",
+        "イキます",
+        "イッちゃう"
+      ],
+      "zh": {
+        "default": "去了",
+        "variants": [
+          "要去了",
+          "高潮了"
+        ]
+      },
+      "category": "explicit",
+      "allow_variants": true,
+      "notes": "保留口语和喘息感，不要统一成医学术语。"
+    },
+    {
+      "id": "term-competition",
+      "ja": [
+        "競技会"
+      ],
+      "zh": {
+        "default": "竞技会",
+        "variants": []
+      },
+      "category": "setting",
+      "allow_variants": false,
+      "notes": "作品内活动名。"
+    },
+    {
+      "id": "term-academy",
+      "ja": [
+        "学園"
+      ],
+      "zh": {
+        "default": "学园",
+        "variants": []
+      },
+      "category": "setting",
+      "allow_variants": false,
+      "notes": "作品内场景名。"
+    },
+    {
+      "id": "term-external-instructor",
+      "ja": [
+        "外部指導員"
+      ],
+      "zh": {
+        "default": "外部指导员",
+        "variants": []
+      },
+      "category": "setting",
+      "allow_variants": false,
+      "notes": "作品内身份名。"
+    },
+    {
+      "id": "term-flower-knight",
+      "ja": [
+        "花騎士"
+      ],
+      "zh": {
+        "default": "花骑士",
+        "variants": []
+      },
+      "category": "organization",
+      "allow_variants": false,
+      "notes": "FKG 核心身份/群体名；「花騎士団」可由本项派生。依据 proper-noun-inventory.md。"
+    },
+    {
+      "id": "term-pest",
+      "ja": [
+        "害虫"
+      ],
+      "zh": {
+        "default": "害虫",
+        "variants": []
+      },
+      "category": "creature",
+      "allow_variants": false,
+      "notes": "FKG 世界观中的敌对生物总称，不是普通昆虫。依据 proper-noun-inventory.md。"
+    },
+    {
+      "id": "term-world-flower",
+      "ja": [
+        "世界花"
+      ],
+      "zh": {
+        "default": "世界花",
+        "variants": []
+      },
+      "category": "setting",
+      "allow_variants": false,
+      "notes": "FKG 世界观中支撑世界的巨大花朵设定词；固定作「世界花」。依据 proper-noun-inventory.md。"
+    },
+    {
+      "id": "term-peach-blossom-spring",
+      "ja": [
+        "桃源郷"
+      ],
+      "zh": {
+        "default": "桃源乡",
+        "variants": []
+      },
+      "category": "place",
+      "allow_variants": false,
+      "notes": "ベルガモットバレー领内的自治欢乐街/温泉地专名。依据 proper-noun-inventory.md。"
+    },
+    {
+      "id": "term-spring-garden",
+      "ja": [
+        "スプリングガーデン"
+      ],
+      "zh": {
+        "default": "春庭",
+        "variants": []
+      },
+      "category": "place",
+      "allow_variants": false,
+      "notes": "FKG 异世界/世界名；萌娘百科标准作「春庭（スプリングガーデン）」，不沿用普通庭园义。依据 proper-noun-inventory.md。"
+    },
+    {
+      "id": "term-blossom-hill",
+      "ja": [
+        "ブロッサムヒル"
+      ],
+      "zh": {
+        "default": "茂盛之丘",
+        "variants": []
+      },
+      "category": "place",
+      "allow_variants": false,
+      "notes": "FKG 六国之一的国名/城邦名；萌娘百科标准作「茂盛之丘」。依据 proper-noun-inventory.md。"
+    },
+    {
+      "id": "term-lily-wood",
+      "ja": [
+        "リリィウッド"
+      ],
+      "zh": {
+        "default": "百合树",
+        "variants": []
+      },
+      "category": "place",
+      "allow_variants": false,
+      "notes": "FKG 六国之一；国名兼世界花名，标准作「百合树」，不是普通树名。依据 proper-noun-inventory.md。"
+    },
+    {
+      "id": "term-banana-ocean",
+      "ja": [
+        "バナナオーシャン"
+      ],
+      "zh": {
+        "default": "香蕉海洋",
+        "variants": []
+      },
+      "category": "place",
+      "allow_variants": false,
+      "notes": "FKG 六国之一；萌娘百科标准作「香蕉海洋」。依据 proper-noun-inventory.md。"
+    },
+    {
+      "id": "term-bergamot-valley",
+      "ja": [
+        "ベルガモットバレー"
+      ],
+      "zh": {
+        "default": "香柠檬谷",
+        "variants": []
+      },
+      "category": "place",
+      "allow_variants": false,
+      "notes": "FKG 六国之一；萌娘百科标准作「香柠檬谷」。依据 proper-noun-inventory.md。"
+    },
+    {
+      "id": "term-winter-roses",
+      "ja": [
+        "ウィンターローズ"
+      ],
+      "zh": {
+        "default": "冬之蔷薇",
+        "variants": []
+      },
+      "category": "place",
+      "allow_variants": false,
+      "notes": "FKG 六国之一；萌娘百科标准作「冬之蔷薇」。依据 proper-noun-inventory.md。"
+    },
+    {
+      "id": "term-lotus-lake",
+      "ja": [
+        "ロータスレイク"
+      ],
+      "zh": {
+        "default": "莲花湖",
+        "variants": []
+      },
+      "category": "place",
+      "allow_variants": false,
+      "notes": "FKG 六国之一；萌娘百科标准作「莲花湖」。依据 proper-noun-inventory.md。"
+    },
+    {
+      "id": "term-tree-of-life-blessing",
+      "ja": [
+        "生命樹の祝福"
+      ],
+      "zh": {
+        "default": "生命树的祝福",
+        "variants": [
+          "生命树祝福"
+        ]
+      },
+      "category": "event",
+      "allow_variants": true,
+      "notes": "固定换装/祝福事件名；2286 文件中只出现「生命樹の祝福」，不要把裸「生命樹」当普通树名替换。依据 proper-noun-inventory.md。"
+    },
+    {
+      "id": "term-kodaibana",
+      "ja": [
+        "コダイバナ"
+      ],
+      "zh": {
+        "default": "古代花",
+        "variants": []
+      },
+      "category": "place",
+      "allow_variants": false,
+      "notes": "萌娘百科世界地图标准作「古代花」（枯れた世界花「古代花」コダイバナ）；是旧国/地域名，不加「町/国」后缀。术语匹配须最长/精确，优先保护「古代花騎士」，避免把「古代花騎士」误拆成「古代花」+「騎士」。"
+    },
+    {
+      "id": "term-deep-record",
+      "ja": [
+        "ディープ・レコード"
+      ],
+      "zh": {
+        "default": "深层记录",
+        "variants": [
+          "深录"
+        ]
+      },
+      "category": "organization",
+      "allow_variants": true,
+      "notes": "人工确认后的专名：リリィウッド王立情报机关；default「深层记录」，允许短称「深录」。术语匹配须最长/精确，避免英文与普通词误伤。依据 optional-terms-review.md。"
+    },
+    {
+      "id": "term-knight-school",
+      "ja": [
+        "騎士学校"
+      ],
+      "zh": {
+        "default": "骑士学校",
+        "variants": []
+      },
+      "category": "setting",
+      "allow_variants": false,
+      "notes": "花骑士培养机构的通称/泛称；与具体机构「骑士团学校」区分，不合并。依据 optional-terms-review.md。"
+    },
+    {
+      "id": "term-knight-order-school",
+      "ja": [
+        "騎士団学校"
+      ],
+      "zh": {
+        "default": "骑士团学校",
+        "variants": []
+      },
+      "category": "organization",
+      "allow_variants": false,
+      "notes": "骑士团设立的具体学校（如フォス騎士団学校）；与通称「骑士学校」区分。依据 optional-terms-review.md。"
+    }
+  ],
+  "version_label": "v0006",
+  "supersedes": "v0002",
+  "changelog": {
+    "scope": "由 terms-v0002 升版：拆分膣奥/膣道；新增 12 个高置信度专名术语。",
+    "split": {
+      "from": "term-vagina-canal",
+      "into": [
+        "term-vagina-deep",
+        "term-vagina-canal"
+      ]
+    },
+    "added": [
+      "term-flower-knight",
+      "term-pest",
+      "term-world-flower",
+      "term-peach-blossom-spring",
+      "term-spring-garden",
+      "term-blossom-hill",
+      "term-lily-wood",
+      "term-banana-ocean",
+      "term-bergamot-valley",
+      "term-winter-roses",
+      "term-lotus-lake",
+      "term-tree-of-life-blessing"
+    ],
+    "source": "work/translation_loop/audit-glossary/proper-noun-inventory.md",
+    "targeted_translation_policy": "译文统一只按源文触发块定点替换，不做全局盲替换。"
+  }
+}

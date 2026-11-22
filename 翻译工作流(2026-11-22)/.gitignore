@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+work/translation_loop/runs/
+work/translation_loop/cache/
+work/translation_loop/results/
+json_cn/
+json_cn.zip
+FlowerKnightGirl_原文/*.txt
+FlowerKnightGirl_原文/译文/c*.txt
